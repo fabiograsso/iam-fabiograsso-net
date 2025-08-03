@@ -4,6 +4,11 @@ title = 'IAM.FabioGrasso.net'
 defaultContentLanguage = 'en'
 theme = 'PaperMod'
 
+[params]
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
+  hideSummary = true
+
 [languages]
   [languages.en]
     languageName = 'English'

@@ -6,10 +6,10 @@ description: "A brief descriptio."
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["blog"]
 translationKey: "intro-to-hugo"
-toc: false
-ShowBreadCrumbs: true # Mostra il percorso di navigazione
-ShowReadingTime: true # Mostra il tempo di lettura stimato
-hideSummary: true # Nasconde il sommario dall'homepage
+#toc: false
+#ShowBreadCrumbs: true
+#ShowReadingTime: true
+#hideSummary: true
 
 # Open Graph e SEO
 author: "Fabio Grasso"
