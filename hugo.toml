@@ -1,0 +1,26 @@
+baseURL = 'https://iam.fabiograsso.net'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+defaultContentLanguage = 'en'
+theme = 'PaperMod'
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/english'
+    weight = 1
+    title = 'My Tech Blog'
+
+  [languages.it]
+    languageName = 'Italiano'
+    contentDir = 'content/italiano'
+    weight = 2
+    title = 'Il Mio Blog di Tecnologia'
+
+  [languages.fr]
+    languageName = 'Français'
+    contentDir = 'content/francais'
+    weight = 3
+    title = 'Mon Blog Technique'
+
+
