@@ -17,11 +17,18 @@ theme = 'PaperMod'
     weight = 2
     title = 'IAM.FabioGrasso.net'
 
+  [languages.it.menu]
+    [languages.it.menu.main]
+      name = 'Blog'
+      url = '/it/posts/'
+
   [languages.fr]
     languageName = 'Français'
     contentDir = 'content/francais'
     weight = 3
     title = 'IAM.FabioGrasso.net'
 
-
-
+  [languages.fr.menu]
+    [languages.fr.menu.main]
+      name = 'Blog'
+      url = '/fr/posts/'
