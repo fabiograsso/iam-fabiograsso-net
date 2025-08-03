@@ -20,7 +20,7 @@ theme = 'PaperMod'
 [languages]
   [languages.en]
     languageName = 'English'
-    contentDir = 'content/english'
+    contentDir = 'content/en'
     weight = 1
     title = 'IAM.FabioGrasso.net'
     [languages.en.params]
@@ -32,7 +32,7 @@ theme = 'PaperMod'
 
   [languages.it]
     languageName = 'Italiano'
-    contentDir = 'content/italiano'
+    contentDir = 'content/it'
     weight = 2
     title = 'IAM.FabioGrasso.net'
     [languages.it.params]
@@ -44,7 +44,7 @@ theme = 'PaperMod'
 
   [languages.fr]
     languageName = 'Français'
-    contentDir = 'content/francais'
+    contentDir = 'content/fr'
     weight = 3
     title = 'IAM.FabioGrasso.net'
     [languages.fr.params]
