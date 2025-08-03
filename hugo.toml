@@ -8,6 +8,14 @@ theme = 'PaperMod'
   ShowBreadCrumbs = true
   ShowReadingTime = true
   hideSummary = true
+  [params.socials]
+    github = "fabiograsso" # Sostituisci con il tuo username
+    linkedin = "fabiograsso82"
+  ShowSearch = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 
 [languages]
   [languages.en]
