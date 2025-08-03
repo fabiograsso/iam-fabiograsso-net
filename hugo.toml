@@ -10,13 +10,20 @@ theme = 'PaperMod'
     contentDir = 'content/english'
     weight = 1
     title = 'IAM.FabioGrasso.net'
+    [languages.en.params]
+      languageName = 'En' 
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      name = 'Blog'
+      url = '/en/posts/'
 
   [languages.it]
     languageName = 'Italiano'
     contentDir = 'content/italiano'
     weight = 2
     title = 'IAM.FabioGrasso.net'
-
+    [languages.it.params]
+      languageName = 'It' 
   [languages.it.menu]
     [[languages.it.menu.main]]
       name = 'Blog'
@@ -27,7 +34,8 @@ theme = 'PaperMod'
     contentDir = 'content/francais'
     weight = 3
     title = 'IAM.FabioGrasso.net'
-
+    [languages.fr.params]
+      languageName = 'Fr' 
   [languages.fr.menu]
     [[languages.fr.menu.main]]
       name = 'Blog'
