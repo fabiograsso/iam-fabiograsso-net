@@ -6,7 +6,21 @@ description: "A brief descriptio."
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["blog"]
 translationKey: "intro-to-hugo"
+toc: false
+ShowBreadCrumbs: true # Mostra il percorso di navigazione
+ShowReadingTime: true # Mostra il tempo di lettura stimato
+hideSummary: true # Nasconde il sommario dall'homepage
 
+# Open Graph e SEO
+author: "Fabio Grasso"
+#image: "/images/featured-image.jpg"
+#keywords: ["parola chiave 1", "parola chiave 2"]
+# Social Media
+#cover:
+#  image: "/images/social-cover.jpg" # immagine di anteprima
+#  alt: "Descrizione dell'immagine"
+#  caption: "Crediti immagine"
+#  relative: true # Se l'immagine è nel progetto, usa 'true'
 ---
 
 # Title
