@@ -5,6 +5,8 @@ draft: false
 description: "Una breve descrizione del post. Usa parole chiave pertinenti."
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["blog"]
+translationKey: "intro-to-hugo"
+
 ---
 
 # Title
