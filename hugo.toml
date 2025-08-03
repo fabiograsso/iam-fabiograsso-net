@@ -1,6 +1,6 @@
 baseURL = 'https://iam.fabiograsso.net'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'IAM.FabioGrasso.net'
 defaultContentLanguage = 'en'
 theme = 'PaperMod'
 
@@ -9,18 +9,19 @@ theme = 'PaperMod'
     languageName = 'English'
     contentDir = 'content/english'
     weight = 1
-    title = 'My Tech Blog'
+    title = 'IAM.FabioGrasso.net'
 
   [languages.it]
     languageName = 'Italiano'
     contentDir = 'content/italiano'
     weight = 2
-    title = 'Il Mio Blog di Tecnologia'
+    title = 'IAM.FabioGrasso.net'
 
   [languages.fr]
     languageName = 'Français'
     contentDir = 'content/francais'
     weight = 3
-    title = 'Mon Blog Technique'
+    title = 'IAM.FabioGrasso.net'
+
 
 
