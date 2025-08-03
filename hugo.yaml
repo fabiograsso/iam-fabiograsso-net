@@ -49,9 +49,9 @@ menu:
       name: 'About'
       url: "/aboutme/"
       weight: 30
-    - identifier: "privacy_policy"
+    - identifier: "privacy"
       name: 'Privacy Policy'      
-      url: "/privacy-policy/"
+      url: "/privacy/"
       weight: 40
 
 params:
