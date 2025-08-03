@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-description: "A brief descriptio."
+description: "A brief description."
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["blog"]
 translationKey: "intro-to-hugo"
