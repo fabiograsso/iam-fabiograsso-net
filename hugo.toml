@@ -18,7 +18,7 @@ theme = 'PaperMod'
     title = 'IAM.FabioGrasso.net'
 
   [languages.it.menu]
-    [languages.it.menu.main]
+    [[languages.it.menu.main]]
       name = 'Blog'
       url = '/it/posts/'
 
@@ -29,6 +29,6 @@ theme = 'PaperMod'
     title = 'IAM.FabioGrasso.net'
 
   [languages.fr.menu]
-    [languages.fr.menu.main]
+    [[languages.fr.menu.main]]
       name = 'Blog'
       url = '/fr/posts/'
