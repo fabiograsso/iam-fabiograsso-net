@@ -16,7 +16,6 @@ copyright: "© 2025 Fabio Grasso"
 enableInlineShortcodes: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
-disqusShortname: "iam-fabiograsso-net"
 languages:
   en:
     weight: 1
@@ -90,6 +89,7 @@ cascade:
       path: "posts/**"
     comments: true
 params:
+  comments: true
   env: production
   description: "Il mio blog tecnico multilingua"
   author: "Fabio Grasso"
@@ -204,3 +204,7 @@ params:
       Diaspora: true
       Mix: false
       Telegram: true
+
+services:
+  disqus:
+    shortname: "iam-fabiograsso-net"
