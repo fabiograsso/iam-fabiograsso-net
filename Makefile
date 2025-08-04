@@ -2,7 +2,7 @@
 
 HUGO ?= hugo
 
-.PHONY: help build server clean deploy
+.PHONY: help build server clean deploy debug
 
 # Default target
 help:
@@ -25,6 +25,11 @@ server:
 	@echo "Starting local server..."
 	@$(HUGO) server --disableFastRender --bind 0.0.0.0
 
+# Run the local development server (with drafts)
+debug: clean
+	@echo "Starting local server..."
+	@$(HUGO) server --disableFastRender --bind 0.0.0.0 --logLevel debug
+
 # Clean the public directory
 clean:
 	@echo "Cleaning public directory..."
@@ -35,7 +40,7 @@ clean:
 deploy: build
 	@echo "Deploying to GitHub..."
 	@git add .
-	@git commit -m "chore: Update site content"
+	@git commit -m "Update site content"
 	@git push origin main
 	@echo "Site deployed successfully!"
 

@@ -1,0 +1,16 @@
+<footer class="footer"><hr/>
+  <span style="display: inline-block; margin-right: 0.5em;">{{- if site.Copyright }}
+  {{ site.Copyright | markdownify }}
+  {{- else }}
+  &copy; {{ if ne now.Year 2025 }}2025 - {{ end }}{{ now.Year }} <a href="{{ "" | absURL }}">Fabio Grasso</a>
+  {{- end -}}</span> - 
+  <span style="display: inline-block; margin-left: 0.5em;">
+    License: <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+  </span>
+  <br/>
+  <span style="display: inline-block;">
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
+  </span>
+</footer>

@@ -2,18 +2,23 @@ baseURL: "https://iam.fabiograsso.net"
 languageCode: "en-us"
 title: "IAM.FabioGrasso.net"
 defaultContentLanguage: "en"
-theme: "PaperMod"
+theme: PaperModX
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 hasCJKLanguage: false
-enableGitInfo: true
 enableEmoji: true
 pagination:
   pagerSize: 10
-copyright: "© 2025 Fabio Grasso"
 
+enableGitInfo: true
+frontmatter:
+    lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
 enableInlineShortcodes: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
@@ -99,6 +104,7 @@ cascade:
       Text: "Suggest Changes"
       appendFilePath: true
 params:
+  hideFooter: true # using layouts/partials/extend_footer.html
   comments: true
   env: production
   description: "Il mio blog tecnico multilingua"
@@ -109,11 +115,13 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowWordCount: true
+  ShowPostCover: true
   ShowRssButtonInSectionTermList: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
+  TocSide: right
 #  profileMode:
 #    enabled: true
 #    title: "Fabio Grasso"
@@ -163,9 +171,9 @@ params:
     iconHeight: 35
 
   cover:
-    hidden: true
-    hiddenInList: true
-    hiddenInSingle: true
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
 
   footer:
     customText: "Custom Footer"
@@ -178,6 +186,7 @@ params:
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
+    disableFingerprinting: true
 
   search:
     enable: true
