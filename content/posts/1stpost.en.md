@@ -1,5 +1,5 @@
 ---
-title: "1st Post Exemple"
+title: "1st Post Example"
 date: 2025-08-03T23:08:54+02:00
 draft: false
 description: "A brief description..."

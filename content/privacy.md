@@ -6,6 +6,5 @@ translationKey: "privacy"
 layout: single
 share: false
 ---
-# Privacy Policy
 
 This site does not track or collect any personal data without consent...

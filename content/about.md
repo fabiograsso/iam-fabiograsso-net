@@ -6,6 +6,5 @@ translationKey: "about"
 layout: single
 share: false
 ---
-# About Me
 
 This is the content for my About Me page in English...

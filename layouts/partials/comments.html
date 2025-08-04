@@ -1,21 +1,26 @@
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://iam-fabiograsso-net.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- Comments by Cusdis -->
+<br/><br/>
 
-<script id="dsq-count-scr" src="//iam-fabiograsso-net.disqus.com/count.js" async></script>
+<style>
+  #cusdis_thread iframe {
+    height: auto !important;
+    min-height: 400px;
+  }
+
+  #cusdis_thread {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+</style>
+
+<h4 id="comments" style="margin-top: 2rem;margin-bottom: 2rem;">Comments</h4>
+<div class="bg-gray-100 p-5 rounded-md my-6">
+    <div id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="fb29f809-4545-421a-8c5a-8b067581f9fa"
+    data-page-id="{{ .File.UniqueID }}"
+    data-page-url="{{ .Permalink }}"
+    data-page-title="{{ .Title }}"
+  ></div>
+</div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>

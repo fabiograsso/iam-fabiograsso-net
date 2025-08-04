@@ -13,6 +13,7 @@ enableEmoji: true
 pagination:
   pagerSize: 10
 copyright: "© 2025 Fabio Grasso"
+
 enableInlineShortcodes: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
@@ -88,6 +89,15 @@ cascade:
   - _target:
       path: "posts/**"
     comments: true
+    ShowToc: true
+    TocOpen: false
+  - _target:
+      kind: page
+      section: posts
+    editPost:
+      URL: "https://github.com/fabiograsso/iam-fabiograsso-net/content"
+      Text: "Suggest Changes"
+      appendFilePath: true
 params:
   comments: true
   env: production
@@ -98,25 +108,47 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  profileMode:
-    enabled: true
-    title: "Fabio Grasso"
-    subtitle: "Learn more about me and my work"
-    imageUrl: "/apple-touch-icon.png"
-    imageTitle: "Fabio Grasso"
-    imageWidth: 200
-    imageHeight: 200
-    typeit: true
-    typeitStrings:
-      - "IAM Engineer"
-      - "Cybersecurity Enthusiast"
-      - "Tech Blogger"
+#  profileMode:
+#    enabled: true
+#    title: "Fabio Grasso"
+#    subtitle: "Learn more about me and my work"
+#    imageUrl: "/apple-touch-icon.png"
+#    imageTitle: "Fabio Grasso"
+#    imageWidth: 200
+#    imageHeight: 200
+#    buttons:
+#      - name: Archive
+#        url: "/archive"
+#      - name: Github
+#        url: "https://github.com/"
+  homeInfoParams:
+    Title: "PaperMod's Demo"
+    Content: >
+      👋 Welcome to demo page of Hugo's theme PaperMod!
 
+      - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+
+      - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
+
+      - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+
+  page:
+    share:
+      enable: true
+      Facebook: true
+      X: true         
+      Linkedin: true
+      Reddit: false
+      Whatsapp: false
+      Telegram: true
+      Email: true
+      Evernote: true
   socialIcons:
     - name: LinkedIn
       url: "https://linkedin.com/in/fabiograsso82"
@@ -145,7 +177,7 @@ params:
     favicon16x16: "/favicon-16x16.png"
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
-    safari_pinned_tab: "<link / abs url>"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
 
   search:
     enable: true
@@ -173,38 +205,3 @@ params:
       - content
       - description
 
-  page:
-    toc: true
-    math: false
-    share:
-      enable: true
-      Facebook: true
-      X: true
-      Threads: true
-      Linkedin: false
-      Whatsapp: false
-      Pinterest: false
-      Tumblr: false
-      HackerNews: true
-      Reddit: false
-      VK: false
-      Buffer: false
-      Xing: false
-      Line: true
-      Instapaper: false
-      Pocket: false
-      Flipboard: false
-      Weibo: true
-      Blogger: false
-      Baidu: false
-      Odnoklassniki: false
-      Evernote: false
-      Skype: false
-      Trello: false
-      Diaspora: true
-      Mix: false
-      Telegram: true
-
-services:
-  disqus:
-    shortname: "iam-fabiograsso-net"
