@@ -1,286 +1,50 @@
-baseURL: 'https://iam.fabiograsso.net'
-languageCode: 'en-us'
-title: 'IAM.FabioGrasso.net'
-defaultContentLanguage: 'en'
-theme: 'LoveIt'
+baseURL: "https://iam.fabiograsso.net"
+languageCode: "en-us"
+title: "IAM.FabioGrasso.net"
+defaultContentLanguage: "en"
+theme: "PaperMod"
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 hasCJKLanguage: false
-enableRobotsTXT: true
 enableGitInfo: true
 enableEmoji: true
-
-pagination:
-  disableAliases: false
-  pagerSize: 10
-  path: 'page'
+paginate: 10
 
 languages:
   en:
     weight: 1
-    languageName: "English"
+    languageName: English
   it:
     weight: 2
-    languageName: "Italiano"
+    languageName: Italiano
   fr:
     weight: 3
-    languageName: "Français"
+    languageName: Français
 
 menu:
   main:
-    - identifier: "posts"
-      name: 'Posts'
-      pre: ''
-      post: ''
-      url: "/posts/"
+    - identifier: posts
+      name: Posts
+      url: /posts/
       weight: 0
-      title: "Posts"
-    - identifier: "categories"
-      name: 'Categories'
-      url: "/categories/"
+    - identifier: categories
+      name: Categories
+      url: /categories/
       weight: 2
-    - identifier: "tags"
-      name: 'Tags'
-      url: "/tags/"
+    - identifier: tags
+      name: Tags
+      url: /tags/
       weight: 3
-    - identifier: "aboutme"
-      name: 'About'
-      url: "/aboutme/"
+    - identifier: aboutme
+      name: About
+      url: /aboutme/
       weight: 30
-    - identifier: "privacy"
-      name: 'Privacy Policy'      
-      url: "/privacy/"
+    - identifier: privacy
+      name: Privacy Policy
+      url: /privacy-policy/
       weight: 40
-
-params:
-  tagline: "Il mio sito IAM personale"
-  description: "Il mio blog tecnico multilingua"
-  env: "production"
-  dateFormat: "2006-01-02"
-  keywords:
-    - "IAM"
-    - "CIAM"
-    - "PAM"
-    - "Identity Governance"
-    - "Okta"
-    - "SSO"
-    - "MFA"
-    - "Identity and Access Management"
-    - "Customer Identity and Access Management"
-    - "Privileged Access Management"
-    - "Single Sign-On"
-    - "Multi-Factor Authentication"
-    - "Cybersecurity"
-    - "Security"
-    - "RBAC"
-    - "Role-Based Access Control"
-    - "ABAC"
-    - "Attribute-Based Access Control"
-    - "Provisioning"
-    - "Deprovisioning"
-    - "Federation"
-    - "OAuth 2.0"
-    - "OpenID Connect"
-    - "SAML"
-    - "LDAP"
-    - "Active Directory"
-    - "JIT" 
-    - "Just-in-Time Access"
-    - "Least Privilege"
-    - "Zero Trust"
-    - "Compliance"
-    - "SOC 2"
-    - "Authentication"
-    - "Authorization"
-    - "Auditing"
-    - "Identity Management"
-    - "Access Control"
-    - "API Security"
-    - "User Lifecycle Management"
-    - "FGA"
-    - "Fine-Grained Authorization"
-    - "ISPM" 
-    - "Identity Security Posture Management"
-  defaultTheme: auto
-  disableThemeToggle: false
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: true
-  hidemeta: false
-  hideSummary: false
-  section:
-    paginate: 20
-    dateFormat: "01-02"
-    rss: 10
-  list:
-    paginate: 10
-    dateFormat: "01-02"
-    rss: 10
-  app:
-    title: "LoveIt"
-    noFavicon: false
-    svgFavicon: ""    
-    # Android browser theme color
-    themeColor: "#ffffff"
-    # Safari mask icon color
-    iconColor: "#5bbad5"
-  author:
-    name: "Fabio Grasso"
-    link: "https://iam.fabiograsso.net"
-    email: "info@fabiograsso.net"
-  socials:
-    github: "fabiograsso"
-    linkedin: "fabiograsso82"
-  search:
-    enable: true
-    type: "lunr"
-    contentLength: 1000
-    placeholder: ""    # placeholder of the search bar
-    maxResultLength: 10
-    snippetLength: 30
-    highlightTag: "em"
-    absoluteURL: false
- 
-  home:
-    posts:
-      enable: true
-      title: "Latest Posts"
-      subtitle: "Check out my latest articles"
-      showDate: true
-      showReadingTime: true
-      showWordCount: true
-      showShareButtons: true
-      showPostNavLinks: true
-      showCoverImage: false
-      coverImageHeight: 200
-      coverImageWidth: 1200
-    profile:
-      enable: true
-      title: "About Me"
-      subtitle: "Learn more about me and my work"
-      showProfileImage: true
-      profileImage: "/apple-touch-icon.png"
-      profileImageWidth: 200
-      profileImageHeight: 200
-      typeit: true
-      typeitOptions:
-        strings: ["IAM Engineer", "Cybersecurity Enthusiast", "Tech Blogger"]
-        loop: true
-        speed: 50
-        backSpeed: 30
-      social: true
-  social:
-    LinkedIn: "fabiograsso82"
-    Instagram: "fabiograsso82"
-    GitHub: "fabiograsso"
-    #Spotify:
-    #RSS
-    #Email
-    #Paypal
-    #Fivehundredpx
-    #Lastfm
-    #Discord
-
-  page:
-    twemoji:
-      enable: true
-    fontawesome:
-      enable: true
-    linkToMarkdown:
-      enable: false
-    toc:
-      enable: true
-      keepStatic: false
-    code:
-      enable: true
-      copyButton: true
-      maxShownLines: 10
-      showLineNumbers: true
-      render:
-        goat: true
-        mermaid: true
-    math:
-      enable: false
-    share:
-      enable: true
-      Linkedin: true
-      X: true
-      Facebook: true
-      Threads: true
-      Whatsapp: true
-      Telegram: true
-      Email: true
-      Evernote: true
-      HackerNews: false
-      Reddit: false
-      Diaspora: false
-      Weibo: false
-      Line: false
-    breadcrumb:
-      enable: true
-    comment:
-      enable: true
-      disqus:
-        enable: true
-        shortname: "iam-fabiograsso-net"
-  verification:
-    google: "google-site-verification=your-google-verification-code"
-    bing: "your-bing-verification-code"
-  cookieconsent:
-    enable: true
-    message: "This website uses cookies to ensure you get the best experience on our website."
-    dismiss: "Got it!"
-    learnMore: "Learn more"
-    link: "/privacy-policy/"
-    theme: "edgeless"
-    palette:
-      popup: { background: "#000", text: "#fff" }
-      button: { background: "#f1d600", text: "#000" }
-    position: "bottom-right"
-  footer:
-    enable: true
-    custom: 'Custom Footer'
-    copyright:
-      enable: true
-      text: "© 2025 Fabio Grasso  Powered by Hugo & LoveIt" 
-    since: 2025
-    license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-
-  logo:
-    enable: true
-    image: "/apple-touch-icon.png"
-    imageWidth: 35
-    imageHeight: 35
-
-  assets:
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
-    safari_pinned_tab: "<link / abs url>"
-
-  label:
-    text: "Home"
-    icon: "/apple-touch-icon.png"
-    iconHeight: 35
-
-  profileMode:
-    enabled: false
-    
-  cover:
-    hidden: true
-    hiddenInList: true
-    hiddenInSingle: true
-
 
 markup:
   highlight:
@@ -288,18 +52,17 @@ markup:
 
 outputs:
   home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
+    - HTML
+    - RSS
+    - JSON
   page:
-    - "HTML"
-    - "MarkDown"
+    - HTML
   section:
-    - "HTML"
-    - "RSS"
+    - HTML
+    - RSS
   taxonomy:
-    - "HTML"
-    - "RSS"
+    - HTML
+    - RSS
 
 sitemap:
   filename: "sitemap.xml"
@@ -311,13 +74,119 @@ sitemap:
 permalinks:
   posts: "/posts/:year/:filename/"
   section: "/:section/"
-#  tag: "/tags/:tag/"
-#  category: "/categories/:category/"
   aboutme: "/aboutme/"
   privacy_policy: "/privacy-policy/"
 
-#privacy:
-#  googleAnalytics:
-#    enable: true
-#    trackingID: "UA-XXXXXXXXX-X"
-#    anonymizeIP: true
+params:
+  env: production
+  description: "Il mio blog tecnico multilingua"
+
+  author:
+    name: "Fabio Grasso"
+    email: "info@fabiograsso.net"
+    url: "https://iam.fabiograsso.net"
+
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+
+  profileMode:
+    enabled: true
+    title: "About Me"
+    subtitle: "Learn more about me and my work"
+    imageUrl: "/apple-touch-icon.png"
+    imageTitle: "Fabio Grasso"
+    imageWidth: 200
+    imageHeight: 200
+    typeit: true
+    typeitStrings:
+      - "IAM Engineer"
+      - "Cybersecurity Enthusiast"
+      - "Tech Blogger"
+    buttons:
+      - name: "Latest Posts"
+        url: "/posts/"
+    # Questa sezione è visibile solo nella homepage
+  homeInfoParams:
+    Title: "Latest Posts"
+    Content: "Check out my latest articles"
+
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/fabiograsso"
+    - name: LinkedIn
+      url: "https://linkedin.com/in/fabiograsso82"
+    - name: Instagram
+      url: "https://instagram.com/fabiograsso82"
+
+  label:
+    text: "Home"
+    icon: "/apple-touch-icon.png"
+    iconHeight: 35
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  footer:
+    customText: "Custom Footer"
+    since: 2025
+    copyright: "© 2025 Fabio Grasso  Powered by Hugo & PaperMod"
+    license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "<link / abs url>"
+
+  search:
+    enable: true
+    type: "lunr"
+
+  social:
+    LinkedIn: fabiograsso82
+    Instagram: fabiograsso82
+    GitHub: fabiograsso
+
+  page:
+    toc: true
+    math: false
+    share:
+      enable: true
+      Facebook: true
+      X: true
+      Threads: true
+      Linkedin: false
+      Whatsapp: false
+      Pinterest: false
+      Tumblr: false
+      HackerNews: true
+      Reddit: false
+      VK: false
+      Buffer: false
+      Xing: false
+      Line: true
+      Instapaper: false
+      Pocket: false
+      Flipboard: false
+      Weibo: true
+      Blogger: false
+      Baidu: false
+      Odnoklassniki: false
+      Evernote: false
+      Skype: false
+      Trello: false
+      Diaspora: true
+      Mix: false
+      Telegram: true
