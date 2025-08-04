@@ -1,18 +1,19 @@
 ---
-title: "Premier Post Exemple"
+title: "1st Post Exemple"
 date: 2025-08-03T23:08:54+02:00
 draft: false
-description: "A brief descriptio."
+description: "A brief description..."
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["blog"]
 translationKey: "intro-to-hugo"
+comments: true
 #toc: false
 #ShowBreadCrumbs: true
 #ShowReadingTime: true
 #hideSummary: true
-
 # Open Graph e SEO
-author: "Fabio Grasso"
+# author: "Fabio Grasso"
+author: ["Aut1", "Auth2"]
 #image: "/images/featured-image.jpg"
 #keywords: ["parola chiave 1", "parola chiave 2"]
 # Social Media

@@ -1,6 +1,6 @@
 # Makefile for Hugo static site
 
-HUGO ?= ./bin/hugo
+HUGO ?= hugo
 
 .PHONY: help build server clean deploy
 
