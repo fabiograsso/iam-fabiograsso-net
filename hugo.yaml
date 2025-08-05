@@ -73,7 +73,7 @@ cascade:
     TocOpen: false
 
 params:
-  hideFooter: true
+  hideFooter: true # see layouts/partials/extend_footer.html
   comments: true
   env: production
   description: "Il mio blog tecnico multilingua"
@@ -91,7 +91,7 @@ params:
   ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  displayFullLangName: true
+  displayFullLangName: truef
   EnableInstantClick: true
   socialIcons:
     - name: LinkedIn
