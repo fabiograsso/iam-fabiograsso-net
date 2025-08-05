@@ -14,8 +14,8 @@ categories:
   - blog
 cover:
   image: cover.png
-  alt: alt text
-  caption: text
+#  alt: alt text
+#  caption: text
   relative: true
 ---
 ## Chi sorveglia i sorveglianti nell'era dell'identità digitale?
