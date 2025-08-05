@@ -23,14 +23,14 @@ This repository contains the source code for my blog built with [Hugo](https://g
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/matteobisi/msbiro.net.git
-cd msbiro.net
+git clone https://github.com/fabiograsso/iam-fabiograsso-net.git
+cd iam-fabiograsso-net
 ```
 
 2. **Start the local development server:**
 
 ```bash
-hugo server
+make server
 ```
 
 Your site will be available at [http://localhost:1313/](http://localhost:1313/).
@@ -47,7 +47,7 @@ Edit the Markdown file in the `content/posts` directory.
 
 ## 🖌️ Configuration
 
-- Site configuration is in `config.toml` (or `config.yaml`/`config.json` depending on your setup).
+- Site configuration is in `config.yaml` (or `config.toml`/`config.json` depending on your setup).
 - Theme-specific options can be customized according to the [PaperMod documentation](https://adityatelange.github.io/hugo-PaperMod/docs/).
 
 
@@ -79,7 +79,7 @@ For automated deployment, you can use GitHub Actions. See [this guide](https://g
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the CC BY-NC-SA 4.0 License. See the [LICENSE](LICENSE) file for details.
 
 ---
 

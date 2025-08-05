@@ -11,7 +11,6 @@ hasCJKLanguage: false
 enableEmoji: true
 pagination:
   pagerSize: 10
-
 enableGitInfo: true
 frontmatter:
     lastmod:
@@ -26,12 +25,23 @@ languages:
   en:
     weight: 1
     languageName: English
+    languageCode: "en"
+    params:
+      flagEmoji: "🇬🇧"
   it:
     weight: 2
     languageName: Italiano
+    languageCode: "it"
+    params:
+      flagEmoji: "🇮🇹"
+
   fr:
     weight: 3
     languageName: Français
+    languageCode: "fr"
+    params:
+      flagEmoji: "🇫🇷"
+
 
 menu:
   main:
@@ -59,7 +69,10 @@ menu:
       name: Search
       url: /search/
       weight: 10
-
+    - name: "@Author"
+      url: "https://reorx.com"
+      params:
+        external: true
 markup:
   highlight:
     noClasses: false
@@ -86,7 +99,7 @@ sitemap:
   includeSection: true
 
 permalinks:
-  posts: "/posts/:year/:contentbasename/"
+  posts: "/posts/:year/:slugorcontentbasename/" 
   section: "/:section/"
   about: "/about/"
   privacy: "/privacy/"
@@ -96,6 +109,8 @@ cascade:
     comments: true
     ShowToc: true
     TocOpen: false
+    TocSide: right
+    UseHugoToc: true
   - _target:
       kind: page
       section: posts
@@ -112,6 +127,7 @@ params:
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["linkedin", "x"]
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowWordCount: true
@@ -121,7 +137,8 @@ params:
   ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  TocSide: right
+  displayFullLangName: true
+  EnableInstantClick: true
 #  profileMode:
 #    enabled: true
 #    title: "Fabio Grasso"
@@ -141,22 +158,11 @@ params:
       👋 Welcome to demo page of Hugo's theme PaperMod!
 
       - **PaperMod**  is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
-
+    
       - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
+    
       - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
 
-  page:
-    share:
-      enable: true
-      Facebook: true
-      X: true         
-      Linkedin: true
-      Reddit: false
-      Whatsapp: false
-      Telegram: true
-      Email: true
-      Evernote: true
   socialIcons:
     - name: LinkedIn
       url: "https://linkedin.com/in/fabiograsso82"
@@ -175,10 +181,10 @@ params:
     hiddenInList: false
     hiddenInSingle: false
 
-  footer:
-    customText: "Custom Footer"
-    since: 2025
-    license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+#  footer:
+#    customText: "Custom Footer"
+#    since: 2025
+#    license: '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
 
   assets:
     favicon: "/favicon.ico"
@@ -191,11 +197,6 @@ params:
   search:
     enable: true
     type: "lunr"
-
-  social:
-    LinkedIn: fabiograsso82
-    Instagram: fabiograsso82
-    GitHub: fabiograsso
 
   # Enable search
   fuseOpts:
