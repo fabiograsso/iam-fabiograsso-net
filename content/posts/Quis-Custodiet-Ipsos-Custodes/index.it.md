@@ -1,6 +1,6 @@
 ---
 title: Quis Custodiet Ipsos Custodes?
-date: 2025-08-04
+date: 2025-08-05
 draft: false
 tags:
   - IAM
@@ -18,7 +18,7 @@ cover:
   caption: text
   relative: true
 ---
-# Chi sorveglia i sorveglianti nell'era dell'identità digitale?
+## Chi sorveglia i sorveglianti nell'era dell'identità digitale?
 
 > «Pone seram, cohibe, sed quis custodiet ipsos custodes? Cauta est et ab illis incipit uxor.»
 >
@@ -53,16 +53,15 @@ Governance, Automation and Orchestration, Visibility and Analytics, sono poste c
 
 Quanto agli altri "pillars":
 
-* Device:
-  * Okta Desktop Access (ODA)
-  * Integrazioni con strumenti di terze parti come EDR (es. Crowdstrike) completano la protezione di questo aspetto
-* Networks
-  * L'integrazione dell'IAM con VPN e strumenti ZLA (es. Zscaler)
-* Application & Workloads
-  * completare
-* Data
-  * completare2
-
+- Device:
+  - Okta Desktop Access (ODA)
+  - Integrazioni con strumenti di terze parti come EDR (es. Crowdstrike) completano la protezione di questo aspetto
+- Networks
+  - L'integrazione dell'IAM con VPN e strumenti ZLA (es. Zscaler)
+- Application & Workloads
+  - completare
+- Data
+  - completare2
 
 ## Identity Fabric: L'architettura che unisce le identità
 
@@ -70,6 +69,7 @@ Quanto agli altri "pillars":
 L'evoluzione del panorama digitale ha portato a un'esplosione di identità. Non si tratta più solo di dipendenti e collaboratori, ma anche di entità non umane: bot, API, workload e microservizi. La gestione di queste identità, spesso effimere e dinamiche, in un'architettura frammentata crea una superficie di attacco significativa e spesso trascurata.
 
 Per superare la complessità e la frammentazione di questi ecosistemi, il concetto di **Identity Fabric** emerge come l'approccio architetturale più efficace. L'**Identity Fabric** non è un singolo prodotto, ma un framework completo che integra e orchestra tutti i sistemi IAM disparati per funzionare come un unico sistema unificato. Questo approccio crea un "tessuto" di sicurezza coerente che si estende su tutta l'infrastruttura IT aziendale, eliminando i silos e i punti ciechi di sicurezza. In pratica, consente di orchestrare identità e accessi in modo agile, scalabile e sicuro, adattandosi a una realtà cloud-first e API-driven.
+
 --
 Mentre il modello Zero Trust fornisce i principi fondamentali per una sicurezza moderna, l'evoluzione del panorama digitale richiede un passo ulteriore. L'esplosione di identità digitali, che non si limitano più solo a dipendenti e collaboratori, ma includono anche una miriade di entità non umane (bot, API, workload, microservizi), ha creato un ecosistema estremamente complesso e frammentato. La gestione di queste identità, spesso effimere e dinamiche, in un'architettura disconnessa crea una superficie di attacco significativa e spesso trascurata.
 

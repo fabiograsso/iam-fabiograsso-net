@@ -22,6 +22,10 @@ iframe {
     border: 1px solid var(--border);
 }
 
+ul.share-buttons::before {
+    content: "Share :";
+}
+
 :root {
   --link-color: var(--primary);
   --link-hover-color: #573eaa;
