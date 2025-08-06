@@ -36,7 +36,7 @@ Di recente, un cliente mi ha posto una domanda volutamente provocatoria: *"A cos
 
 Il modello di sicurezza tradizionale, basato sul concetto di "trusted perimeter", è ormai superato. In un mondo dove si lavora da remoto, si accede a risorse SaaS e si interagisce con API, la fiducia implicita è una vulnerabilità. La risposta a questa sfida è il modello Zero Trust, la cui filosofia cardine è "non fidarsi mai, verificare sempre".s
 
-![Questa è la didascalia della tua immagine](zerotrustmodel.png)
+![Questa è la didascalia della tua immagine](model-zero-trust.png)
 
 Il [CISA's Zero Trust Maturity Model (ZTMM)](https://www.cisa.gov/zero-trust-maturity-model), un framework riconosciuto a livello globale, identifica l'**identità come il primo dei pilastri fondamentali** di questa architettura. L'identità non è solo un componente, ma il punto di controllo primario su cui si fonda l'intera strategia di sicurezza. Per implementare con successo questo modello, un'organizzazione ha bisogno di un sistema IAM robusto in grado di:
 
@@ -61,17 +61,19 @@ Quanto agli altri "pilastri":
 
 ## Identity Fabric: L'architettura che unisce le identità
 
-![Identity Fabric Model for Zero Trust Maturity](identityfabricmodel.png)
-
-span
+![Identity Fabric Model for Zero Trust Maturity](model-identity-fabric.png)
 
 Per superare la complessità e la frammentazione di questi ecosistemi, il concetto di **Identity Fabric** emerge come l'approccio architetturale più efficace. L'Identity Fabric non è un singolo prodotto, ma un framework completo che integra e orchestra tutti i sistemi IAM disparati per funzionare come un unico sistema unificato. Questo approccio crea un "tessuto" di sicurezza coerente che si estende su tutta l'infrastruttura IT aziendale, eliminando i silos e i punti ciechi di sicurezza.
 
 **Okta è progettata per fungere da orchestratore centrale in questo Identity Fabric.** Grazie alle sue ampie capacità di integrazione, Okta connette e gestisce tutte le identità, applicazioni e infrastrutture (IaaS, on-prem, multi-cloud), indipendentemente dal fornitore. Questo approccio agnostico non solo garantisce una visibilità completa e un controllo centralizzato, ma permette anche di applicare politiche di sicurezza coerenti a tutte le entità digitali, umane e non umane. In pratica, consente di orchestrare identità e accessi in modo agile, scalabile e sicuro, adattandosi a una realtà cloud-first e API-driven, portando i principi Zero Trust a un livello di implementazione più ampio e coeso.
 
+![Vendor Lock-in](okta-identity-fabric.png)
+
 ## Il rischio nascosto del fornitore integrato
 
 Scegliere una soluzione IAM fornita dallo stesso vendor che gestisce la tua infrastruttura e i tuoi dati nel cloud può sembrare comodo ed economicamente conveniente, ma presenta rischi significativi. Vediamoli nel dettaglio.
+
+![Vendor Lock-in](vendor-lock.jpg)
 
 1. **Single Point of Failure (SPoF)**: Affidarsi a un unico fornitore per l'infrastruttura IT e per la gestione dell'identità espone a una pericolosa concentrazione di rischio di sicurezza. Se un attaccante riesce a compromettere il provider, l'intero stack aziendale è a rischio: le identità degli utenti e degli asset, i relativi accessi, le applicazioni e i dati sensibili. La violazione del sistema IAM (Identity and Access Management) integrato, in particolare, concede all'attaccante le "*chiavi del regno*", permettendogli di muoversi lateralmente e di accedere a tutte le risorse e informazioni critiche all'interno dell'ecosistema aziendale, con conseguenze potenzialmente devastanti in termini di furto di dati, interruzione delle operazioni e compromissione della reputazione.
 2. **Vendor Lock-in**: La profonda integrazione con l'ecosistema proprietario di un singolo fornitore può intrappolare le aziende in un lock-in quasi irreversibile. La migrazione diventa un processo proibitivamente costoso e dispendioso, limitando drasticamente la flessibilità di adottare nuove tecnologie o di negoziare condizioni economiche più vantaggiose.
@@ -90,11 +92,15 @@ Una soluzione **IAM agnostica**, come **Okta**, è progettata per essere neutral
 
 Okta si impegna in un processo continuo di miglioramento della sicurezza attraverso investimenti in innovazione, controlli e trasparenza.
 
+![The Okta Platform](okta-identity-fabric.png)
+
 ## Conclusioni: l'identità come arbitro imparziale
 
 Nel panorama digitale odierno, l'identità è il nuovo perimetro di sicurezza. La scelta di una piattaforma IAM non è meramente una decisione tecnica, ma una scelta strategica fondamentale. Affidarsi a un unico fornitore per infrastruttura, dati e identità può apparire apparentemente vantaggioso, ma la vera sicurezza si fonda sulla separazione dei poteri, sulla trasparenza e sulla libertà di scelta.
 
 Come abbiamo citato all’inizio: *"Chi sorveglia i sorveglianti?"*. **L'IAM deve operare come un arbitro imparziale, non come un giocatore in campo.**
+
+![Rome](rome.png)
 
 Adottare una soluzione **IAM agnostica**, che si configuri come un vero e proprio Identity Fabric, significa implementare un'architettura che assicura una gestione delle identità unificata e sicura. Questo approccio riduce i rischi, incrementa la flessibilità e supporta pienamente una strategia Zero Trust.
 
