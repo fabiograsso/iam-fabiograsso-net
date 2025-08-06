@@ -1,21 +1,11 @@
-/* Custom styles added to demo */
+/* Custom styles */
 
 .post-description {
 	display: none;
 }
 
-/* Custom styles added to demo */
-
-.twitter-tweet {
-    margin: auto;
-}
-
 iframe {
     border-radius: var(--radius) !important;
-}
-
-.home-info ul {
-    padding-inline-start: 20px;
 }
 
 .entry-cover img {
@@ -28,6 +18,21 @@ ul.share-buttons::before {
 
 .footer span:last-child {
     white-space: normal;
+}
+
+.home-info ul {
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+.home-info ul li {
+    margin-top: 1em;
+}
+.home-info .entry-header, .home-info .entry-content {
+        margin-bottom: 0;
+        margin-top: 0;
+}
+.home-info .entry-footer .social-icons{
+    margin-top: 14px;
 }
 
 :root {

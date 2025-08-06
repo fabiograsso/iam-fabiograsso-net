@@ -28,7 +28,7 @@ La domanda non è più *se* adottare una strategia di sicurezza basata sull'iden
 
 ---
 
-## **La Risposta Strategica: Costruire un "Identity Fabric" Resiliente**
+## La risposta strategica: costruire un "Identity Fabric" resiliente
 
 Affrontare minacce così diverse — fragilità interna, attacchi esterni mirati e vulnerabilità della supply chain — con un mosaico di soluzioni di sicurezza isolate è una strategia perdente. Ogni strumento crea un nuovo silo, aumentando la complessità e lasciando pericolose zone d'ombra.
 
@@ -36,39 +36,49 @@ La risposta moderna è un approccio di piattaforma, un **Identity Fabric** .
 
 **Cos'è un Identity Fabric?** Immaginatelo come un tessuto connettivo intelligente che unifica la sicurezza di **tutte le identità** (dipendenti, clienti, partner, API, agenti AI e service account) e di **tutte le risorse** (applicazioni, infrastrutture, dati). Invece di silos, crea un unico piano di controllo che offre visibilità centralizzata, orchestrazione delle policy e risposta coordinata alle minacce. Un concetto fondamentale di questo approccio è la neutralità, che garantisce la libertà di scegliere le migliori tecnologie senza essere vincolati a un unico ecosistema.
 
+![alt text](okta-identity-fabric.png)
+
 Un Identity Fabric efficace si fonda su quattro pilastri strategici.
 
-### 1. Oltre l'MFA: Autenticazione a Prova di Phishing**
+### 1. Oltre l'MFA: autenticazione a prova di phishing
 
 Con il social engineering e il furto di credenziali come vettori d'attacco primari , l'MFA tradizionale (notifiche push, OTP) non è più sufficiente. È essenziale neutralizzare il phishing alla radice.
 
-**La tecnologia chiave:** Soluzioni come [Okta FastPass](https://www.okta.com/products/fastpass/)  utilizzano standard crittografici (come FIDO2) per legare l'autenticazione al dispositivo e all'origine del servizio. In parole semplici, anche se un utente viene ingannato e inserisce le proprie credenziali su un sito falso, queste sono inutili per l'attaccante perché non possono essere riutilizzate altrove.
+**La tecnologie chiave:**
 
-### 2. Governance Totale: Gestire il Ciclo di Vita di *Tutte* le Identità
+- **[Okta FastPass](https://www.okta.com/products/fastpass/)** utilizza standard crittografici (come FIDO2) per legare l'autenticazione al dispositivo. In parole semplici, anche se un utente viene ingannato e inserisce le proprie credenziali su un sito falso, queste sono inutili per l'attaccante perché non possono essere riutilizzate altrove.
+
+- **Okta Adaptive MFA**:
+
+### 2. Governance Totale: gestire il ciclo di Vita di *Tutte* le identità
 
 Il 65% degli incidenti che coinvolge fornitori  è un problema di governance degli accessi. Questo rischio è amplificato dall'esplosione delle **Identità Non Umane (NHI)** — API key, service account, token — che oggi superano di gran lunga quelle umane  e sono il tessuto connettivo della supply chain digitale. Governarle con lo stesso rigore di quelle umane è un imperativo di DORA.
 
-**La tecnologia chiave:** Piattaforme come **[Okta Identity Governance (OIG)](https://www.okta.com/products/identity-governance/)** automatizzano l'intero ciclo di vita dell'accesso (JML: Joiner-Mover-Leaver). Garantiscono che a ogni identità (umana e non) venga applicato il principio del minimo privilegio (least privilege) attraverso flussi di richiesta e approvazione tracciabili e campagne di certificazione periodiche.
+**La tecnologie chiave:**
 
-### 3. Dalla Prevenzione alla Protezione Continua e Proattiva
+- Piattaforme come **[Okta Identity Governance (OIG)](https://www.okta.com/products/identity-governance/)** automatizzano l'intero ciclo di vita dell'accesso (JML: Joiner-Mover-Leaver). Garantiscono che a ogni identità (umana e non) venga applicato il principio del minimo privilegio (least privilege) attraverso flussi di richiesta e approvazione tracciabili e campagne di certificazione periodiche.
+
+- **[Okta Privileged Access](https://www.okta.com/products/privileged-access/)**:
+
+### 3. Dalla prevenzione alla protezione continua e proattiva
 
 La sicurezza non può essere un controllo statico al momento del login. Deve essere un processo dinamico che valuta il rischio in tempo reale, per tutta la durata della sessione.
 
 **Le tecnologie chiave:** Qui servono due capacità complementari che lavorano in sinergia:
 
-* **[Okta ISPM - Identity Security Posture Management/](https://www.okta.com/products/identity-security-posture-management/)**: È la difesa proattiva. Pensa a ISPM come a un "check-up" continuo della tua infrastruttura di identità. Scansiona costantemente i tuoi sistemi (come Azure AD, AWS, Salesforce) per trovare e correggere configurazioni errate, falle nell'MFA o privilegi eccessivi *prima* che vengano sfruttati.
+- **[Okta ISPM - Identity Security Posture Management/](https://www.okta.com/products/identity-security-posture-management/)**: È la difesa proattiva. Pensa a ISPM come a un "check-up" continuo della tua infrastruttura di identità. Scansiona costantemente i tuoi sistemi (come Azure AD, AWS, Salesforce) per trovare e correggere configurazioni errate, falle nell'MFA o privilegi eccessivi *prima* che vengano sfruttati.
 
-* **[Okta ITP - Identity Threat Protection/](https://www.okta.com/products/identity-threat-protection/)** : È la difesa reattiva in tempo reale. Utilizzando standard aperti come CAEP e SSF per integrare segnali di rischio dall'intero ecosistema di sicurezza (es. da un EDR come CrowdStrike) , ITP monitora la sessione *dopo* il login. Se rileva un'anomalia (es. un cambio di IP sospetto o un alert dal dispositivo), può intervenire automaticamente, terminando la sessione o richiedendo un'ulteriore verifica.
+- **[Okta ITP - Identity Threat Protection/](https://www.okta.com/products/identity-threat-protection/)** : È la difesa reattiva in tempo reale. Utilizzando standard aperti come CAEP e SSF per integrare segnali di rischio dall'intero ecosistema di sicurezza (es. da un EDR come CrowdStrike) , ITP monitora la sessione *dopo* il login. Se rileva un'anomalia (es. un cambio di IP sospetto o un alert dal dispositivo), può intervenire automaticamente, terminando la sessione o richiedendo un'ulteriore verifica.
 
-## 4. Non Dimenticare il Cliente: CIAM per Ambienti Altamente Regolamentati
+## 4. Non dimenticare il Cliente: CIAM per ambienti altamente regolamentati
 
 La fiducia del cliente è l'asset più prezioso. Proteggere gli account dei clienti da frodi e acquisizioni richiede lo stesso livello di rigore applicato internamente, bilanciando sicurezza e user experience.
 
-**La tecnologia chiave:** Piattaforme come [Auth0 by Okta](https://auth0.com/) offrono moduli specializzati come **[(HRI - Highly Regulated Identity)](https://auth0.com/features/highly-regulated-identity)** . HRI è progettata per soddisfare i più alti standard di sicurezza e conformità (es. **FAPI, PSD2**). Implementa controlli essenziali come la **Strong Customer Authentication (SCA)** e il **Dynamic Linking**, che lega crittograficamente l'autenticazione ai dettagli specifici di una transazione, mostrando all'utente esattamente cosa sta approvando e prevenendo così le frodi.
+**La tecnologia chiave:** [Auth0 by Okta](https://auth0.com/) offre moduli specializzati come **[(HRI - Highly Regulated Identity)](https://auth0.com/features/highly-regulated-identity)**. HRI è progettata per soddisfare i più alti standard di sicurezza e conformità (es. **FAPI, Financial-Grade API**). Implementa controlli essenziali come la **Strong Customer Authentication (SCA)** e il **Dynamic Linking**, che lega l'autenticazione ai dettagli specifici di una transazione, mostrando all'utente esattamente cosa sta approvando e prevenendo così le frodi.
 
 ---
 
-## Conclusione: Da Obbligo Normativo a Vantaggio Strategico
+## Conclusione: da obbligo normativo a vantaggio strategico
 
 Il report della Banca d'Italia[^1] è un'istantanea di un campo di battaglia complesso e interconnesso. Affrontarlo con un approccio frammentato non è più sostenibile.
 

@@ -6,15 +6,13 @@
     weight: 1
     params:
       homeInfoParams:
-        Title: "Roneo.org EN"
+        Title: "I AM Fabio"
         Content: >
-            👋 Welcome to demo page of Hugo's theme PaperMod!
+           - 👋 Ciao! I’m **Fabio Grasso**, a *Solutions Engineer* specialized in 🔐 *Identity & Access Management (IAM)*. I work between France 🇫🇷 and Italy 🇮🇹 for Okta.
 
-            - **PaperMod** is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
-            
-            - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-            
-            - PaperMod is based on theme [Paper]
+           - 🚀 I love solving identity security challenges, helping companies implement agile, scalable, and effective Zero Trust strategies.
+
+           - 📚 In this space, I share ideas, experiences, and insights about the world of digital identity.
     menu:
       main:
         - identifier: posts
@@ -53,15 +51,13 @@
     languageCode: "it"
     params:
       homeInfoParams:
-        Title: "IAM.FabioGrasso.net IT"
+        Title: "I AM Fabio"
         Content: >
-            👋 Welcome to demo page of Hugo's theme PaperMod!
-
-            - **PaperMod** is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
-            - PaperMod is based on theme [Paper]
+          - 👋 Ciao! Sono **Fabio Grasso**, *Solutions Engineer* specializzato in 🔐 *Identity & Access Management (IAM)*. Lavoro tra la Francia 🇫🇷 e l’Italia 🇮🇹 per Okta 
+          
+          - 🚀 Amo risolvere le sfide legate alla sicurezza dell’identità, aiutando aziende a implementare strategie Zero Trust agili, scalabili ed efficaci.
+          
+          - 📚 In questo spazio condivido idee, esperienze e visioni sul mondo dell’identità digitale.
     weight: 2
     menu:
       main:
@@ -101,15 +97,13 @@
     languageCode: "fr"
     params:
       homeInfoParams:
-        Title: "Roneo.org FR"
+        Title: "I AM Fabio"
         Content: >
-            👋 Welcome to demo page of Hugo's theme PaperMod!
+          - 👋 Bonjour ! Je suis **Fabio Grasso**, *Solutions Engineer* spécialisé en 🔐 *Identity & Access Management (IAM)*. Je travaille entre la France 🇫🇷 et l’Italie 🇮🇹 pour Okta.
 
-            - **PaperMod** is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
+          - 🚀 J’aime résoudre les défis liés à la sécurité des identités et aider les entreprises à mettre en place des stratégies Zero Trust agiles, efficaces et faciles à faire évoluer.
 
-            - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-
-            - PaperMod is based on theme [Paper]
+          - 📚 Ici, je partage des idées, des retours d’expérience et des réflexions sur le monde de l’identité numérique.
     weight: 3
     menu:
       main:
