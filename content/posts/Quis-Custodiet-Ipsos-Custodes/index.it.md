@@ -32,7 +32,7 @@ In un'era in cui il perimetro di sicurezza non è più fisico, ma virtuale, l'id
 
 Di recente, un cliente mi ha posto una domanda volutamente provocatoria: *"A cosa serve Okta? Il mio fornitore attuale mi può dare già tutto: infrastruttura, posta elettronica, storage, Business Intelligence, protezione dei dispositivi... e anche la gestione delle identità. Perché dovrei spendere altri soldi per Okta quando posso avere tutto praticamente gratis e integrato in quello che già ho?".* Questa affermazione, apparentemente logica e innocua, rivela una percezione diffusa: che l'**IAM (Identity and Access Management)** sia una semplice funzionalità integrata, non una scelta strategica. Il dibattito non è tra due prodotti, ma tra un modello centralizzato e un'architettura indipendente e agnostica.
 
-## Zero Trust: L'Identità come Pilastro della Sicurezza
+## Zero Trust: L'Identità come pilastro della sicurezza
 
 Il modello di sicurezza tradizionale, basato sul concetto di "trusted perimeter", è ormai superato. In un mondo dove si lavora da remoto, si accede a risorse SaaS e si interagisce con API, la fiducia implicita è una vulnerabilità. La risposta a questa sfida è il modello Zero Trust, la cui filosofia cardine è "non fidarsi mai, verificare sempre".s
 
@@ -41,51 +41,43 @@ Il modello di sicurezza tradizionale, basato sul concetto di "trusted perimeter"
 Il [CISA's Zero Trust Maturity Model (ZTMM)](https://www.cisa.gov/zero-trust-maturity-model), un framework riconosciuto a livello globale, identifica l'**identità come il primo dei pilastri fondamentali** di questa architettura. L'identità non è solo un componente, ma il punto di controllo primario su cui si fonda l'intera strategia di sicurezza. Per implementare con successo questo modello, un'organizzazione ha bisogno di un sistema IAM robusto in grado di:
 
 - **Applicare politiche adattive:** Adattare dinamicamente le politiche di accesso in base al contesto (utente, dispositivo, posizione, ora).
-- **Utilizzare un'autenticazione forte:** Implementare un'autenticazione a più fattori (MFA) intelligente e adattiva.
+- **Utilizzare un'autenticazione forte:** Implementare un'autenticazione a più fattori (MFA) intelligente, adattiva e resistente al phishinh.
 
-Strumenti come l'**Adaptive MFA e l'Identity Threat Protection (ITP)** diventano essenziali per realizzare questi obiettivi, garantendo che solo gli utenti e i dispositivi legittimi possano interagire con le risorse aziendali.
+Strumenti come **FastPass**, **Adaptive MFA e Identity Threat Protection (ITP)** diventano essenziali per realizzare questi obiettivi, garantendo che solo gli utenti e i dispositivi legittimi possano interagire con le risorse aziendali.
 
-Governance, Automation and Orchestration, Visibility and Analytics, sono poste come le fondamenta. Anche qui piattaforme come **Okta** aiutano i clienti con strumenti come:
+Se analizziamo poi le **fondamenta** troviamo:
 
-* Okta Identity Governance: Per assicurare che gli accessi siano conformi alle politiche aziendali e che vengano revocati tempestivamente quando non sono più necessari.
-* Okta Workflows: Per automatizzare i processi di gestione delle identità e degli accessi, riducendo gli errori manuali e migliorando l'efficienza.
-* Okta ISPM (Identity Security Posture Management): Per analizzare costantemente la salute della sicurezza delle identità e rilevare anomalie.
+- **Governance**: definisce le regole e le politiche che guidano l'intera strategia di sicurezza. Non basta implementare gli strumenti giusti, è cruciale stabilire chi può accedere a cosa, in quali condizioni e per quanto tempo.
+  Soluzioni come **Okta Identity Governance** diventano vitali in questo contesto, in quanto permettono di assicurare che gli accessi siano sempre conformi alle politiche aziendali e che vengano revocati in modo tempestivo quando non sono più necessari. Questo approccio non solo rafforza la sicurezza, ma garantisce anche la conformità normativa.
+- **Automation and Orchestration**: L'efficacia di un modello Zero Trust dipende dalla sua capacità di reagire rapidamente ai cambiamenti di contesto. Gestire manualmente ogni singola richiesta di accesso o ogni cambiamento di stato dei dispositivi sarebbe impossibile. Strumenti come **Okta Workflows** consentono di automatizzare i processi di gestione delle identità e degli accessi, eliminando la necessità di interventi manuali, riducendo gli errori umani e migliorando notevolmente l'efficienza operativa. L'automazione permette al sistema di adattarsi in tempo reale, applicando la filosofia "non fidarsi mai, verificare sempre" in modo scalabile.
+- **Visibility and Analytics**: Per poter prendere decisioni informate e reagire alle minacce, un'organizzazione deve avere una visione chiara e costante di ciò che accade nel suo ecosistema. Piattaforme come **Okta ISPM (Identity Security Posture Management)** sono progettate per analizzare in modo continuo la salute della sicurezza delle identità, fornendo dati preziosi e insight che aiutano a identificare e mitigare i rischi prima che possano diventare problemi seri. La capacità di analizzare i dati e visualizzare i pattern di accesso è il perno su cui si basa la capacità di reazione proattiva del modello Zero Trust.
 
-Quanto agli altri "pillars":
+Quanto agli altri "pilastri":
 
-- Device:
-  - Okta Desktop Access (ODA)
-  - Integrazioni con strumenti di terze parti come EDR (es. Crowdstrike) completano la protezione di questo aspetto
-- Networks
-  - L'integrazione dell'IAM con VPN e strumenti ZLA (es. Zscaler)
-- Application & Workloads
-  - completare
-- Data
-  - completare2
+- **Device**: Il dispositivo da cui un utente cerca di accedere alle risorse aziendali rappresenta il primo punto di contatto e una potenziale vulnerabilità. L'integrazione dell'IAM con il Device Management assicura che solo i dispositivi fidati, conformi alle policy di sicurezza, possano accedere alle applicazioni e ai dati. In aggiunga, **Okta Desktop Access (ODA)** permette di implementare un'autenticazione a più fattori direttamente dal desktop, legando l'identità dell'utente al dispositivo. Questa protezione è ulteriormente rafforzata dalle integrazioni con strumenti di terze parti come gli **EDR** (**Endpoint Detection and Response**) come ad esempio **CrowdStrike**, che monitorano costantemente lo stato di sicurezza del dispositivo e segnalano anomalie, bloccando l'accesso in caso di minacce rilevate.
+- **Networks**: Il perimetro della rete tradizionale non esiste più. Con l'adozione del cloud e del lavoro ibrido, l'accesso alle risorse avviene da reti non controllate. L'integrazione dell'IAM con i sistemi di sicurezza di rete è quindi cruciale. L'autenticazione e l'autorizzazione basate sull'identità si estendono a strumenti come le VPN e, in modo più evoluto, ai sistemi **ZTA (Zero Trust Architecture)**, come ad esempio **Zscaler**. Questo approccio garantisce che l'accesso a risorse di rete specifiche non sia basato sulla posizione geografica o sulla rete di provenienza, ma sulla validità dell'identità dell'utente, del suo dispositivo e del contesto della richiesta.
+- **Application & Workloads**: Le applicazioni e i carichi di lavoro sono il cuore pulsante dell'attività aziendale e rappresentano un obiettivo primario per gli attaccanti. La protezione di questo pilastro si basa sull'estensione dell'IAM alle applicazioni stesse, garantendo che ogni accesso e operazione sia tracciabile, verificato e conforme alle policy. I meccanismi di **Single Sign-On (SSO)** e **Multi-Factor Authentication (MFA)** per le applicazioni sono fondamentali per ridurre la superficie di attacco. L'integrazione con strumenti di terze parti e la standardizzazione tramite protocolli come **SAML** e **OIDC (OpenID Connect)** permettono di centralizzare la gestione delle identità su tutte le applicazioni, interne ed esterne, e di controllare le autorizzazioni a un livello granulare.
+- **Data**: In definitiva, lo scopo di tutti i pilastri di sicurezza è proteggere i dati. L'integrazione dell'IAM con le politiche di protezione dei dati (Data Protection Policy) e con gli strumenti di sicurezza del dato, come i sistemi **DLP (Data Loss Prevention)** , permette di applicare le policy di accesso basate sull'identità direttamente ai dati, indipendentemente da dove si trovino (in-rest o in-transit). Si garantisce che solo gli utenti autorizzati possano accedere a dati sensibili, con autorizzazioni specifiche in base al loro ruolo e al contesto. Inoltre, si previene la fuoriuscita di dati, anche involontaria, bloccando operazioni non conformi alle policy.
 
 ## Identity Fabric: L'architettura che unisce le identità
 
 ![Identity Fabric Model for Zero Trust Maturity](identityfabricmodel.png)
-<!-- L'evoluzione del panorama digitale ha portato a un'esplosione di identità. Non si tratta più solo di dipendenti e collaboratori, ma anche di entità non umane: bot, API, workload e microservizi. La gestione di queste identità, spesso effimere e dinamiche, in un'architettura frammentata crea una superficie di attacco significativa e spesso trascurata.
 
-Per superare la complessità e la frammentazione di questi ecosistemi, il concetto di **Identity Fabric** emerge come l'approccio architetturale più efficace. L'**Identity Fabric** non è un singolo prodotto, ma un framework completo che integra e orchestra tutti i sistemi IAM disparati per funzionare come un unico sistema unificato. Questo approccio crea un "tessuto" di sicurezza coerente che si estende su tutta l'infrastruttura IT aziendale, eliminando i silos e i punti ciechi di sicurezza. In pratica, consente di orchestrare identità e accessi in modo agile, scalabile e sicuro, adattandosi a una realtà cloud-first e API-driven. -->
-
-Mentre il modello Zero Trust fornisce i principi fondamentali per una sicurezza moderna, l'evoluzione del panorama digitale richiede un passo ulteriore. L'esplosione di identità digitali, che non si limitano più solo a dipendenti e collaboratori, ma includono anche una miriade di entità non umane (bot, API, workload, microservizi), ha creato un ecosistema estremamente complesso e frammentato. La gestione di queste identità, spesso effimere e dinamiche, in un'architettura disconnessa crea una superficie di attacco significativa e spesso trascurata.
+span
 
 Per superare la complessità e la frammentazione di questi ecosistemi, il concetto di **Identity Fabric** emerge come l'approccio architetturale più efficace. L'Identity Fabric non è un singolo prodotto, ma un framework completo che integra e orchestra tutti i sistemi IAM disparati per funzionare come un unico sistema unificato. Questo approccio crea un "tessuto" di sicurezza coerente che si estende su tutta l'infrastruttura IT aziendale, eliminando i silos e i punti ciechi di sicurezza.
 
 **Okta è progettata per fungere da orchestratore centrale in questo Identity Fabric.** Grazie alle sue ampie capacità di integrazione, Okta connette e gestisce tutte le identità, applicazioni e infrastrutture (IaaS, on-prem, multi-cloud), indipendentemente dal fornitore. Questo approccio agnostico non solo garantisce una visibilità completa e un controllo centralizzato, ma permette anche di applicare politiche di sicurezza coerenti a tutte le entità digitali, umane e non umane. In pratica, consente di orchestrare identità e accessi in modo agile, scalabile e sicuro, adattandosi a una realtà cloud-first e API-driven, portando i principi Zero Trust a un livello di implementazione più ampio e coeso.
 
-
-## Il Rischio Nascosto del Fornitore Integrato
+## Il rischio nascosto del fornitore integrato
 
 Scegliere una soluzione IAM fornita dallo stesso vendor che gestisce la tua infrastruttura e i tuoi dati nel cloud può sembrare comodo ed economicamente conveniente, ma presenta rischi significativi. Vediamoli nel dettaglio.
 
-1. **Single Point of Failure (SPoF)**: Affidarsi a un unico fornitore per l'infrastruttura IT e per la gestione dell'identità espone a una pericolosa concentrazione di rischio di sicurezza. Se un attaccante riesce a compromettere il provider, l'intero stack aziendale è a rischio: le identità degli utenti e degli asset, i relativi accessi, le applicazioni e i dati sensibili. La violazione del sistema IAM (Identity and Access Management) integrato, in particolare, concede all'attaccante le "chiavi del regno", permettendogli di muoversi lateralmente e di accedere a tutte le risorse e informazioni critiche all'interno dell'ecosistema aziendale, con conseguenze potenzialmente devastanti in termini di furto di dati, interruzione delle operazioni e compromissione della reputazione.
+1. **Single Point of Failure (SPoF)**: Affidarsi a un unico fornitore per l'infrastruttura IT e per la gestione dell'identità espone a una pericolosa concentrazione di rischio di sicurezza. Se un attaccante riesce a compromettere il provider, l'intero stack aziendale è a rischio: le identità degli utenti e degli asset, i relativi accessi, le applicazioni e i dati sensibili. La violazione del sistema IAM (Identity and Access Management) integrato, in particolare, concede all'attaccante le "*chiavi del regno*", permettendogli di muoversi lateralmente e di accedere a tutte le risorse e informazioni critiche all'interno dell'ecosistema aziendale, con conseguenze potenzialmente devastanti in termini di furto di dati, interruzione delle operazioni e compromissione della reputazione.
 2. **Vendor Lock-in**: La profonda integrazione con l'ecosistema proprietario di un singolo fornitore può intrappolare le aziende in un lock-in quasi irreversibile. La migrazione diventa un processo proibitivamente costoso e dispendioso, limitando drasticamente la flessibilità di adottare nuove tecnologie o di negoziare condizioni economiche più vantaggiose.
 3. **Conflitto di interessi e mancanza di imparzialità**: Quando un fornitore controlla sia i servizi che il meccanismo di sicurezza, emerge un conflitto di interessi intrinseco. Le sue priorità potrebbero non essere la sicurezza o l'interoperabilità universale, ma l'integrazione profonda con il proprio ecosistema. Questo può portare a compromessi sulla sicurezza, a scorciatoie nella protezione e, in ultima analisi, a una mancanza di trasparenza.
 
-## I Vantaggi dell'Agnosticismo IAM
+## I vantaggi dell'agnosticismo IAM
 
 Una soluzione **IAM agnostica**, come **Okta**, è progettata per essere neutrale, interoperabile e modulare. Scegliere una piattaforma indipendente offre i seguenti vantaggi:
 
@@ -98,7 +90,7 @@ Una soluzione **IAM agnostica**, come **Okta**, è progettata per essere neutral
 
 Okta si impegna in un processo continuo di miglioramento della sicurezza attraverso investimenti in innovazione, controlli e trasparenza.
 
-## Conclusioni: L'identità come arbitro imparziale
+## Conclusioni: l'identità come arbitro imparziale
 
 Nel panorama digitale odierno, l'identità è il nuovo perimetro di sicurezza. La scelta di una piattaforma IAM non è meramente una decisione tecnica, ma una scelta strategica fondamentale. Affidarsi a un unico fornitore per infrastruttura, dati e identità può apparire apparentemente vantaggioso, ma la vera sicurezza si fonda sulla separazione dei poteri, sulla trasparenza e sulla libertà di scelta.
 

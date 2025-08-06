@@ -26,6 +26,10 @@ ul.share-buttons::before {
     content: "Share :";
 }
 
+.footer span:last-child {
+    white-space: normal;
+}
+
 :root {
   --link-color: var(--primary);
   --link-hover-color: #573eaa;

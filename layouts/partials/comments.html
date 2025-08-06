@@ -1,26 +1,40 @@
-<!-- Comments by Cusdis -->
 <br/><br/>
 
-<style>
-  #cusdis_thread iframe {
-    height: auto !important;
-    min-height: 400px;
+<script src="https://giscus.app/client.js"
+        data-repo="fabiograsso/iam-fabiograsso-net"
+        data-repo-id="R_kgDOPXdHOg"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOPXdHOs4Ct1ms"
+        data-mapping="specific"
+        data-term="{{ .Page.TranslationKey }}"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+<script>
+  function updateGiscusTheme() {
+    const isDarkMode = document.body.classList.contains('dark');
+    const giscusTheme = isDarkMode ? 'dark' : 'light';
+    console.log('Giscus theme:', giscusTheme);
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) {
+      setTimeout(updateGiscusTheme, 500);
+      return;
+    }
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: giscusTheme } } },
+      'https://giscus.app'
+    );
   }
-
-  #cusdis_thread {
-    max-height: none !important;
-    overflow: visible !important;
-  }
-</style>
-
-<h4 id="comments" style="margin-top: 2rem;margin-bottom: 2rem;">Comments</h4>
-<div class="bg-gray-100 p-5 rounded-md my-6">
-    <div id="cusdis_thread"
-    data-host="https://cusdis.com"
-    data-app-id="fb29f809-4545-421a-8c5a-8b067581f9fa"
-    data-page-id="{{ .File.UniqueID }}"
-    data-page-url="{{ .Permalink }}"
-    data-page-title="{{ .Title }}"
-  ></div>
-</div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  const observer = new MutationObserver(updateGiscusTheme);
+  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  window.onload = () => {
+    updateGiscusTheme();
+  };
+</script>
