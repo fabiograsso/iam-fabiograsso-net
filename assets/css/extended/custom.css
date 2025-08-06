@@ -34,7 +34,17 @@ ul.share-buttons::before {
 .home-info .entry-footer .social-icons{
     margin-top: 14px;
 }
+.float-right {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
 
+.float-left {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
 :root {
   --link-color: var(--primary);
   --link-hover-color: #573eaa;

@@ -35,12 +35,19 @@ outputs:
     - JSON
   page:
     - HTML
+    - RSS
   section:
     - HTML
     - RSS
   taxonomy:
     - HTML
     - RSS
+services:
+  rss:
+    limit: 42
+    filename: "index.xml"
+    section: "posts"
+    includeHome: false
 
 sitemap:
   filename: "sitemap.xml"
@@ -100,6 +107,22 @@ params:
       url: "https://github.com/fabiograsso"
     - name: Instagram
       url: "https://instagram.com/fabiograsso82"
+    - name: Email
+      url: "mailto:iam@fabiograsso.net"
+    - name: rss
+      url: "/posts/index.xml"
+#    - name: applemusic
+#      url: "/posts/index.xml"
+#    - name: cv
+#      url: "/posts/index.xml"
+#    - name: spotify
+#      url: "mailto:iam@fabiograsso.net"
+#    - name: paypal
+#      url: "mailto:iam@fabiograsso.net"
+#    - name: phone
+#      url: "mailto:iam@fabiograsso.net"
+#    - name: lastfm
+#      url: "mailto:iam@fabiograsso.net"
   label:
     text: "Home"
     icon: "/apple-touch-icon.png"

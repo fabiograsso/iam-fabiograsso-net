@@ -27,14 +27,10 @@
           name: Tags
           url: /tags/
           weight: 3
-        - identifier: aboutme
+        - identifier: about
           name: About
           url: /about/
           weight: 30
-        - identifier: privacy
-          name: Privacy Policy
-          url: /privacy/
-          weight: 40
         - identifier: search
           name: Search
           url: /search/
@@ -73,14 +69,10 @@
           name: Tags
           url: /tags/
           weight: 3
-        - identifier: aboutme
+        - identifier: about
           name: About
           url: /about/
           weight: 30
-        - identifier: privacy
-          name: Privacy Policy
-          url: /privacy/
-          weight: 40
         - identifier: search
           name: Search
           url: /search/
@@ -119,14 +111,10 @@
           name: Tags
           url: /tags/
           weight: 3
-        - identifier: aboutme
+        - identifier: about
           name: About
           url: /about/
           weight: 30
-        - identifier: privacy
-          name: Privacy Policy
-          url: /privacy/
-          weight: 40
         - identifier: search
           name: Rechercher
           url: /search/
@@ -135,10 +123,3 @@
 #          url: "https://reorx.com"
 #          params:
 #            external: true
-    homeInfoParams:
-      Title: "PaperMod's Demo"
-      Content: >
-          👋 Welcome to demo page of Hugo's theme PaperMod!
-          - **PaperMod** is designed to be clean and simple but fast and responsive theme with useful feature-set that enhances UX.
-          - Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media .
-          - PaperMod is based on theme [Paper]
