@@ -1,31 +1,39 @@
 CMS.registerEditorComponent({
     id: "figure",
     label: "Figure",
-    fields: [{
-            name: "title",
-            label: "Figure Title",
-            widget: "string"
-        },
-        {
-            name: "src",
-            label: "Figure SRC",
-            widget: "string"
-        },
+    fields: [
+        { name: "src", label: "Image Source", widget: "string" },
+        { name: "alt", label: "Alt Text", widget: "string", required: false },
+        { name: "title", label: "Title", widget: "string", required: false },
+        { name: "class", label: "CSS Classes", widget: "string", required: false }
     ],
-    pattern: /{{< figure src="([a-zA-Z0-9-_ ]+)" title="([a-zA-Z0-9-_ ]+)" >}}/,
+    // Pattern matches: {{ <figure src="..." alt="..." title="..." class="..."> }}
+    pattern: /\{\{\s*<figure\s+src="([^"]+)"(?:\s+alt="([^"]*)")?(?:\s+title="([^"]*)")?(?:\s+class="([^"]*)")?\s*>\s*\}\}/,
     fromBlock: function(match) {
         return {
-            title: match[1],
-            src: match[2],
+            src: match[1] || "",
+            alt: match[2] || "",
+            title: match[3] || "",
+            class: match[4] || ""
         };
     },
     toBlock: function(obj) {
-        return `{{< figure src="${obj.src}" title="${obj.title}" >}}`;
+        let attrs = `src="${obj.src}"`;
+        if (obj.alt) attrs += ` alt="${obj.alt}"`;
+        if (obj.title) attrs += ` title="${obj.title}"`;
+        if (obj.class) attrs += ` class="${obj.class}"`;
+        return `{{ <figure ${attrs}> }}`;
     },
     toPreview: function(obj) {
-        return `<figure><img src=${obj.src} alt=${obj.title}><figcaption>${obj.title}</figcaption></figure>`;
-    },
+        const classAttr = obj.class ? ` class="${obj.class}"` : "";
+        const altAttr = obj.alt || obj.title || "";
+        const caption = obj.title ? `<figcaption>${obj.title}</figcaption>` : "";
+        return `<figure${classAttr}><img src="${obj.src}" alt="${altAttr}">${caption}</figure>`;
+    }
 });
+
+
+
 CMS.registerEditorComponent({
     id: "gist",
     label: "Gist",
