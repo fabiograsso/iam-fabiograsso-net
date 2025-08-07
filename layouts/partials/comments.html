@@ -17,24 +17,43 @@
         crossorigin="anonymous"
         async>
 </script>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
-  function updateGiscusTheme() {
+  kofiWidgetOverlay.draw('fabiograsso', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Tip Me',
+
+  });
+</script>
+
+<script>
+  function updateTheme() {
     const isDarkMode = document.body.classList.contains('dark');
     const giscusTheme = isDarkMode ? 'dark' : 'light';
-    console.log('Giscus theme:', giscusTheme);
+    const kofiBackgroundColor = isDarkMode ? 'rgb(55, 56, 62)' : 'rgb(245, 245, 245)';
+    const kofiTextColor = isDarkMode ? 'rgb(218, 218, 219)' : 'rgb(30, 30, 30)';
     const iframe = document.querySelector('iframe.giscus-frame');
+    console.log ("Darkmode: " + isDarkMode);
     if (!iframe) {
-      setTimeout(updateGiscusTheme, 500);
+      setTimeout(updateTheme, 500);
       return;
     }
     iframe.contentWindow.postMessage(
       { giscus: { setConfig: { theme: giscusTheme } } },
       'https://giscus.app'
     );
+    kofiWidgetOverlay.draw('fabiograsso', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Tip Me',
+      'floating-chat.donateButton.background-color': kofiBackgroundColor,
+      'floating-chat.donateButton.text-color': kofiTextColor,
+    });
   }
-  const observer = new MutationObserver(updateGiscusTheme);
+  const observer = new MutationObserver(updateTheme);
   observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
   window.onload = () => {
-    updateGiscusTheme();
+    updateTheme();
   };
 </script>

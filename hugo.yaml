@@ -111,6 +111,8 @@ params:
       url: "mailto:iam@fabiograsso.net"
     - name: rss
       url: "/posts/index.xml"
+    - name: kofi
+      url: "https://ko-fi.com/fabiograsso"
 #    - name: applemusic
 #      url: "/posts/index.xml"
 #    - name: cv
