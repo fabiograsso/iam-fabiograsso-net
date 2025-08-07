@@ -9,6 +9,10 @@ collections:
     folder: 'content/posts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    path: '{{year}}-{{slug}}/index.md'
+    media_folder: ''
+    #{{dirname}}/{{filename}}
+    public_folder: ''
     editor:
       preview: false
     fields:
