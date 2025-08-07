@@ -1,17 +1,15 @@
 ---
-title: "A propos de moi "
-date: 2025-08-03T23:00:00+02:00
 draft: false
 layout: single
-share: false
+date: 2025-08-03T23:00:00+02:00
 comments: false
 disableShare: true
+title: "A propos de moi "
+description: yeys
+share: false
 ---
-{{< figure
-  src="/profile-small.jpg"
-  alt="Fabio"
-  class="ma0 w-25 float-right"
->}}
+{{ <figure src="/profile-small.jpg" alt="Fabio" class="ma0 w-25 float-right"> }}
+
 👋 Je suis **Fabio Grasso**, Solutions Engineer chez Okta, spécialisé en **Identity & Access Management (IAM/CIAM)**. Je travaille entre la **France** 🇫🇷 et l’**Italie** 🇮🇹, où j’accompagne les entreprises dans leur parcours de digitalisation sécurisée.
 
 ## Ce que je fais
