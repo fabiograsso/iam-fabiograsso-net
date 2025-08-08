@@ -4,8 +4,8 @@ CMS.registerEditorComponent({
     fields: [
         { name: "src", label: "Image Source", widget: "string" },
         { name: "alt", label: "Alt Text", widget: "string", required: false },
-        { name: "title", label: "Title", widget: "string", required: false },
-        { name: "class", label: "CSS Classes", widget: "string", required: false }
+        { name: "class", label: "CSS Classes", widget: "string", required: false },
+        { name: "title", label: "Title", widget: "string", required: false }
     ],
     // Pattern matches: {{ <figure src="..." alt="..." title="..." class="..."> }}
     pattern: /\{\{\s*<figure\s+src="([^"]+)"(?:\s+alt="([^"]*)")?(?:\s+title="([^"]*)")?(?:\s+class="([^"]*)")?\s*>\s*\}\}/,
