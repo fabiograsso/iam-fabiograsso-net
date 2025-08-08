@@ -46,3 +46,4 @@ resources/_gen/
 .old
 /.obsidian
 test/
+.env
