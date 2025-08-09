@@ -1,0 +1,15 @@
+services:
+  tina-hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile.tina-hugo
+    working_dir: /app
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "1313:1313"  # Hugo
+      - "3000:3000"  # Tina UI
+      - "4001:4001"  # Tina GraphQL
+    volumes:
+      - ./:/app
+    platform: linux/amd64 # Workaround for compatibility with MacOS

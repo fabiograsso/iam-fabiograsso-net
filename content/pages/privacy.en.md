@@ -5,6 +5,7 @@ draft: false
 translationKey: "privacy"
 layout: single
 share: false
+url: "/privacy"
 ---
 
 ## Who We Are

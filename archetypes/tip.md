@@ -4,25 +4,10 @@ date: {{ .Date }}
 draft: true
 tags: ["first", "second", "third"]
 description: "A brief description."
-categories: ["blog"]
-translationKey: "intro-to-hugo"
-#lightgallery: true
-#keywords: ["first", "second", "third"]
-#weight: 1
-#aliases: ["/first"]
-#author: "Fabio Gfasso"
+categories: ["tips"]
+#author: "Fabio Grasso"
 #author: ["Me", "You"] # multiple authors
-# ShowToc: true
-#hidemeta: false
-#comments: false
-#disableShare: true
-#hideSummary: false
-#ShowReadingTime: true
-#ShowBreadCrumbs: true
-#ShowPostNavLinks: true
-#ShowWordCount: true
-#ShowRssButtonInSectionTermList: true
-#searchHidden: true
+ShowToc: false
 #cover:
 #    image: "cover.png"
 #    relative: true

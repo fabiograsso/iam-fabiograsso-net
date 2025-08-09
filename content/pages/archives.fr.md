@@ -1,8 +1,9 @@
 ---
 title: "Archive"
 layout: "archives"
-# url: "/archives"
 summary: "archives"
 comments: false
 disableShare: true
+translationKey: "archives"
+url: "/archives"
 ---

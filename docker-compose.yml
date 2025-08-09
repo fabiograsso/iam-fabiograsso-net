@@ -1,19 +1,4 @@
-version: "3.9"
-
 services:
-  decap-proxy:
-    image: node:18-alpine
-    working_dir: /app
-    volumes:
-      - ./:/app
-    environment:
-      - PORT=${DECAP_PORT:-1314}
-      - GIT_REPO_DIRECTORY=/app
-    command: sh -c "npx decap-server"
-    ports:
-      - "${DECAP_PORT:-1314}:${DECAP_PORT:-1314}"
-    networks:
-      - hugonet
 
   hugo:
     image: docker.io/hugomods/hugo:std-exts
@@ -23,6 +8,21 @@ services:
       - ./:/src
     ports:
       - "${HUGO_PORT:-1313}:${HUGO_PORT:-1313}"
+    networks:
+      - hugonet
+
+  decap-proxy:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      - PORT=${DECAP_PORT:-1314}
+      - GIT_REPO_DIRECTORY=/app
+      - NODE_ENV=development
+    command: sh -c "npx decap-server"
+    ports:
+      - "${DECAP_PORT:-1314}:${DECAP_PORT:-1314}"
     networks:
       - hugonet
 

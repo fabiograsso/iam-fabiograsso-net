@@ -72,7 +72,7 @@ cascade:
       kind: page
       section: posts
     editPost:
-      URL: "https://github.com/fabiograsso/iam-fabiograsso-net/content"
+      URL: "https://github.com/fabiograsso/iam-fabiograsso-net/content/"
       Text: "Suggest Changes"
       appendFilePath: true
     comments: true
@@ -83,7 +83,7 @@ params:
   hideFooter: true # see layouts/partials/extend_footer.html
   comments: true
   env: production
-  description: "Il mio blog tecnico multilingua"
+  description: "description"
   author: "Fabio Grasso"
   defaultTheme: auto
   ShowReadingTime: true

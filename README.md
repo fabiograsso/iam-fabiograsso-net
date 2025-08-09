@@ -87,3 +87,13 @@ This project is licensed under the CC BY-NC-SA 4.0 License. See the [LICENSE](LI
 
 - [Hugo Quick Start Guide](https://gohugo.io/getting-started/quick-start/)
 - [PaperMod Theme Documentation](https://adityatelange.github.io/hugo-PaperMod/docs/)
+
+
+
+
+----
+
+Tina
+
+ npx @tinacms/cli@latest init
+ npx tinacms dev -c "hugo server -D -p 1313"
