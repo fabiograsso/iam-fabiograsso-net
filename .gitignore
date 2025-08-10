@@ -40,10 +40,10 @@ bower_components
 _obj
 _test
 /public
-.DS_Store
 .hugo_build.lock
 resources/_gen/
 .old
 /.obsidian
 test/
 .env
+.vscode

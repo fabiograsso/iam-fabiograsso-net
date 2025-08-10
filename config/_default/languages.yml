@@ -13,6 +13,8 @@
            - 🚀 I love solving identity security challenges, helping companies implement agile, scalable, and effective Zero Trust strategies.
 
            - 📚 In this space, I share ideas, experiences, and insights about the world of digital identity.
+
+           - 🌍 Although this site is multilingual and some posts are also in [Italian 🇮🇹](/it) and [French 🇫🇷](/fr), most content is in [English 🇬🇧](/en). To see everything, pick [English 🇬🇧](/en) as your language.
     menu:
       main:
         - identifier: posts
@@ -54,6 +56,8 @@
           - 🚀 Amo risolvere le sfide legate alla sicurezza dell’identità, aiutando aziende a implementare strategie Zero Trust agili, scalabili ed efficaci.
           
           - 📚 In questo spazio condivido idee, esperienze e visioni sul mondo dell’identità digitale.
+
+          - 🌍 Sebbene questo sito sia multilingue e alcuni post siano anche in [Italiano 🇮🇹](/it) e [Francese 🇫🇷](/fr), la maggior parte dei contenuti è in [Inglese 🇬🇧](/en). Per vedere tutto, seleziona [Inglese 🇬🇧](/en) come lingua.
     weight: 2
     menu:
       main:
@@ -96,6 +100,11 @@
           - 🚀 J’aime résoudre les défis liés à la sécurité des identités et aider les entreprises à mettre en place des stratégies Zero Trust agiles, efficaces et faciles à faire évoluer.
 
           - 📚 Ici, je partage des idées, des retours d’expérience et des réflexions sur le monde de l’identité numérique.
+          
+          - 🌍 Bien que ce site soit multilingue et que certains articles soient aussi en [Italien 🇮🇹](/it) et [Français 🇫🇷](/fr), la plupart des contenus sont en [Anglais 🇬🇧](/en). Pour tout voir, choisissez [Anglais 🇬🇧](/en) comme langue.
+
+
+
     weight: 3
     menu:
       main:

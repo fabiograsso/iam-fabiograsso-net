@@ -72,13 +72,12 @@ cascade:
       kind: page
       section: posts
     editPost:
-      URL: "https://github.com/fabiograsso/iam-fabiograsso-net/content/"
+      URL: "https://github.com/fabiograsso/iam-fabiograsso-net/tree/main/content"
       Text: "Suggest Changes"
       appendFilePath: true
     comments: true
     ShowToc: true
     TocOpen: false
-
 params:
   hideFooter: true # see layouts/partials/extend_footer.html
   comments: true
@@ -112,7 +111,7 @@ params:
     - name: rss
       url: "/posts/index.xml"
     - name: kofi
-      url: "https://ko-fi.com/fabiograsso"
+      url: "https://ko-fi.com/fabiograsso/tip"
 #    - name: applemusic
 #      url: "/posts/index.xml"
 #    - name: cv
@@ -150,3 +149,9 @@ params:
     minMatchCharLength: 2
     keys: ["title", "permalink", "summary", "content", "description"]
   DisableLangSwitcher: true
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
