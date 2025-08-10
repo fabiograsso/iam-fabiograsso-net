@@ -46,9 +46,6 @@ deploy: build
 
 
 
-
-
-
 #hugo mod get -u
 #hugo new my-new-section/my-post.md --kind post
 #hugo new posts/my-first-post.md

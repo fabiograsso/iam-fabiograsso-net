@@ -10,6 +10,7 @@ services:
       - "${HUGO_PORT:-1313}:${HUGO_PORT:-1313}"
     networks:
       - hugonet
+    #platform: linux/amd64 # Workaround for compatibility with MacOS
 
   decap-proxy:
     image: node:18-alpine

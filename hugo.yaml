@@ -1,7 +1,11 @@
+module:
+  imports:
+  - path: github.com/adityatelange/hugo-PaperMod
+
 baseURL: "https://iam.fabiograsso.net"
 languageCode: "en-us"
 title: "IAM.FabioGrasso.net"
-theme: PaperMod 
+theme: ["PaperMod"]
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -83,7 +87,7 @@ params:
   comments: true
   env: production
   disableThemeToggle: false
-  description: "description"
+  description: "IAM.FabioGrasso.net is a personal blog by Fabio Grasso, a Solutions Engineer at Okta, focusing on Identity & Access Management (IAM)."
   author: "Fabio Grasso"
   defaultTheme: auto
   ShowReadingTime: true
@@ -164,3 +168,8 @@ minify:
   disableCSS: false
   disableJS: false
   minifyOutput: true
+
+imaging:
+  quality: 85
+  resampleFilter: "Lanczos"
+  anchor: "smart" 
