@@ -11,11 +11,11 @@ categories:
 translationKey: glpi-okta
 hideSummary: true
 author: Fabio Grasso
-cover:
-  image: cover.jpg
+#cover:
+#  image: cover.jpg
   #alt: Descrizione dell'immagine
   #caption: Crediti immagine
-  relative: true
+#  relative: true
 ---
 
 ## Intro

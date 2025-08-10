@@ -82,6 +82,7 @@ params:
   hideFooter: true # see layouts/partials/extend_footer.html
   comments: true
   env: production
+  disableThemeToggle: false
   description: "description"
   author: "Fabio Grasso"
   defaultTheme: auto
@@ -155,3 +156,11 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
+
+minify:
+  disableHTML: false
+  disableCSS: false
+  disableJS: false
+  minifyOutput: true
