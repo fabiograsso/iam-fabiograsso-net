@@ -8,9 +8,7 @@
       homeInfoParams:
         Title: "I AM Fabio"
         Content: >
-           - 👋 Ciao! I’m **Fabio Grasso**, a *Solutions Engineer* specialized in 🔐 *Identity & Access Management (IAM)*. I work between France 🇫🇷 and Italy 🇮🇹 for Okta.
-
-           - 🚀 I love solving identity security challenges, helping companies implement agile, scalable, and effective Zero Trust strategies.
+           - 👋 Ciao! I’m [**Fabio**](/about/), a *Solutions Engineer* specialized in 🔐 *Identity & Access Management (IAM)*. I work between France and Italy for [**Okta**](https://www.okta.com).
 
            - 📚 In this space, I share ideas, experiences, and insights about the world of digital identity.
 
@@ -51,10 +49,8 @@
       homeInfoParams:
         Title: "I AM Fabio"
         Content: >
-          - 👋 Ciao! Sono **Fabio Grasso**, *Solutions Engineer* specializzato in 🔐 *Identity & Access Management (IAM)*. Lavoro tra la Francia 🇫🇷 e l’Italia 🇮🇹 per Okta 
-          
-          - 🚀 Amo risolvere le sfide legate alla sicurezza dell’identità, aiutando aziende a implementare strategie Zero Trust agili, scalabili ed efficaci.
-          
+          - 👋 Ciao! Sono [**Fabio**](/it/about/), *Solutions Engineer* specializzato in 🔐 *Identity & Access Management (IAM)*. Lavoro tra la Francia e l’Italia per [**Okta**](https://www.okta.com) 
+
           - 📚 In questo spazio condivido idee, esperienze e visioni sul mondo dell’identità digitale.
 
           - 🌍 Sebbene questo sito sia multilingue e alcuni post siano anche in [Italiano 🇮🇹](/it) e [Francese 🇫🇷](/fr), la maggior parte dei contenuti è in [Inglese 🇬🇧](/en). Per vedere tutto, seleziona [Inglese 🇬🇧](/en) come lingua.
@@ -95,9 +91,7 @@
       homeInfoParams:
         Title: "I AM Fabio"
         Content: >
-          - 👋 Bonjour ! Je suis **Fabio Grasso**, *Solutions Engineer* spécialisé en 🔐 *Identity & Access Management (IAM)*. Je travaille entre la France 🇫🇷 et l’Italie 🇮🇹 pour Okta.
-
-          - 🚀 J’aime résoudre les défis liés à la sécurité des identités et aider les entreprises à mettre en place des stratégies Zero Trust agiles, efficaces et faciles à faire évoluer.
+          - 👋 Bonjour ! Je suis [**Fabio**](/fr/about/), *Solutions Engineer* spécialisé en 🔐 *Identity & Access Management (IAM)*. Je travaille entre la France et l’Italie pour [**Okta**](https://www.okta.com).
 
           - 📚 Ici, je partage des idées, des retours d’expérience et des réflexions sur le monde de l’identité numérique.
           
