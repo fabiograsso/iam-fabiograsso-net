@@ -7,6 +7,7 @@ disableShare: true
 title: "A propos de moi "
 description: yeys
 share: false
+hiddenFromHomePage: true
 ---
 {{ <figure src="/profile-small.jpg" alt="Fabio" class="ma0 w-25 float-right"> }}
 

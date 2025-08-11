@@ -6,6 +6,7 @@ disableShare: true
 title: About Me
 date: 2025-08-03T21:00:00.000Z
 draft: false
+hiddenFromHomePage: true
 ---
 
 {{< figure src="/profile-small.jpg" alt="Fabio" class="ma0 w-25 float-right" >}}

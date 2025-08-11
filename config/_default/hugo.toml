@@ -1,0 +1,116 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://nunocoracao.github.io/blowfish/docs/getting-started/
+
+theme = "blowfish"
+baseURL = "https://iam.fabiograsso.net/"
+defaultContentLanguage = "en"
+languageCode = "en-us"
+title = "IAM.FabioGrasso.net"
+
+mainsections = ["posts", "tips", "travels", "howto", "kitchen"]
+
+disableLanguages = [] #to allow translation work requiring shipping to production
+
+summaryLength = 0
+enableRobotsTXT = true
+buildExpired = false
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+enableGitInfo = true
+enableInlineShortcodes = true
+
+# googleAnalytics = "G-XXXXXXXXX"
+
+[imaging]
+  anchor = 'Center'
+
+[pagination]
+  pagerSize = 20
+
+[taxonomies]
+  tag = "Tags"
+  category = "Categories"
+  author = "Authors"
+  series = "Series"
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "JSON"]
+
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[markup]
+  [highlight]
+    noClasses = false
+
+[services]
+  [rss]
+    limit = 42
+    filename = "index.xml"
+    section = "posts"
+    includeHome = false
+
+[permalinks]
+  #posts = "/posts/:year/:slugorcontentbasename/" 
+  posts = "/posts/:slugorcontentbasename/" 
+  section = "/:section/"
+  about = "/about/"
+  privacy = "/privacy/"
+
+[[cascade]]
+  [cascade._target]
+    path = "posts/**"
+  comments = true
+  ShowToc = true
+  TocOpen = false
+
+[[cascade]]
+  [cascade._target]
+    kind = "page"
+    section = "posts"
+  [cascade.editPost]
+    URL = "https://github.com/fabiograsso/iam-fabiograsso-net/tree/main/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
+  comments = true
+  ShowToc = true
+  TocOpen = false
+
+
+[related]
+  threshold = 0
+  toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 100
+
+    [[related.indices]]
+        name = "series"
+        weight = 50
+
+    [[related.indices]]
+        name = "authors"
+        weight = 20
+
+    [[related.indices]]
+        name = "date"
+        weight = 10
+
+    [[related.indices]]
+      applyFilter = false
+      name = 'fragmentrefs'
+      type = 'fragments'
+      weight = 10

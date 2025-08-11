@@ -3,9 +3,9 @@ title: "Chi Sono"
 date: 2025-08-03T23:00:00+02:00
 draft: false
 layout: single
-share: false
 comments: false
 disableShare: true
+hiddenFromHomePage: true
 ---
 👋 Sono **Fabio Grasso**, Solutions Engineer per Okta, specializzato in **Identity & Access Management (IAM/CIAM)**. Opero tra la **Francia** 🇫🇷 e l’**Italia** 🇮🇹, dove supporto le aziende nel loro percorso di digitalizzazione sicura.
 <!-- <span style="font-size:28px;letter-spacing:4px">🧡💻📷🏀🎱🎮🀄🐶🐱☮️</span> -->

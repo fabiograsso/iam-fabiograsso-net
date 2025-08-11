@@ -49,7 +49,11 @@ deploy: build
 #hugo mod get -u
 #hugo new my-new-section/my-post.md --kind post
 #hugo new posts/my-first-post.md
-
+update-theme:
+	@git submodule update --remote --merge
+	@git add *
+	@git commit -m "updated theme" 
+	@git push
 
 docker-start: docker-check-prereqs
 	@echo "--> Starting containers in detached mode..."

@@ -1,0 +1,156 @@
+baseURL: "https://iam.fabiograsso.net"
+languageCode: "en-us"
+title: "IAM.FabioGrasso.net"
+
+theme: ["blowfish"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "🇬🇧 English"
+    weight: 1
+  it:
+    languageName: "🇮🇹 Italiano"
+    weight: 2
+  fr:
+    languageName: "🇫🇷 Français"
+    weight: 3
+
+mainsections: ["posts", "tips"]
+backgroundImageWidth: 1920
+
+highlightCurrentMenuArea: true
+smartTOC: true
+
+header:
+  layout: "basic"
+
+footer:
+  showMenu: true
+  showCopyright: true
+  showThemeAttribution: true
+  showAppearanceSwitcher: true
+  showScrollToTop: true
+
+homepage:
+  layout: "card"
+  homepageImage: "apple-touch-icon.png"
+  showRecent: true
+  showRecentItems: 20
+  showMoreLink: true
+  showMoreLinkDest: "/posts/"
+  layoutBackgroundBlur: false
+  disableHeroImageFilter: false
+
+article:
+  showDate: true
+  showViews: true
+  showLikes: true
+  showDateUpdated: true
+  showAuthor: true
+  showAuthorBottom: true
+  showHero: true
+  showEdit:  true
+  editURL: ""
+  editAppendPath: true
+  showTableOfContents: true
+  showTaxonomies: true
+  showWordCount: true
+  showComments: true
+  sharingLinks: true
+  showZenMode: true
+
+defaultAppearance: "auto"
+autoSwitchAppearance: true
+
+enableSearch: true
+enableGitInfo: true
+enableCodeCopy: true
+
+params:
+  author:
+    name: "Fabio Grasso"
+    headline: "Solutions Engineer — Identity & Access Management"
+    image: "/apple-touch-icon.png"
+    email: "iam@fabiograsso.net"
+    links:
+      - title: "LinkedIn"
+        url: "https://linkedin.com/in/fabiograsso82"
+      - title: "GitHub"
+        url: "https://github.com/fabiograsso"
+    headline: "Solutions Engineer at Okta"
+    bio: "I’m Fabio, a Solutions Engineer at Okta, specializing in Identity & Access Management (IAM). I share insights on digital identity and IAM practices."
+  description: "IAM.FabioGrasso.net is a personal blog by Fabio Grasso, a Solutions Engineer at Okta, focusing on Identity & Access Management (IAM)."
+  search:
+    enable: true
+    type: "lunr"
+    fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      minMatchCharLength: 2
+      keys: ["title", "permalink", "summary", "content", "description"]
+  copyright: "© 2023 Fabio Grasso"
+  socialIcons:
+    - name: LinkedIn
+      url: "https://linkedin.com/in/fabiograsso82"
+    - name: GitHub
+      url: "https://github.com/fabiograsso"
+    - name: Instagram
+      url: "https://instagram.com/fabiograsso82"
+    - name: Email
+      url: "mailto:iam@fabiograsso.net"
+    - name: rss
+      url: "/posts/index.xml"
+
+outputs:
+  home: [HTML, RSS, JSON]
+  page: [HTML, RSS]
+  section: [HTML, RSS]
+  taxonomy: [HTML, RSS]
+
+services:
+  rss:
+    limit: 42
+    filename: "index.xml"
+    section: "posts"
+    includeHome: false
+
+sitemap:
+  filename: "sitemap.xml"
+  changefreq: "weekly"
+  priority: 0.5
+  includeHome: true
+  includeSection: true
+  excludedKinds: ["privacy"]
+
+permalinks:
+  posts: "/posts/:year/:slugorcontentbasename/"
+  section: "/:section/"
+  about: "/about/"
+  privacy: "/privacy/"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+minify:
+  disableHTML: false
+  disableCSS: false
+  disableJS: false
+  minifyOutput: true
+
+imaging:
+  quality: 85
+  resampleFilter: "Lanczos"
+  anchor: "smart"

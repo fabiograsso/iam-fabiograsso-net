@@ -1,11 +1,20 @@
 ---
 title: "Privacy Policy"
 date: 2025-08-04T11:00:00+02:00
-draft: false
 translationKey: "privacy"
-url: "/privacy"
 layout: single
 share: false
+comments: false
+ShowToc: true
+hidemeta: true
+disableShare: true
+ShowReadingTime: false
+#ShowBreadCrumbs: true
+ShowPostNavLinks: false
+ShowWordCount: false
+#ShowRssButtonInSectionTermList: true
+searchHidden: true
+hiddenFromHomePage: true
 ---
 
 ## Who We Are
