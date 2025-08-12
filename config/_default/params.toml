@@ -60,7 +60,7 @@ smartTOCHideUnfocusedChildren = false
   
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/hero.png"
+  homepageImage = "img/homebg.png"
   showRecent = true
   showRecentItems = 20
   showMoreLink = true

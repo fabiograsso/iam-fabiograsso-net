@@ -26,23 +26,34 @@
 
 
 <script>
-  function updateTheme() {
-    const isDarkMode = document.body.classList.contains('dark');
-    const giscusTheme = isDarkMode ? 'dark' : 'light';
-    const iframe = document.querySelector('iframe.giscus-frame');
-    console.log ("Darkmode: " + isDarkMode);
-    if (!iframe) {
-      setTimeout(updateTheme, 500);
-      return;
+  function updateGiscusTheme() {
+    function sendMessage(theme) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: theme } } }, 'https://giscus.app');
+      }
     }
-    iframe.contentWindow.postMessage(
-      { giscus: { setConfig: { theme: giscusTheme } } },
-      'https://giscus.app'
-    );
+
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    const giscusTheme = isDarkMode ? 'dark' : 'light';
+    
+    sendMessage(giscusTheme);
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'class') {
+          const isDarkModeNow = document.documentElement.classList.contains('dark');
+          const newGiscusTheme = isDarkModeNow ? 'dark' : 'light';
+          sendMessage(newGiscusTheme);
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
   }
-  const observer = new MutationObserver(updateTheme);
-  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  window.onload = () => {
-    updateTheme();
-  };
+
+  window.addEventListener('load', updateGiscusTheme);
 </script>
