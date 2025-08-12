@@ -5,17 +5,27 @@
     display: none;
 
 }
- */
-
 .footnotes a::before {
     content: '[';
 }
-
 .footnotes a::after {
     content: ']';
 }
 .footnote-backref::before, .footnote-backref::after{
     content: none!important;
+}
+    */
+.footnotes ol::before {
+    content: "References:";
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.footnotes p, .footnotes li {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
 }
 
 kbd {
