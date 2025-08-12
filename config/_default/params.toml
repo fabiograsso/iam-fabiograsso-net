@@ -5,8 +5,8 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://nunocoracao.github.io/blowfish/docs/configuration/#theme-parameters
 
-colorScheme = "slate"
-defaultAppearance = "light" # valid options: light or dark
+colorScheme = "Fire"
+defaultAppearance = "light"
 autoSwitchAppearance = true
 
 enableSearch = true
@@ -14,27 +14,59 @@ enableCodeCopy = true
 
 # robots = ""
 
+copyright = """
+  <span style="display: inline-block;">
+    &copy; 2025 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/about">Fabio Grasso</a>
+  </span> - 
+  <span style="display: inline-block;">
+    License: <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+  </span>
+-
+  <span style="display: inline-block;">
+    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/posts/index.xml">RSS</a>
+  </span> - 
+  <span style="display: inline-block;">
+    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy">Privacy&Cookie Policy</a>
+  </span>
+  <br/>
+  <span style="line-height: 1.3em; margin-top: 1em;">
+    ✍️ Crafted with the help of 🤖 AI. <br/>
+    💡 All content is fact-checked, edited, and reflects the author’s expertise and opinions.
+  </span>
+"""
+
+#logo = "img/apple-touch-icon.png"
+#secondaryLogo = "img/apple-touch-icon.png" # dark mode
+
+#defaultBackgroundImage = "/img/hero2.svg"
+#defaultFeaturedImage = "/img/featured.svg"
+#defaultSocialImage = "/img/blowfish_banner.png"
+highlightCurrentMenuArea = true
+
+
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
+
+
 [header]
-  layout = "basic" # valid options: basic, fixed
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, and fixed-fill-blur.
 
 [footer]
-  showMenu = true
+  showMenu = false
   showCopyright = true
   showThemeAttribution = true
   showAppearanceSwitcher = true
   showScrollToTop = true
-
+  
 [homepage]
-  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/hero.png"
   showRecent = true
   showRecentItems = 20
   showMoreLink = true
   showMoreLinkDest = "/posts"
-  cardView = false
-  cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
-
+  layoutBackgroundBlur = true # only used when layout equals background
+  # disableHeroImageFilter =
 
 [article]
   showDate = true
@@ -43,11 +75,11 @@ enableCodeCopy = true
   showDateUpdated = false
   showAuthor = true
   showHero = true
-  heroStyle = "basic" # valid options: basic, big, background
+  heroStyle = "big" # valid options: basic, big, background
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/fabiograsso/iam-fabiograsso-net/"
+  showEdit = true
+  editURL = "https://github.com/fabiograsso/iam-fabiograsso-net/tree/main/"
   editAppendPath = true
   seriesOpened = false
   showHeadingAnchors = true
@@ -55,27 +87,28 @@ enableCodeCopy = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = false 
-  showAuthorsBadges = false 
+  showAuthorsBadges = true 
   showWordCount = true
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "facebook", "whatsapp", "telegram", "reddit", "email","line"]
-
+  showZenMode = true
+  
 [list]
-  showBreadcrumbs = false
-  showSummary = true
-  showTableOfContents = false
-  showCards = false
-  groupByYear = true
-  cardView = false
-  cardViewScreenWidth = false
-  constrainItemsWidth = true
-
-[sitemap]
-  excludedKinds = []
+  showHero = true
+  # heroStyle = basic # basic, big, background, thumbAndBackground.
 
 [taxonomy]
+#  showHero = true
+#  heroStyle = # basic, big, background, thumbAndBackground
   showTermCount = true
+
+[term]
+#  showHero = true
+  showTermCount = true
+
+[sitemap]
+  excludedKinds = ["privacy"]
+
 
 [firebase]
   # apiKey = "XXXXXX"
@@ -86,20 +119,12 @@ enableCodeCopy = true
   # appId = "XXXXXX"
   # measurementId = "XXXXXX"
 
-[fathomAnalytics]
-  # site = "ABC12345"
-  # domain = "llama.yoursite.com"
-
 [verification]
   # google = ""
   # bing = ""
   # pinterest = ""
   # yandex = ""
 
-[comments]
-  provider = "utterances"
-  [comments.utterances]
-    repo = "fabiograsso/iam-fabiograsso-net"
-    issueTerm = "issues"
-    label = "💬 comment"
-    theme = "github-light"
+# [RSSNext]
+# feedId =
+# userId =

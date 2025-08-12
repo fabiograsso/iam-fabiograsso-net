@@ -6,9 +6,9 @@ theme = "blowfish"
 baseURL = "https://iam.fabiograsso.net/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
-title = "IAM.FabioGrasso.net"
+title = "I AM Fabio"
 
-mainsections = ["posts", "tips", "travels", "howto", "kitchen"]
+mainSections = ["posts", "tips", "travels", "howto", "kitchen"]
 
 disableLanguages = [] #to allow translation work requiring shipping to production
 
@@ -57,7 +57,6 @@ enableInlineShortcodes = true
     filename = "index.xml"
     section = "posts"
     includeHome = false
-
 [permalinks]
   #posts = "/posts/:year/:slugorcontentbasename/" 
   posts = "/posts/:slugorcontentbasename/" 
@@ -66,24 +65,16 @@ enableInlineShortcodes = true
   privacy = "/privacy/"
 
 [[cascade]]
-  [cascade._target]
-    path = "posts/**"
   comments = true
+  showComments = true
   ShowToc = true
-  TocOpen = false
-
-[[cascade]]
-  [cascade._target]
-    kind = "page"
-    section = "posts"
   [cascade.editPost]
     URL = "https://github.com/fabiograsso/iam-fabiograsso-net/tree/main/content"
     Text = "Suggest Changes"
     appendFilePath = true
-  comments = true
-  ShowToc = true
-  TocOpen = false
-
+  [cascade._target]
+    kind = "page"
+    section = "posts"
 
 [related]
   threshold = 0

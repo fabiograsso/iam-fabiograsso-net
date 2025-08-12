@@ -1,20 +1,11 @@
-<!--
-<div class="paginav" text-align="center">
-<a href="https://ko-fi.com/O5O81JB4FK" target="_blank"><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-</div>
--->
-
-
-
 <div class="paginav" style="display: flex; align-items: center; justify-content: center; text-align: center;">
-  Do you like what you read?
+  Do you like what you read? 
   <a href="https://ko-fi.com/O5O81JB4FK/tip" target="_blank">
-    <img height='36' style='border:0px;height:36px;margin:10px 0px' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+    <img height='36' style='border:0px;height:36px;margin:10px 0px 10px 10px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
   </a>
 </div>
 
-<hr/>
-
+<h2>Comments</h2>
 <script src="https://giscus.app/client.js"
         data-repo="fabiograsso/iam-fabiograsso-net"
         data-repo-id="R_kgDOPXdHOg"
@@ -32,23 +23,12 @@
         crossorigin="anonymous"
         async>
 </script>
-<!--
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('fabiograsso', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Tip Me',
 
-  });
-</script>
--->
+
 <script>
   function updateTheme() {
     const isDarkMode = document.body.classList.contains('dark');
     const giscusTheme = isDarkMode ? 'dark' : 'light';
-    // const kofiBackgroundColor = isDarkMode ? 'rgb(55, 56, 62)' : 'rgb(245, 245, 245)';
-    // const kofiTextColor = isDarkMode ? 'rgb(218, 218, 219)' : 'rgb(30, 30, 30)';
     const iframe = document.querySelector('iframe.giscus-frame');
     console.log ("Darkmode: " + isDarkMode);
     if (!iframe) {
@@ -59,12 +39,6 @@
       { giscus: { setConfig: { theme: giscusTheme } } },
       'https://giscus.app'
     );
-    //kofiWidgetOverlay.draw('fabiograsso', {
-//      'type': 'floating-chat',
-//      'floating-chat.donateButton.text': 'Tip Me',
-//      'floating-chat.donateButton.background-color': kofiBackgroundColor,
-//      'floating-chat.donateButton.text-color': kofiTextColor,
-    //});
   }
   const observer = new MutationObserver(updateTheme);
   observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });

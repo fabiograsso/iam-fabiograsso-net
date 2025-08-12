@@ -28,7 +28,7 @@ server:
 # Run the local development server (with drafts)
 debug: clean
 	@echo "Starting local server..."
-	@$(HUGO) server --disableFastRender --bind 0.0.0.0 --logLevel debug
+	@$(HUGO) server -D --disableFastRender --bind 0.0.0.0 --logLevel debug
 
 # Clean the public directory
 clean:

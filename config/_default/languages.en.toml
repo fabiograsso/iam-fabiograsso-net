@@ -1,14 +1,11 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "I AM Fabio"
-contentDir = 'content'
+#title = "I AM Fabio"
 
 [params]
   displayName = "🇬🇧 English"
   isoCode = "en"
-  rtl = false
-  #logo = "img/apple-touch-icon.png"
   description = "IAM.FabioGrasso.net is a personal blog by Fabio Grasso, a Solutions Engineer at Okta, focusing on Identity & Access Management (IAM)."
   dateFormat = "2 January 2006"
 
@@ -16,9 +13,13 @@ contentDir = 'content'
   name = "Fabio Grasso"
   image = "img/profile-small.jpg"
   headline = """
+  <div id="headline">
+
   - 👋 Ciao! I’m [**Fabio**](/about/), a *Solutions Engineer* specialized in 🔐 *Identity & Access Management (IAM)*. I work between France 🇫🇷 and Italy 🇮🇹 for [**Okta**](https://www.okta.com).
   - 📚 In this space, I share ideas, experiences, and insights about the world of digital identity.
   - 🌍 Although this site is multilingual and some posts are also in [Italian](/it) and [French](/fr), most content is in [English](/en). To see everything, pick [English](/en) as your language.
+  
+  </div>
   """
   bio = "A little bit about you"
    links = [
