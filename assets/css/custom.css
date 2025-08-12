@@ -14,20 +14,83 @@
 .footnote-backref::before, .footnote-backref::after{
     content: none!important;
 }
-    */
-.footnotes ol::before {
-    content: "References:";
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-weight: 600;
-}
+*/
+
+/* Custom styles for the footnotes */
 .footnotes p, .footnotes li {
   margin: 0;
   padding: 0;
   font-size: 12px;
 }
+.footnotes ol::before {
+    content: "References:";
+    margin: 0 0 0 -20px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
 
+
+/* Custom styles for the share section */
+section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl {
+  display: flex !important;
+  align-items: center;
+  gap: 1px;
+  padding-bottom: 16px;
+  border-radius: 15px;
+  background: rgba(var(--color-neutral-100), 1);
+  color: rgba(var(--color-neutral-500), 1);
+}
+html.dark section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl {
+  background: rgba(var(--color-neutral-500), 1);
+  color: rgba(var(--color-neutral-300), 1)
+}
+section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl::before {
+  content: "Share:";
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* Custom styles for the ko-fi Buy me a coffee */
+.ko-fi {
+  padding-top: 10px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+
+  background: rgba(var(--color-neutral-100), 1);
+  color: rgba(var(--color-neutral-500), 1);
+  border-top: 1px solid rgba(var(--color-neutral-300), 1);
+  border-bottom: 1px solid rgba(var(--color-neutral-300), 1);
+}
+ html.dark .ko-fi  {
+  background: rgba(var(--color-neutral-500), 1);
+  color: rgba(var(--color-neutral-300), 1);
+  border-top-color: rgba(var(--color-neutral-500), 1);
+  border-bottom-color: rgba(var(--color-neutral-500), 1);
+}
+
+
+/* Custom styles for the footer */
+#site-footer {
+    padding: 10px;
+    margin: 40px 0px;
+    border-top: 1px solid rgba(var(--color-neutral-300), 1);
+    border-bottom: 1px solid rgba(var(--color-neutral-300), 1);
+    background: rgba(var(--color-neutral-100), 1);
+    border-radius: 15px;
+}
+html.dark #site-footer{
+  border-top-color: rgba(var(--color-neutral-500), 1);
+  border-bottom-color: rgba(var(--color-neutral-500), 1);
+  background: rgba(var(--color-neutral-500), 1);
+}
+
+
+/* Keyboard styles */
 kbd {
   color: #444;
   border: 1px solid #444;
@@ -36,23 +99,7 @@ kbd {
   padding: 0.1rem 0.4rem;
 }
 
-#site-footer, .paginav {
-  padding-top: 10px;
-  margin-top: 40px;
-  border-top: 1px solid rgb(28, 25, 23);
-}
-html.dark #site-footer, html.dark .paginav  {
-  border-top-color: rgb(255, 255, 255); /* Un grigio più scuro e meno invasivo per il dark mode */
-}
-.paginav {
-  padding-top: 10px;
-  margin-top: 40px;
-  border-top: 1px solid rgb(28, 25, 23);
-  border-bottom: 1px solid rgb(28, 25, 23);
-  padding-bottom: 10px;
-  margin-bottom: 40px;
-}
-
+/* Headline styles */
 #headline {
     font-size: 15px;
     text-align: left;
@@ -67,6 +114,7 @@ html.dark #site-footer, html.dark .paginav  {
     margin-top: 1em;
 }
 
+/* No zoom styles
 .no-zoom {
   pointer-events: none;
-}
+} */
