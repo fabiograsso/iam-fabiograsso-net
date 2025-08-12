@@ -7,12 +7,11 @@ baseURL = "https://iam.fabiograsso.net/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
 title = "I AM Fabio"
-
 mainSections = ["posts", "tips", "travels", "howto", "kitchen"]
 
 disableLanguages = [] #to allow translation work requiring shipping to production
 
-summaryLength = 0
+summaryLength = 25
 enableRobotsTXT = true
 buildExpired = false
 buildDrafts = false
@@ -68,10 +67,6 @@ enableInlineShortcodes = true
   comments = true
   showComments = true
   ShowToc = true
-  [cascade.editPost]
-    URL = "https://github.com/fabiograsso/iam-fabiograsso-net/tree/main/content"
-    Text = "Suggest Changes"
-    appendFilePath = true
   [cascade._target]
     kind = "page"
     section = "posts"

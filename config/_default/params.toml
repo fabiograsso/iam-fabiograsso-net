@@ -67,6 +67,8 @@ smartTOCHideUnfocusedChildren = false
   showMoreLinkDest = "/posts"
   layoutBackgroundBlur = true # only used when layout equals background
   # disableHeroImageFilter =
+  showSummary = true
+  #cardView = true
 
 [article]
   showDate = true
@@ -74,11 +76,13 @@ smartTOCHideUnfocusedChildren = false
   #showLikes = true
   showDateUpdated = false
   showAuthor = true
+  showAuthorsBadges = true
+  showAuthorBottom=true
   showHero = true
   heroStyle = "big" # valid options: basic, big, background
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = true
+  showEdit = false
   editURL = "https://github.com/fabiograsso/iam-fabiograsso-net/tree/main/"
   editAppendPath = true
   seriesOpened = false
@@ -87,7 +91,6 @@ smartTOCHideUnfocusedChildren = false
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showAuthorsBadges = true 
   showWordCount = true
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "facebook", "whatsapp", "telegram", "reddit", "email","line"]
@@ -96,15 +99,18 @@ smartTOCHideUnfocusedChildren = false
 [list]
   showHero = true
   # heroStyle = basic # basic, big, background, thumbAndBackground.
+  showSummary = true
 
 [taxonomy]
 #  showHero = true
 #  heroStyle = # basic, big, background, thumbAndBackground
   showTermCount = true
+  showSummary = true
 
 [term]
 #  showHero = true
   showTermCount = true
+  showSummary = true
 
 [sitemap]
   excludedKinds = ["privacy"]

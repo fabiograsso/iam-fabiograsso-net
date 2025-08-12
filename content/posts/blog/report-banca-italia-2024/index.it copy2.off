@@ -3,12 +3,9 @@ title: "Banche Sotto Assedio: +45% di Incidenti. Oltre l'Allarme, la Strategia: 
 date: 2025-08-01
 draft: false
 tags: [Cybersecurity, Sicurezza Informatica, Financial Services, DORA, NIS2, IdentityManagement, IAM, CIAM, ZeroTrust, Okta]
-description: "A brief description."
+summary: "A brief description."
 categories: ["blog"]
-cover:
-    image: "cover.jpeg"
-    relative: true
- 
+
 ---
 
 Il recente report 2024 della Banca d'Italia[^1] non è solo una statistica, è un campanello d'allarme strategico per l'intero settore finanziario italiano (e, per estensione, europeo). I dati sono netti: un **aumento del 45% degli incidenti operativi e di sicurezza segnalati**, per un totale di 188 notifiche.
