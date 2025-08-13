@@ -25,7 +25,7 @@ server:
 
 debug: clean
 	@echo "Starting local server..."
-	@$(HUGO) server -D --disableFastRender --bind 0.0.0.0 --logLevel debug
+	@$(HUGO) server -D --disableFastRender --bind 0.0.0.0 --logLevel debug --printMemoryUsage --printPathWarnings --printUnusedTemplates --printI18nWarnings --watch 
 
 clean:
 	@echo "Cleaning public directory..."

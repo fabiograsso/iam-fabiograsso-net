@@ -9,6 +9,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  x-wtf: Delfino Curioso
 
 /static/*
   Cache-Control: public, max-age=3153600, immutable
