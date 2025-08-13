@@ -12,26 +12,59 @@ ENV ALPHA_QUALITY=100
 ENV PRESET=picture
 ENV VERBOSE=false
 
-RUN apk add --no-cache libwebp-tools
+RUN apk add --no-cache libwebp-tools bash
+
+RUN cat <<'EOF' > /usr/local/bin/convert-images.sh
+#!/bin/bash
+set -euo pipefail
+
+echo "Starting image conversion..."
+echo "Source dir: $SOURCE_DIR"
+echo "Output dir: $OUTPUT_DIR"
+echo "WebP Quality: $WEBP_QUALITY"
+echo "WebP Method: $WEBP_METHOD"
+echo "WebP Multithread: $WEBP_MULTITHREAD"
+echo "WebP Lossless: $WEBP_LOSSLESS"
+echo "Max Width: $MAX_WIDTH"
+echo "Max Height: $MAX_HEIGHT"
+echo "Alpha Quality: $ALPHA_QUALITY"
+echo "Preset: $PRESET"
+echo "Verbose: $VERBOSE"
+
+find "$SOURCE_DIR" -type f \( \
+  -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \
+\) -print0 |
+while IFS= read -r -d '' f; do
+  rel_path="${f#"$SOURCE_DIR/"}"
+  output_path="$OUTPUT_DIR/${rel_path%.*}.webp"
+  output_dir_path=$(dirname "$output_path")
+  mkdir -p "$output_dir_path"
+
+  echo "Processing: $f"
+
+  opts=()
+  if [ "$WEBP_LOSSLESS" = "true" ]; then
+    opts+=("-lossless")
+  else
+    opts+=("-q" "$WEBP_QUALITY")
+  fi
+  [ "$WEBP_MULTITHREAD" = "true" ] && opts+=("-mt")
+  if [ "$MAX_WIDTH" != "0" ] && [ "$MAX_HEIGHT" != "0" ]; then
+    opts+=("-resize" "$MAX_WIDTH" "$MAX_HEIGHT")
+  fi
+  [ "$ALPHA_QUALITY" != "100" ] && opts+=("-alpha_q" "$ALPHA_QUALITY")
+  [ -n "$PRESET" ] && opts+=("-preset" "$PRESET")
+  [ "$VERBOSE" = "true" ] && opts+=("-v")
+  opts+=("-m" "$WEBP_METHOD")
+
+  cwebp "${opts[@]}" "$f" -o "$output_path"
+  echo "Done: $output_path"
+done
+
+EOF
+
+RUN chmod +x /usr/local/bin/convert-images.sh
 
 VOLUME ["${SOURCE_DIR}", "${OUTPUT_DIR}"]
 
-CMD ["sh", "-c", " \
-for f in ${SOURCE_DIR}/*; do \
-  [ ! -f \"$f\" ] && continue; \
-  echo \"Processing: $(basename \"$f\")\"; \
-  \
-  # Build command options \
-  opts=\"-q ${WEBP_QUALITY}\"; \
-  [ \"${WEBP_LOSSLESS}\" = \"true\" ] && opts=\"-lossless\"; \
-  [ \"${WEBP_MULTITHREAD}\" = \"true\" ] && opts=\"$opts -mt\"; \
-  [ \"${MAX_WIDTH}\" != \"0\" ] && opts=\"$opts -resize ${MAX_WIDTH} ${MAX_HEIGHT}\"; \
-  [ \"${ALPHA_QUALITY}\" != \"100\" ] && opts=\"$opts -alpha_q ${ALPHA_QUALITY}\"; \
-  [ \"${PRESET}\" != \"\" ] && opts=\"$opts -preset ${PRESET}\"; \
-  [ \"${VERBOSE}\" = \"true\" ] && opts=\"$opts -v\"; \
-  opts=\"$opts -m ${WEBP_METHOD}\"; \
-  \
-  # Execute conversion \
-  eval cwebp $opts \"\\\"$f\\\"\" -o \"\\\"${OUTPUT_DIR}/$(basename \"${f%.*}\").webp\\\"\"; \
-done"]
-
+CMD ["/usr/local/bin/convert-images.sh"]
