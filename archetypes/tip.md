@@ -8,12 +8,6 @@ categories: ["tips"]
 #author: "Fabio Grasso"
 #author: ["Me", "You"] # multiple authors
 ShowToc: false
-#cover:
-#    image: "cover.png"
-#    relative: true
-#    alt: "<alt text>" 
-#    caption: "<text>" 
-#    hidden: true 
 
 
 ---

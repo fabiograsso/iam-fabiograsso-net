@@ -23,12 +23,6 @@ translationKey: "intro-to-hugo"
 #ShowWordCount: true
 #ShowRssButtonInSectionTermList: true
 #searchHidden: true
-#cover:
-#    image: "cover.png"
-#    relative: true
-#    alt: "<alt text>" 
-#    caption: "<text>" 
-#    hidden: true 
 
 
 ---

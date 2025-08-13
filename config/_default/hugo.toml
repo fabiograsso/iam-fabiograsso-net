@@ -20,6 +20,8 @@ enableEmoji = true
 enableGitInfo = true
 enableInlineShortcodes = true
 
+defaultFeaturedImage = "img/homebg.png"
+
 # googleAnalytics = "G-XXXXXXXXX"
 
 [imaging]

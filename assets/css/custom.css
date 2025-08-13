@@ -114,7 +114,7 @@ kbd {
     margin-top: 1em;
 }
 
-/* No zoom styles
-.no-zoom {
+/* No zoom styles */
+.no-zoom, .ko-fi img {
   pointer-events: none;
-} */
+}

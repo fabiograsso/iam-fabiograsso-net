@@ -95,6 +95,8 @@ smartTOCHideUnfocusedChildren = false
   showSummary = true
   sharingLinks = [ "linkedin", "twitter", "facebook", "whatsapp", "telegram", "reddit", "email","line"]
   showZenMode = true
+  showTaxonomies = true
+#  showRelatedContent=true
   
 [list]
   showHero = true

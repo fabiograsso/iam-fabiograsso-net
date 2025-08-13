@@ -1,0 +1,46 @@
+<!--
+### Caso studio: trasformazione digitale con approccio agnostico
+
+Un esempio concreto di successo è rappresentato da un'azienda manifatturiera italiana con 5.000 dipendenti che ha migrato da una soluzione IAM integrata a Okta. I risultati ottenuti in 18 mesi includono:
+
+- **Riduzione del 40% degli incident di sicurezza** legati agli accessi non autorizzati
+- **Miglioramento del 65% nella velocità di onboarding** dei nuovi dipendenti (da 3 giorni a 1 giorno)
+- **Standardizzazione degli accessi** su 120+ applicazioni SaaS e on-premises precedentemente gestite in modo frammentario
+- **Conformità automatizzata** ai requisiti GDPR con audit trail completi e automazione delle richieste di cancellazione dati
+
+L'azienda ha potuto mantenere la propria infrastruttura multi-cloud esistente (AWS, Azure e GCP) unificando la gestione delle identità senza vincoli di vendor lock-in.
+-->
+<!--
+## Implementazione pratica
+
+L'adozione di una soluzione IAM agnostica richiede una pianificazione attenta. Una timeline tipica per un'organizzazione di medie dimensioni prevede:
+
+**Fase 1 - Discovery e Assessment**
+- Audit delle applicazioni e dei sistemi esistenti
+- Mappatura delle identità e degli accessi correnti
+- Valutazione della maturità IAM attuale utilizzando framework come il [Okta Identity Maturity Model](https://www.okta.com/resources/whitepaper-a-comprehensive-guide-for-your-identity-maturity-journey/)
+
+**Fase 2 - Proof of Concept**
+- Implementazione pilota su un subset di applicazioni critiche
+- Test di integrazione con i sistemi esistenti
+- Validazione dei flussi di autenticazione e autorizzazione
+
+**Fase 3 - Rollout graduale**
+- Migrazione progressiva delle applicazioni in ordine di priorità
+- Training degli utenti e del team IT
+- Implementazione delle policy di sicurezza avanzate
+
+**Fase 4 - Ottimizzazione**
+- Monitoraggio continuo e affinamento delle policy
+- Integrazione di nuove applicazioni
+- Evoluzione verso funzionalità avanzate (ITP, Governance, PAM, ISPM)
+
+### Considerazioni sul change management
+
+Il successo dell'implementazione dipende fortemente dalla gestione del cambiamento:
+
+- **Coinvolgimento degli stakeholder**: Identificare champion in ogni dipartimento per facilitare l'adozione
+- **Comunicazione trasparente**: Spiegare i benefici tangibili per gli utenti finali (SSO, riduzione password, accesso mobile)
+- **Training progressivo**: Fornire supporto dedicato durante le prime settimane di utilizzo
+- **Feedback loop**: Raccogliere e incorporare il feedback degli utenti per miglioramenti continui
+-->
