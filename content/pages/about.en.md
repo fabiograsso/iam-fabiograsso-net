@@ -15,7 +15,7 @@ showDate: false
 aliases: ["/about"]
 ---
 
-{{< figure src="/profile-small.jpg" alt="Fabio" class="ma0 w-25 float-right" >}}
+{{< figure src="/profile-small.webp" alt="Fabio" class="ma0 w-25 float-right" >}}
 
 👋 I'm **Fabio Grasso**, a Solutions Engineer at Okta, specialized in **Identity & Access Management (IAM/CIAM)**. I work between **France** 🇫🇷 and **Italy** 🇮🇹, helping companies on their journey toward secure digital transformation.
 <!-- <span style="font-size:28px;letter-spacing:4px">🧡💻📷🏀🎱🎮🀄🐶🐱☮️</span> -->

@@ -1,0 +1,70 @@
+docker build -f Dockerfile-img2webp -t img2webp .
+
+docker run --rm \
+  -v /path/to/source/images:/input \
+  -v /path/to/output/webp:/output \
+  img2webp
+
+
+# Convert from static/images to static/images-webp
+docker run --rm \
+  -v $(pwd)/static/images:/input \
+  -v $(pwd)/static/images-webp:/output \
+  img2webp
+
+# Or convert to the same folder (will mix original + webp)
+docker run --rm \
+  -v $(pwd)/static/images:/input \
+  -v $(pwd)/static/images:/output \
+  img2webp
+
+
+docker run --rm \
+  -v /path/to/originals:/input \
+  -v /path/to/webp-output:/output \
+  -e WEBP_QUALITY=85 \
+  -e WEBP_METHOD=6 \
+  -e WEBP_MULTITHREAD=true \
+  img2webp
+
+---
+#!/bin/bash
+# create-webp.sh
+
+INPUT_DIR="${1:-static/images}"
+OUTPUT_DIR="${2:-static/images-webp}"
+
+# Create output directory if it doesn't exist
+mkdir -p "$OUTPUT_DIR"
+
+echo "Converting images from $INPUT_DIR to $OUTPUT_DIR..."
+
+docker run --rm \
+  -v "$(pwd)/$INPUT_DIR:/input" \
+  -v "$(pwd)/$OUTPUT_DIR:/output" \
+  -e WEBP_QUALITY=80 \
+  -e WEBP_MULTITHREAD=true \
+  img2webp
+
+echo "WebP conversion completed!"
+echo "Original images: $INPUT_DIR"
+echo "WebP images: $OUTPUT_DIR"
+
+---
+
+
+chmod +x create-webp.sh
+
+# Use defaults (static/images -> static/images-webp)
+./create-webp.sh
+
+# Custom directories
+./create-webp.sh content/posts/images content/posts/images-webp
+
+
+---
+
+docker run --rm \
+  -v $(pwd)/static:/input \
+  -v $(pwd)/static/images-webp:/output \
+  img2webp

@@ -13,7 +13,7 @@ showAuthor: false
 ShowBreadCrumbs: false
 
 ---
-{{ <figure src="/profile-small.jpg" alt="Fabio" class="ma0 w-25 float-right"> }}
+{{ <figure src="/profile-small.webp" alt="Fabio" class="ma0 w-25 float-right"> }}
 
 👋 Sono **Fabio Grasso**, Solutions Engineer per Okta, specializzato in **Identity & Access Management (IAM/CIAM)**. Opero tra la **Francia** 🇫🇷 e l’**Italia** 🇮🇹, dove supporto le aziende nel loro percorso di digitalizzazione sicura.
 <!-- <span style="font-size:28px;letter-spacing:4px">🧡💻📷🏀🎱🎮🀄🐶🐱☮️</span> -->

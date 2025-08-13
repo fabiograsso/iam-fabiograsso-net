@@ -11,7 +11,7 @@ weight = 1
 
 [params.author]
   name = "Fabio Grasso"
-  image = "img/profile-small.jpg"
+  image = "img/profile-small.webp"
   headline = """
   <div id="headline">
 

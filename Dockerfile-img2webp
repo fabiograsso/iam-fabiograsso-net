@@ -1,0 +1,37 @@
+FROM alpine:latest
+
+ENV SOURCE_DIR=/input
+ENV OUTPUT_DIR=/output
+ENV WEBP_QUALITY=80
+ENV WEBP_METHOD=4
+ENV WEBP_MULTITHREAD=true
+ENV WEBP_LOSSLESS=false
+ENV MAX_WIDTH=0
+ENV MAX_HEIGHT=0
+ENV ALPHA_QUALITY=100
+ENV PRESET=picture
+ENV VERBOSE=false
+
+RUN apk add --no-cache libwebp-tools
+
+VOLUME ["${SOURCE_DIR}", "${OUTPUT_DIR}"]
+
+CMD ["sh", "-c", " \
+for f in ${SOURCE_DIR}/*; do \
+  [ ! -f \"$f\" ] && continue; \
+  echo \"Processing: $(basename \"$f\")\"; \
+  \
+  # Build command options \
+  opts=\"-q ${WEBP_QUALITY}\"; \
+  [ \"${WEBP_LOSSLESS}\" = \"true\" ] && opts=\"-lossless\"; \
+  [ \"${WEBP_MULTITHREAD}\" = \"true\" ] && opts=\"$opts -mt\"; \
+  [ \"${MAX_WIDTH}\" != \"0\" ] && opts=\"$opts -resize ${MAX_WIDTH} ${MAX_HEIGHT}\"; \
+  [ \"${ALPHA_QUALITY}\" != \"100\" ] && opts=\"$opts -alpha_q ${ALPHA_QUALITY}\"; \
+  [ \"${PRESET}\" != \"\" ] && opts=\"$opts -preset ${PRESET}\"; \
+  [ \"${VERBOSE}\" = \"true\" ] && opts=\"$opts -v\"; \
+  opts=\"$opts -m ${WEBP_METHOD}\"; \
+  \
+  # Execute conversion \
+  eval cwebp $opts \"\\\"$f\\\"\" -o \"\\\"${OUTPUT_DIR}/$(basename \"${f%.*}\").webp\\\"\"; \
+done"]
+

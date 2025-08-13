@@ -20,12 +20,15 @@ enableEmoji = true
 enableGitInfo = true
 enableInlineShortcodes = true
 
-defaultFeaturedImage = "img/homebg.png"
+defaultFeaturedImage = "img/homebg.webp"
 
 # googleAnalytics = "G-XXXXXXXXX"
 
 [imaging]
-  anchor = 'Center'
+  anchor = 'Smart'
+  quality = 80
+  # hint = photo
+  resampleFilter = "Lanczos"
 
 [pagination]
   pagerSize = 20

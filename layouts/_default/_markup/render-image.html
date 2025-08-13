@@ -10,9 +10,9 @@
     fetchpriority="low"
     alt="{{ .alt }}"
     srcset="
-      {{ (.resource.Resize "330x webp q80").RelPermalink }}  330w,
-      {{ (.resource.Resize "660x webp q80").RelPermalink }}  660w,
-      {{ (.resource.Resize "1280x webp q80").RelPermalink }} 1280w
+      {{ (.resource.Resize "330x webp").RelPermalink }}  330w,
+      {{ (.resource.Resize "660x webp").RelPermalink }}  660w,
+      {{ (.resource.Resize "1280x webp").RelPermalink }} 1280w
     "
     data-zoom-src="{{ .resource.RelPermalink }}"
     src="{{ .resource.RelPermalink }}">
