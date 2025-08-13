@@ -3,15 +3,13 @@ services:
   hugo:
     image: docker.io/hugomods/hugo:std-exts
     working_dir: /src
-    command: server --bind 0.0.0.0 --baseURL http://localhost --disableFastRender --logLevel debug -p ${HUGO_PORT:-1313}
     volumes:
       - ./:/src
     ports:
       - "${HUGO_PORT:-1313}:${HUGO_PORT:-1313}"
+    command: server -D --bind 0.0.0.0 --baseURL http://localhost --disableFastRender --logLevel debug -p ${HUGO_PORT:-1313}
     networks:
       - hugonet
-    #platform: linux/amd64 # Workaround for compatibility with MacOS
-
   decap-proxy:
     image: node:18-alpine
     working_dir: /app
@@ -21,9 +19,9 @@ services:
       - PORT=${DECAP_PORT:-1314}
       - GIT_REPO_DIRECTORY=/app
       - NODE_ENV=development
-    command: sh -c "npx decap-server"
     ports:
       - "${DECAP_PORT:-1314}:${DECAP_PORT:-1314}"
+    command: sh -c "npx decap-server"
     networks:
       - hugonet
 

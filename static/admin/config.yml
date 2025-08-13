@@ -10,7 +10,6 @@ media_folder: static/img
 public_folder: /img
 
 site_url: http://localhost:1313
-#site_url: https://iam-fabiograsso-net.netlify.app/
 
 collections:
   - name: "pages"
