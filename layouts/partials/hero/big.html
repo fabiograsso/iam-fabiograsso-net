@@ -87,8 +87,8 @@
           alt="{{ $alt }}"
           width="{{ $webp1200.Width }}"
           height="{{ $webp1200.Height }}"
-          loading="lazy"
           decoding="async"
+          fetchpriority="high"
           srcset="
             {{ $webp400.RelPermalink }} 400w,
             {{ $webp600.RelPermalink }} 600w,
