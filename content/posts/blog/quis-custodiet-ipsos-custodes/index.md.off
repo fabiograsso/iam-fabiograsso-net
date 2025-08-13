@@ -44,3 +44,18 @@ Il successo dell'implementazione dipende fortemente dalla gestione del cambiamen
 - **Training progressivo**: Fornire supporto dedicato durante le prime settimane di utilizzo
 - **Feedback loop**: Raccogliere e incorporare il feedback degli utenti per miglioramenti continui
 -->
+
+
+
+----
+
+
+
+
+## Il rischio nascosto del fornitore integrato
+
+Scegliere una soluzione IAM fornita dallo stesso vendor che gestisce la tua infrastruttura e i tuoi dati nel cloud può sembrare comodo ed economicamente conveniente, ma presenta rischi significativi. Vediamoli nel dettaglio.
+
+![Vendor Lock-in](vendor-lock.jpg)
+
+1. **Single Point of Failure (SPoF)**: Affidarsi a un unico fornitore per l'infrastruttura IT e per la gestione dell'identità espone a una pericolosa concentrazione di rischio di sicurezza. Se un attaccante riesce a compromettere il provider, l'intero stack aziendale è a rischio: le identità degli utenti e degli asset, i relativi accessi, le applicazioni e i dati sensibili. La violazione del sistema IAM (Identity and Access Management) integrato, in particolare, concede all'attaccante le "*chiavi del regno*", permettendogli di muoversi lateralmente e di accedere a tutte le risorse e informazioni critiche all'interno dell'ecosistema aziendale, con conseguenze potenzialmente devastanti in termini di furto di dati, interruzione delle operazioni e compromissione della reputazione.

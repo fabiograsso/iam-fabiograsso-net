@@ -15,9 +15,9 @@ weight = 2
   headline = """
   <div id="headline">
 
-  - 👋 Ciao! I’m [**Fabio**](/about/), a *Solutions Engineer* specialized in 🔐 *Identity & Access Management (IAM)*. I work between France 🇫🇷 and Italy 🇮🇹 for [**Okta**](https://www.okta.com).
-  - 📚 In this space, I share ideas, experiences, and insights about the world of digital identity.
-  - 🌍 Although this site is multilingual and some posts are also in [Italian](/it) and [French](/fr), most content is in [English](/en). To see everything, pick [English](/en) as your language.
+  - 👋 Ciao! Sono **[Fabio](/it/about/)**, Solutions Engineer specializzato in 🔐 Identity & Access Management (IAM). Lavoro tra Francia 🇫🇷 e Italia 🇮🇹 per **[Okta](https://www.okta.com)**.
+  - 📚 In questo spazio, condivido idee, esperienze e approfondimenti sul mondo dell'identità digitale.
+  - 🌍 Anche se questo sito è multilingue e alcuni post sono disponibili anche in [Italiano](/it) e [Frencese](/fr), la maggior parte dei contenuti è in [Inglese](/en). Per visualizzare tutto, scegli [Inglese](/en) come lingua.
   
   </div>
   """
