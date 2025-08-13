@@ -6,7 +6,7 @@ theme = ["blowfish", "hugo-simplecite"]
 baseURL = "https://iam.fabiograsso.net/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
-title = "I AM Fabio"
+title = "I_AM Fabio"
 mainSections = ["posts", "tips", "travels", "howto", "kitchen"]
 
 disableLanguages = [] #to allow translation work requiring shipping to production

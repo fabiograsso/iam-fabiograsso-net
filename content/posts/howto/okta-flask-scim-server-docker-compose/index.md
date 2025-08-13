@@ -8,8 +8,7 @@ tags:
   - tag-2
   - tag-3
 categories:
-  - blog
-translationKey: intro-to-hugo
+  - howto
 toc: false
 ShowBreadCrumbs: true
 ShowReadingTime: true

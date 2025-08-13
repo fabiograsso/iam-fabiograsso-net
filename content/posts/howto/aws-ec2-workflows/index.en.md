@@ -10,8 +10,7 @@ tags:
 - Lambda
 - Amazon
 categories:
-- blog
-translationKey: aws-ec2-workflows
+- howto
 hideSummary: false
 ---
 

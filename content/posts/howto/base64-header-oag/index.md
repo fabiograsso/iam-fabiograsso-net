@@ -8,8 +8,7 @@ tags:
   - OAG
   - Okta Access Gateway
 categories:
-  - blog
-translationKey: base64-header-oag
+  - howto
 hideSummary: true
 author: Fabio Grasso
 cover:

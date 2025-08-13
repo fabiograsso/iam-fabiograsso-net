@@ -153,4 +153,3 @@ Il settore finanziario ha sfide uniche che richiedono competenze specializzate:
 [^7]: [Financial-Grade API Security Profile](https://curity.io/resources/learn/what-is-financial-grade/), Curity, 2023
 
 [^8]: [EU Systemic Cyber Incident Coordination Framework](https://www.eu-scicf.com/), ESRB Recommendation, implementato con DORA 2025
-

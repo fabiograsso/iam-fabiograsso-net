@@ -1,0 +1,108 @@
+{{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+
+{{- $images := .Resources.ByType "image" -}}
+{{- $featured := $images.GetMatch "*background*" -}}
+{{- if not $featured }}{{ $featured = $images.GetMatch "*feature*" }}{{ end -}}
+{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+
+{{ if .Params.featureimage }}
+  {{- $url := .Params.featureimage -}}
+  {{- if not $featured }}{{ $featured = resources.GetRemote $url }}{{ end -}}
+{{ end }}
+
+{{- if not $featured }}
+  {{ with .Site.Params.defaultBackgroundImage }}
+    {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+      {{ $featured = resources.GetRemote . }}
+    {{ else }}
+      {{ $featured = resources.Get . }}
+    {{ end }}
+  {{ end }}
+{{ end -}}
+
+{{ $caption := "" }}
+{{ if .Params.featureimagecaption }}
+  {{- $caption = .Params.featureimagecaption -}}
+{{ end }}
+
+{{- $alt := .Page.Title -}}
+{{- with .Page.Params.alt }}{{ $alt = . }}{{ end -}}
+
+{{- with $featured -}}
+  {{ if strings.HasSuffix $featured ".svg" }}
+    {{ with . }}
+      <figure>
+        <img class="w-full rounded-lg single_hero_round nozoom" alt="{{ $alt }}" src="{{ .RelPermalink }}">
+        {{ if $caption }}
+          <figcaption class="text-sm text-neutral-700 dark:text-neutral-400 hover:underline text-center">
+            {{ $caption | markdownify }}
+          </figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+  {{ else if $disableImageOptimization }}
+    {{ with . }}
+      <figure>
+        <img
+          class="w-full rounded-lg single_hero_round nozoom"
+          alt="{{ $alt }}"
+          width="{{ .Width }}"
+          height="{{ .Height }}"
+          src="{{ .RelPermalink }}">
+        {{ if $caption }}
+          <figcaption class="text-sm text-neutral-700 dark:text-neutral-400 hover:underline text-center">
+            {{ $caption | markdownify }}
+          </figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+  {{ else }}
+    {{- $width := $.Site.Params.backgroundImageWidth | default "1200" -}}
+    {{- $mainImage := .Resize (print $width "x") -}}
+    {{- $isSVG := eq .MediaType.SubType "svg" -}}
+    
+    {{- if $isSVG -}}
+      <figure>
+        <img
+          class="w-full rounded-lg single_hero_round nozoom"
+          alt="{{ $alt }}"
+          width="{{ $mainImage.Width }}"
+          height="{{ $mainImage.Height }}"
+          src="{{ $mainImage.RelPermalink }}">
+        {{ if $caption }}
+          <figcaption class="text-sm text-neutral-700 dark:text-neutral-400 hover:underline text-center">
+            {{ $caption | markdownify }}
+          </figcaption>
+        {{ end }}
+      </figure>
+    {{- else -}}
+      {{- $webp1200 := .Resize (print $width "x webp") -}}
+      {{- $webp800 := .Resize "800x webp" -}}
+      {{- $webp600 := .Resize "600x webp" -}}
+      {{- $webp400 := .Resize "400x webp" -}}
+      
+      <figure>
+        <img
+          class="w-full rounded-lg single_hero_round nozoom"
+          alt="{{ $alt }}"
+          width="{{ $webp1200.Width }}"
+          height="{{ $webp1200.Height }}"
+          loading="lazy"
+          decoding="async"
+          srcset="
+            {{ $webp400.RelPermalink }} 400w,
+            {{ $webp600.RelPermalink }} 600w,
+            {{ $webp800.RelPermalink }} 800w,
+            {{ $webp1200.RelPermalink }} {{ $width }}w
+          "
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, {{ $width }}px"
+          src="{{ $webp1200.RelPermalink }}">
+        {{ if $caption }}
+          <figcaption class="text-sm text-neutral-700 dark:text-neutral-400 hover:underline text-center">
+            {{ $caption | markdownify }}
+          </figcaption>
+        {{ end }}
+      </figure>
+    {{- end -}}
+  {{ end }}
+{{- end -}}

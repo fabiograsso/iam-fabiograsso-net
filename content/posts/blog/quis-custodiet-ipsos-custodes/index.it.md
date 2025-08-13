@@ -2,7 +2,7 @@
 title: "Quis Custodiet Ipsos Custodes: perché un IAM Indipendente è essenziale per la sicurezza"
 date: 2025-08-13
 tags: ["IAM", "Zero Trust", "Identity Fabric", "Okta", "Cybersecurity", "Vendor Lock-in", "Identity Governance", "MFA", "SAML", "OIDC", "Digital Identity", "Enterprise Security", "IPSIE", "OpenID Foundation"]
-summary: Chi controlla i controllori? Un'analisi critica sui rischi del vendor lock-in nell'IAM e i vantaggi di un approccio agnostico basato su Identity Fabric e standard aperti.
+summary: "Chi controlla i controllori? Un'analisi critica sui rischi del vendor lock-in nell'IAM e i vantaggi di un approccio agnostico basato su Identity Fabric e standard aperti."
 categories: ["blog"]
 showTaxonomies: true
 ---
@@ -223,16 +223,15 @@ La sicurezza autentica deriva dalla separazione dei poteri: **chi è preposto al
 
 ---
 
+<!--
 ## ✋ E tu?
 
 📣 Qual è la tua esperienza con le soluzioni IAM? Hai mai affrontato il dilemma tra una soluzione integrata e una indipendente?
 
 💬 Condividi la tua opinione nei commenti e, se sei interessato a capire come un **Identity Fabric** può proteggere la tua azienda, non esitare a [contattarmi](/contacts) per saperne di più.
-
----
+-->
 
 ## ✋ La tua esperienza conta
-
 
 📊 **Valuta il tuo stato attuale**: Prima di intraprendere qualsiasi trasformazione IAM, è essenziale fare il punto della situazione. Okta offre un Secure Identity Discovery assessment gratuito che analizza i tuoi attuali rischi di sicurezza delle identità attraverso 12 domande chiave, fornendo raccomandazioni mirate da parte degli esperti Okta. [Contattami](/contacts) per saperne di più.
 

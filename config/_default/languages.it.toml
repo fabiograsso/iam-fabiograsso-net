@@ -1,12 +1,12 @@
 languageCode = "it"
 languageName = "Italian"
 weight = 2
-#title = "I AM Fabio"
+#title = ""
 
 [params]
   displayName = "🇮🇹 Italiano"
   isoCode = "it"
-  description = "IAM.FabioGrasso.net is a personal blog by Fabio Grasso, a Solutions Engineer at Okta, focusing on Identity & Access Management (IAM)."
+  description = "IAM.FabioGrasso.net è un blog personale di Fabio Grasso, un Solutions Engineer di Okta. Il blog si concentra su Identity & Access Management (IAM)."
   dateFormat = "2 January 2006"
 
 [params.author]
@@ -21,8 +21,8 @@ weight = 2
   
   </div>
   """
-  bio = "A little bit about you"
-   links = [
+  bio = "Solutions Engineer specializzato in Identity & Access Management (IAM) e cybersecurity."
+  links = [
     # { link = "https://iam.fabiograsso.net" },
     { linkedin = "https://www.linkedin.com/in/fabiograsso82/"},
     { github = "https://github.com/fabiograsso/" },

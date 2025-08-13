@@ -6,6 +6,8 @@ tags:
   - Okta
 description: 
 ShowToc: false
+categories:
+  - tips
 ---
 I had a customer with very specific requirements for MFA:
 

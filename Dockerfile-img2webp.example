@@ -63,8 +63,30 @@ chmod +x create-webp.sh
 
 
 ---
+#!/bin/bash
 
+# Check se l'immagine esiste, altrimenti buildala
+if ! docker images img2webp | grep -q img2webp; then
+    echo "Building img2webp image..."
+    docker build -f Dockerfile-img2webp -t img2webp .
+fi
+
+# Crea cartella output
+mkdir -p static/images-webp
+
+# Esegui conversione
+echo "Converting images..."
 docker run --rm \
   -v $(pwd)/static:/input \
   -v $(pwd)/static/images-webp:/output \
+  img2webp
+
+echo "Conversion completed! Check static/images-webp/"
+
+---
+docker build -f Dockerfile-img2webp -t img2webp .
+
+docker run --rm \
+  -v $(pwd)/static:/input \
+  -v $(pwd)/static:/output \
   img2webp

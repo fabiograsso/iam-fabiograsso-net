@@ -7,8 +7,7 @@ tags:
   - Okta
   - GLPI
 categories:
-  - blog
-translationKey: glpi-okta
+  - howto
 hideSummary: true
 author: Fabio Grasso
 #cover:

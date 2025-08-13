@@ -1,0 +1,5 @@
+{{- range .Resources.ByType "image" }}
+  {{- $webp := .Resize "1280x webp" }}
+  {{- $webp660 := .Resize "660x webp" }}
+  {{- $webp330 := .Resize "330x webp" }}
+{{- end }}
