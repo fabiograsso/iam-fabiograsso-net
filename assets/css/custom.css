@@ -120,3 +120,7 @@ kbd {
 .no-zoom, .ko-fi img {
   pointer-events: none;
 }
+
+#site-footer .text-xs.text-neutral-500.dark\:text-neutral-400 {
+  align-self: flex-end; margin-top: auto;
+}

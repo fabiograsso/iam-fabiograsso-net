@@ -11,29 +11,63 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
+  name = "Posts"
   pageRef = "posts"
   weight = 10
+  pre = "newspaper"
 
 [[main]]
   name = "Tags"
   pageRef = "tags"
   weight = 10
+  pre = "tag"
 
 [[main]]
   name = "Categories"
   pageRef = "categories"
-  weight = 50
+  weight = 30
+  pre = "list"
+[[main]]
+  name = "Blog"
+  parent = "Categories"
+  pageRef = "categories/blog/"
+  weight = 10
+  pre = "pencil"
+[[main]]
+  name = "Howto"
+  parent = "Categories"
+  pageRef = "categories/howto/"
+  weight = 20
+  pre = "screwdriver"
+[[main]]
+  name = "Tips"
+  parent = "Categories"
+  pageRef = "categories/tips/"
+  weight = 30
+  pre = "lightbulb"
+[[main]]
+  name = "Travels" #
+  parent = "Categories"
+  pageRef = "categories/travels/"
+  weight = 100
+  pre = "plane"
+[[main]]
+  name = "Kitchen"
+  parent = "Categories"
+  pageRef = "categories/kitchen/"
+  weight = 101
+  pre = "utensils"
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 60
-
+  weight = 50
+  pre = "user"
 
 # -- Footer Menu --
 
-#[[footer]]
-#  name = "Tags2"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+  name = "Contacts"
+  pageRef = "contacts"
+  weight = 10
+  pre = "address-card"

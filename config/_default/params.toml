@@ -5,7 +5,8 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://nunocoracao.github.io/blowfish/docs/configuration/#theme-parameters
 
-colorScheme = "Fire"
+colorScheme = "andslate"
+#blowfish (default), avocado, fire, ocean, forest, princess, neon, bloody, terminal, marvel, noir, autumn, congo, andslate.
 defaultAppearance = "light"
 autoSwitchAppearance = true
 
@@ -17,19 +18,15 @@ enableCodeCopy = true
 copyright = """
   <span style="display: inline-block;">
     &copy; 2025 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/about">Fabio Grasso</a>
-  </span> - 
-  <span style="display: inline-block;">
+    - 
     License: <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
-  </span>
--
-  <span style="display: inline-block;">
+    -
     <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/posts/index.xml">RSS</a>
-  </span> - 
-  <span style="display: inline-block;">
+    - 
     <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy">Privacy&Cookie Policy</a>
   </span>
   <br/>
-  <span style="line-height: 1.3em; margin-top: 1em;">
+  <span style="display: inline-block;">
     ✍️ Crafted with the help of 🤖 AI. <br/>
     💡 All content is fact-checked, edited, and reflects the author’s expertise and opinions.
   </span>
@@ -52,7 +49,7 @@ smartTOCHideUnfocusedChildren = false
   layout = "fixed" # valid options: basic, fixed, fixed-fill, and fixed-fill-blur.
 
 [footer]
-  showMenu = false
+  showMenu = true
   showCopyright = true
   showThemeAttribution = true
   showAppearanceSwitcher = true

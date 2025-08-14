@@ -11,19 +11,18 @@ draft: false
 hiddenFromHomePage: true
 showAuthor: false
 ShowBreadCrumbs: false
-
+showDate: false
 ---
 
-{{ <figure src="/profile-small.webp" alt="Fabio" class="ma0 w-25 float-right"> }}
+{{< figure src="/profile-small.webp" alt="Fabio" class="ma0 w-25 float-right" >}}
 
 👋 Je suis **Fabio Grasso**, Solutions Engineer chez Okta, spécialisé en **Identity & Access Management (IAM/CIAM)**. Je travaille entre la **France** 🇫🇷 et l’**Italie** 🇮🇹, où j’accompagne les entreprises dans leur parcours de digitalisation sécurisée.
-<!-- <span style="font-size:28px;letter-spacing:4px">🧡💻📷🏀🎱🎮🀄🐶🐱☮️</span> -->
 
 ## Ce que je fais
 
 Avec passion et expertise, j’aide les organisations à **renforcer la sécurité de l’identité**, en mettant l’accent sur des approches **Zero Trust agiles, évolutives et efficaces**.
 
-## Je crois que :
+## Je crois que…
 
 * 🔐 L’identité est le nouveau périmètre de sécurité, au cœur de la stratégie Zero Trust ;
 * 🌐 Les solutions IAM doivent être indépendantes et basées sur des standards ouverts, pour éviter le verrouillage avec un seul fournisseur ;

@@ -60,6 +60,8 @@ In aggiunga, **[Okta Desktop Access (ODA)](https://www.okta.com/desktop-access/)
 
 ![Okta + Zscaler + Crowdstrike](okta-crowdstrike-zscaler.png "[*Better Together*: **Okta** si integra perfettamente con strumenti come **Zscaler** e **Crowdstrike** per condividere segnali e aumentare la sicurezza](https://www.okta.com/partners/crowdstrike-and-zscaler/)")
 
+Questo non significa che ogni organizzazione debba implementare immediatamente tutti i pilastri - l'approccio graduale è spesso più realistico.
+
 ### ABAC, ReBAC, DLP
 
 **Data**: Il pilastro finale riconosce che proteggere il perimetro non basta: bisogna proteggere i *dati* stessi. In questo contesto, l'IAM evolve da semplice "guardiano della porta" a **controllore intelligente dei contenuti**.
@@ -81,7 +83,7 @@ Per superare la frammentazione di questi ecosistemi, il concetto di **Identity F
 
 ![Identity Fabric Model for Zero Trust Maturity](model-identity-fabric.png "Identity Fabric Model, evoluzione dello Zero Trust Maturity Model")
 
-**Okta è progettata per fungere da orchestratore centrale in questo Identity Fabric.** Grazie alle sue ampie capacità di integrazione, Okta connette e gestisce tutte le identità, applicazioni e infrastrutture (IaaS, on-prem, multi-cloud), indipendentemente dal fornitore. Questo approccio agnostico non solo garantisce una visibilità completa e un controllo centralizzato, ma permette anche di applicare politiche di sicurezza coerenti a tutte le entità digitali, umane e non umane. In pratica, consente di orchestrare identità e accessi in modo agile, scalabile e sicuro, adattandosi a una realtà cloud-first e API-driven, portando i principi Zero Trust a un livello di implementazione più ampio e coeso.
+**Okta è progettata per fungere da orchestratore centrale in questo Identity Fabric.** Grazie alle sue ampie capacità di integrazione, Okta connette e gestisce tutte le identità, applicazioni e infrastrutture (IaaS, on-prem, multi-cloud), indipendentemente dal fornitore. Questo approccio *vendor-agnostic* non solo garantisce una visibilità completa e un controllo centralizzato, ma permette anche di applicare politiche di sicurezza coerenti a tutte le entità digitali, umane e non umane. In pratica, consente di orchestrare identità e accessi in modo agile, scalabile e sicuro, adattandosi a una realtà cloud-first e API-driven, portando i principi Zero Trust a un livello di implementazione più ampio e coeso.
 
 ![Okta Identity Fabric](okta-identity-fabric.png)
 
@@ -110,15 +112,17 @@ La profonda integrazione con l'ecosistema proprietario di un singolo fornitore p
 Inoltre, quando un fornitore controlla sia i servizi e l'infrastruttura che il meccanismo di sicurezza, emerge un **conflitto di interessi intrinseco**.
 Le sue priorità potrebbero non essere la sicurezza o l'interoperabilità universale, ma l'integrazione profonda con il proprio ecosistema. Questo può portare a compromessi, a scorciatoie nella protezione e, in ultima analisi, a una **mancanza di trasparenza e imparzialità**.
 
+Spesso i clienti scoprono limitazioni delle soluzioni integrate solo quando è troppo tardi e diventa poi molto costoso cambiare.
+
 ---
 
-## I vantaggi dell'agnosticismo IAM
+## I vantaggi di un IAM indipendente
 
-Una soluzione **IAM agnostica**, come **Okta**, è progettata per essere neutrale, interoperabile e modulare. Scegliere una piattaforma indipendente offre i seguenti vantaggi:
+Una soluzione **IAM indipendete**, come **Okta**, è progettata per essere neutrale, interoperabile e modulare. Scegliere una piattaforma indipendente offre i seguenti vantaggi:
 
-- **Flessibilità e Agilità**: Con un ampio catalogo di integrazioni, una soluzione agnostica permette alle aziende di adottare una strategia "best-of-breed", scegliendo i migliori strumenti per ogni funzione aziendale e unificando la gestione delle identità in un'unica piattaforma sicura.
+- **Flessibilità e Agilità**: Con un ampio catalogo di integrazioni, una soluzione *vendor-agnostic* permette alle aziende di adottare una strategia "*best-of-breed*", scegliendo i migliori strumenti per ogni funzione aziendale e unificando la gestione delle identità in un'unica piattaforma sicura.
   Ad esempio è possibile scegliere soluzioni di fornitori diversi per: Infrastruttura (IaaS), Collaboration (e-mail, file, instant messaging), EDR, Antispam, ecc.
-- **Neutralità e Standard Aperti**: Soluzioni agnostiche si basano su standard aperti (OAuth 2.0, OIDC, SAML, SCIM), evitando logiche proprietarie. Questa neutralità favorisce la portabilità, la compliance e l'interoperabilità tra ecosistemi diversi.
+- **Neutralità e Standard Aperti**: Soluzioni come Okta si basano su standard aperti (OAuth 2.0, OIDC, SAML, SCIM), evitando logiche proprietarie. Questa neutralità favorisce la portabilità, la compliance e l'interoperabilità tra ecosistemi diversi.
   Questo impegno si manifesta nell'iniziativa **[IPSIE](#ipsie-limportanza-degli-standard-aperti)**, di cui abbiamo parlato poco fa.
 - **Nessuna dipendenza da logiche proprietarie**: Questo approccio elimina completamente qualsiasi dipendenza da logiche proprietarie, garantendo che il sistema sia flessibile, interoperabile e a prova di futuro. L'indipendenza da soluzioni vincolanti permette alle organizzazioni di scegliere le tecnologie più adatte alle proprie esigenze senza essere limitate dalle decisioni di un singolo fornitore. Ciò favorisce l'innovazione e la capacità di adattamento in un panorama tecnologico in continua evoluzione.
 - **Resilienza e Governance Rafforzata**: Un IAM agnostico non si limita al login. Offre strumenti di Identity Governance (IGA) per gestire il ciclo di vita delle identità, il Privileged Access Management (PAM) per proteggere gli account sensibili e l'Identity Security Posture Management (ISPM) per un monitoraggio continuo.
@@ -127,7 +131,7 @@ Okta si impegna in un processo continuo di miglioramento della sicurezza attrave
 
 ### ROI Tangibile e Benefici Misurabili
 
-I vantaggi di un approccio IAM agnostico non sono solo teorici. Secondo uno studio recente di **Forrester Consulting**[^1], le organizzazioni che implementano **[Okta Identity Governance](https://www.okta.com/identity-governance/)** ottengono un **ROI del 211%** in tre anni. I benefici includono:
+I vantaggi di un approccio IAM basato su *Identity Fabric* non sono solo teorici. Secondo uno studio recente di **Forrester Consulting**[^1], le organizzazioni che implementano **[Okta Identity Governance](https://www.okta.com/identity-governance/)** ottengono un **ROI del 211%** in tre anni. I benefici includono:
 
 - **Riduzione dei costi operativi**: Automazione delle attività di provisioning e deprovisioning con una riduzione del 75% del tempo necessario per gestire gli accessi utente
 - **Miglioramento della produttività**: Gli utenti recuperano mediamente 30 minuti al giorno grazie all'SSO e alla riduzione degli attriti di accesso
@@ -155,9 +159,9 @@ La maggior parte delle organizzazioni si trova tra lo Stage 1 e 2, con significa
 
 ## Una valutazione equilibrata
 
-Sebbene i vantaggi di un IAM agnostico siano significativi, è importante riconoscere alcune sfide che le organizzazioni potrebbero incontrare:
+Sebbene i vantaggi di un **Identity Fabric** siano significativi, è importante riconoscere alcune sfide che le organizzazioni potrebbero incontrare:
 
-- **Complessità iniziale di setup**: L'implementazione di una soluzione agnostica richiede una maggiore pianificazione iniziale rispetto all'attivazione di una funzionalità già integrata. Tuttavia, questa complessità iniziale si traduce in maggiore flessibilità e controllo a lungo termine.
+- **Complessità iniziale di setup**: L'implementazione di una soluzione indipendente richiede una maggiore pianificazione iniziale rispetto all'attivazione di una funzionalità già integrata. Tuttavia, questa complessità iniziale si traduce in maggiore flessibilità e controllo a lungo termine.
 
 - **Investimento in competenze**: Il team IT deve acquisire familiarità con protocolli di integrazione (SAML, OIDC, SCIM) e best practice IAM. Okta mitiga questa sfida attraverso più di 8000 integrazioni out of the box nel catalogo [OIN - Okta Integration Network](https://www.okta.com/integrations/), [documentazione estensiva](https://help.okta.com/en-us/content/index.htm), [training gratuiti](https://learning.okta.com/) e supporto dedicato durante l'onboarding.
 
@@ -183,21 +187,15 @@ Nel panorama digitale odierno, l'identità è il nuovo perimetro di sicurezza. L
 
 ![](mfa.png)
 
-Adottare una soluzione **IAM agnostica**, che si configuri come un vero e proprio **Identity Fabric**, significa implementare un'architettura che assicura una gestione delle identità unificata e sicura. Questo approccio riduce i rischi, incrementa la flessibilità e supporta pienamente una strategia Zero Trust.
+Adottare una soluzione **IAM indipendente**, che si configuri come un vero e proprio **Identity Fabric**, significa implementare un'architettura che assicura una gestione delle identità unificata e sicura. Questo approccio riduce i rischi, incrementa la flessibilità e supporta pienamente una strategia Zero Trust.
 
 Come abbiamo citato all'inizio: *"Chi sorveglia i sorveglianti?"*. **L'IAM deve operare come un arbitro imparziale, non come un giocatore in campo.**
 
 La sicurezza autentica deriva dalla separazione dei poteri: **chi è preposto alla protezione non può essere colui che controlla ogni aspetto dell'infrastruttura e dei dati.** Un'**architettura IAM indipendente** non solo è più sicura, ma è anche intrinsecamente più **resiliente, scalabile e libera**.
 
+Come **Solutions Engineer Okta**, vedo quotidianamente i benefici di questo approccio. Ecco perché credo che **Okta** rappresenti la migliore implementazione di questa filosofia.
+
 ---
-
-<!--
-## ✋ E tu?
-
-📣 Qual è la tua esperienza con le soluzioni IAM? Hai mai affrontato il dilemma tra una soluzione integrata e una indipendente?
-
-💬 Condividi la tua opinione nei commenti e, se sei interessato a capire come un **Identity Fabric** può proteggere la tua azienda, non esitare a [contattarmi](/contacts) per saperne di più.
--->
 
 ## ✋ La tua esperienza conta
 
@@ -207,7 +205,7 @@ La sicurezza autentica deriva dalla separazione dei poteri: **chi è preposto al
 
 📣 **Condividi la tua esperienza nei commenti**: Qual è il tuo approccio alle soluzioni IAM? Hai mai affrontato il dilemma tra soluzione integrata e indipendente?
 
-🤝 **Scopri l'Identity Fabric**: Se sei interessato a capire come un approccio agnostico può proteggere la tua azienda, [contattami](/contacts) per una consulenza personalizzata.
+🤝 **Scopri l'Identity Fabric**: Se sei interessato a capire come può proteggere la tua azienda, [contattami](/contacts) per una consulenza personalizzata.
 
 [^1]: [The Total Economic Impact™ Of Okta Identity Governance ](https://www.okta.com/blog/2025/07/new-forrester-study-reveals-okta-identity-governance-can-result-in-211-roi/), Forrester, 2025
 [^2]: [The Interoperability Profiling for Secure Identity in the Enterprise (IPSIE) Work Group](https://openid.net/wg/ipsie/), OpenID Foundation, 2024

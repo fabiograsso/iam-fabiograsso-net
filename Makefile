@@ -61,7 +61,7 @@ docker-stop:
 	@echo "--> Stopping containers..."
 	@docker compose down
 
-docker-restart: stop start
+docker-restart: docker-stop docker-start
 
 docker-logs:
 	@echo "--> Tailing and following logs..."
