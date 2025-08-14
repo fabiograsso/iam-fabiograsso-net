@@ -73,7 +73,7 @@ L'integrazione con sistemi **DLP (Data Loss Prevention)** permette di bloccare i
 
 ---
 
-## Identity Fabric: L'architettura che unisce le identità
+## Identity Fabric: il Tessuto che unisce le identità
 
 Mentre il modello Zero Trust definisce chiaramente **cosa** proteggere e **come** approcciarsi alla sicurezza, non risolve automaticamente il problema del **coordinamento** tra tutti i sistemi coinvolti. Senza un'architettura unificante, si rischia di avere un modello Zero Trust teoricamente solido ma praticamente frammentato, dove ogni componente opera in isolamento.
 
@@ -149,63 +149,31 @@ Prima di intraprendere la trasformazione, è essenziale valutare lo stato attual
 
 La maggior parte delle organizzazioni si trova tra lo Stage 1 e 2, con significative opportunità di miglioramento attraverso l'adozione di una piattaforma IAM moderna.
 
----
-
-
 ![Okta Identity Maturity Model](okta-identity-maturity-model.png "[Okta Identity Maturity Model](https://www.okta.com/resources/whitepaper-a-comprehensive-guide-for-your-identity-maturity-journey/)")
 
 ---
 
-## Contestazioni comuni
-
-### "La complessità multi-vendor aumenta i rischi"
-
-Questo timore è comprensibile ma mal riposto. Una piattaforma IAM agnostica come Okta **riduce** la complessità attraverso:
-- **Standardizzazione**: Tutti i sistemi utilizzano gli stessi protocolli di autenticazione (SAML, OIDC)
-- **Visibilità unificata**: Un'unica dashboard per monitorare accessi e sicurezza su tutti i sistemi
-- **Automazione**: Eliminazione della gestione manuale frammentata tipica degli ambienti vendor-specifici
-
-### "I costi di integrazione superano i benefici"
-
-L'analisi TCO (Total Cost of Ownership) dimostra il contrario:
-- **Costi nascosti delle soluzioni integrate**: Vendor lock-in, mancanza di negoziazione, limitazioni funzionali
-- **ROI dell'approccio agnostico**: Come dimostrato dallo studio Forrester[^1], il ROI del 211% si manifesta attraverso riduzione dei costi operativi, miglioramento della produttività e prevenzione di violazioni
-- **Flessibilità futura**: Capacità di adottare nuove tecnologie senza dover rifare l'intero stack IAM
-
-### "Il vendor unico semplifica il supporto"
-
-Questa percezione nasconde una realtà più complessa:
-- **Responsabilità diluite**: Con un vendor integrato, spesso è difficile identificare dove risiede il problema (infrastruttura vs IAM)
-- **Supporto specializzato**: Un vendor IAM dedicato offre expertise specifica e SLA mirati sulla sicurezza delle identità
-- **Community e risorse**: Piattaforme specializzate come Okta offrono community attive, documentazione estensiva e risorse dedicate
-
----
-
-## Soluzioni accessibili per ogni dimensione aziendale
-
-### Per le piccole e medie imprese
-
-Anche se l'approccio integrato può sembrare allettante per ridurre costi e complessità iniziali, l'esperienza dimostra che alla lunga non ripaga, soprattutto in termini di ROI e rischio di violazioni. Le piccole aziende sono spesso i bersagli più vulnerabili proprio perché percepiscono la sicurezza come un costo piuttosto che come un investimento.
-
-Okta offre [soluzioni specifiche per le small business](https://www.okta.com/solutions/small-business/) che rendono l'IAM enterprise accessibile anche alle organizzazioni più piccole:
-
-- **Okta per Google Workspace**: [Disponibile gratuitamente](https://www.okta.com/free/google/) per aggiungere capacità IAM avanzate al tuo ecosistema Google esistente
-- **Trial gratuito di 30 giorni**: Possibilità di testare l'intera piattaforma senza impegni per valutare i benefici concreti
-- **Pricing scalabile**: Modello di licenza che cresce con l'azienda, permettendo di iniziare con le funzionalità essenziali
-
-Questo approccio permette alle PMI di implementare best practice di sicurezza enterprise sin dall'inizio, evitando costose migrazioni future e proteggendosi da minacce sempre più sofisticate che non fanno distinzione tra grandi e piccole organizzazioni.
-
-### Una valutazione equilibrata
+## Una valutazione equilibrata
 
 Sebbene i vantaggi di un IAM agnostico siano significativi, è importante riconoscere alcune sfide che le organizzazioni potrebbero incontrare:
 
 - **Complessità iniziale di setup**: L'implementazione di una soluzione agnostica richiede una maggiore pianificazione iniziale rispetto all'attivazione di una funzionalità già integrata. Tuttavia, questa complessità iniziale si traduce in maggiore flessibilità e controllo a lungo termine.
 
-- **Investimento in competenze**: Il team IT deve acquisire familiarità con protocolli di integrazione (SAML, OIDC, SCIM) e best practice IAM. Okta mitiga questa sfida attraverso documentazione estensiva, training gratuiti e supporto dedicato durante l'onboarding.
+- **Investimento in competenze**: Il team IT deve acquisire familiarità con protocolli di integrazione (SAML, OIDC, SCIM) e best practice IAM. Okta mitiga questa sfida attraverso più di 8000 integrazioni out of the box nel catalogo [OIN - Okta Integration Network](https://www.okta.com/integrations/), [documentazione estensiva](https://help.okta.com/en-us/content/index.htm), [training gratuiti](https://learning.okta.com/) e supporto dedicato durante l'onboarding.
 
 - **Costi di licensing aggiuntivi**: A differenza delle soluzioni "*gratuite*" integrate, una piattaforma IAM specializzata ha un costo di licenza. Tuttavia, come dimostrato dai dati ROI, questo investimento si ripaga rapidamente attraverso efficienza operativa e riduzione dei rischi.
 
-La chiave è riconoscere che queste sfide sono **temporanee e mitigabili**, mentre i vantaggi di un IAM agnostico sono **strutturali e duraturi**.
+La chiave è riconoscere che queste sfide sono **temporanee e mitigabili**, mentre i vantaggi di un IAM agnostico, basato su un'architettura Identity Fabric, sono **strutturali e duraturi**.
+
+### Per le piccole e medie imprese
+
+Anche se l'approccio integrato può sembrare allettante per ridurre costi e complessità iniziali, l'esperienza dimostra che alla lunga non ripaga, soprattutto in termini di ROI e rischio di violazioni. Le piccole aziende sono spesso i bersagli più vulnerabili proprio perché percepiscono la sicurezza come un costo piuttosto che come un investimento.
+
+Okta offre [soluzioni specifiche per le small business](https://www.okta.com/solutions/small-business/) che rendono l'IAM enterprise accessibile anche alle organizzazioni più piccole.
+
+Okta ha un **modello di pricing scalabile**, che cresce con l'azienda, permettendo di iniziare con le funzionalità essenziali ed estenderle in futuro.
+
+Questo approccio permette alle PMI di implementare best practice di sicurezza enterprise sin dall'inizio, evitando costose migrazioni future e proteggendosi da minacce sempre più sofisticate che non fanno distinzione tra grandi e piccole organizzazioni.
 
 ---
 
@@ -213,11 +181,11 @@ La chiave è riconoscere che queste sfide sono **temporanee e mitigabili**, ment
 
 Nel panorama digitale odierno, l'identità è il nuovo perimetro di sicurezza. La scelta di una piattaforma IAM non è meramente una decisione tecnica, ma una scelta strategica fondamentale. Affidarsi a un unico fornitore per infrastruttura, dati e identità può apparire apparentemente vantaggioso, ma la vera sicurezza si fonda sulla separazione dei poteri, sulla trasparenza e sulla libertà di scelta.
 
-Come abbiamo citato all'inizio: *"Chi sorveglia i sorveglianti?"*. **L'IAM deve operare come un arbitro imparziale, non come un giocatore in campo.**
-
 ![](mfa.png)
 
 Adottare una soluzione **IAM agnostica**, che si configuri come un vero e proprio **Identity Fabric**, significa implementare un'architettura che assicura una gestione delle identità unificata e sicura. Questo approccio riduce i rischi, incrementa la flessibilità e supporta pienamente una strategia Zero Trust.
+
+Come abbiamo citato all'inizio: *"Chi sorveglia i sorveglianti?"*. **L'IAM deve operare come un arbitro imparziale, non come un giocatore in campo.**
 
 La sicurezza autentica deriva dalla separazione dei poteri: **chi è preposto alla protezione non può essere colui che controlla ogni aspetto dell'infrastruttura e dei dati.** Un'**architettura IAM indipendente** non solo è più sicura, ma è anche intrinsecamente più **resiliente, scalabile e libera**.
 
@@ -233,7 +201,7 @@ La sicurezza autentica deriva dalla separazione dei poteri: **chi è preposto al
 
 ## ✋ La tua esperienza conta
 
-📊 **Valuta il tuo stato attuale**: Prima di intraprendere qualsiasi trasformazione IAM, è essenziale fare il punto della situazione. Okta offre un Secure Identity Discovery assessment gratuito che analizza i tuoi attuali rischi di sicurezza delle identità attraverso 12 domande chiave, fornendo raccomandazioni mirate da parte degli esperti Okta. [Contattami](/contacts) per saperne di più.
+📊 **Valuta il tuo stato attuale**: Prima di intraprendere qualsiasi trasformazione IAM, è essenziale fare il punto della situazione. Okta offre un **Secure Identity Discovery Assessment** gratuito che analizza i tuoi attuali rischi di sicurezza delle identità attraverso *12 domande chiave*, fornendo raccomandazioni mirate da parte degli esperti Okta. [Contattami](/contacts) per saperne di più.
 
 📈 **Calcola il tuo ROI**: Utilizza il **[calcolatore ROI di Okta](https://www.okta.com/roi/)** per valutare i benefici economici specifici per la tua organizzazione. In media, i clienti Okta riducono del 60% i costi di manutenzione e sviluppo.
 
