@@ -9,9 +9,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self';
-    Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-hashes' https://giscus.app https://static.cloudflareinsights.com ; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; frame-src 'self' https://giscus.app;
-
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-hashes' https://giscus.app https://static.cloudflareinsights.com ; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; frame-src 'self' https://giscus.app;
   Access-Control-Allow-Origin: https://giscus.app
   Access-Control-Allow-Methods: GET, POST, OPTIONS
   Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
