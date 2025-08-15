@@ -2,43 +2,12 @@
   Extend Footer Partial
   This partial is used to render the footer of the site.
   It includes copyright information, license details, and links to various pages.
-<footer class="footer text-sm text-neutral-500 dark:text-neutral-400" style="line-break: auto;">
-  <hr/>
-  <span style="display: inline-block;">
-    {{- if site.Copyright }}
-    {{ site.Copyright | markdownify }}
-    {{- else }}
-    &copy; {{ if ne now.Year 2025 }}2025 - {{ end }}{{ now.Year }} <a href="{{ "/about" | relLangURL }}">Fabio Grasso</a>
-    {{- end -}}
-  </span> - 
-  <span style="display: inline-block;">
-    License: <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
-  </span>
-  <br/>
-  <span style="display: inline-block;">
-    <a href="{{ "/posts/index.xml" | relLangURL }}">RSS</a>
-  </span> - 
-  <span style="display: inline-block;">
-    <a href="{{ "/privacy" | relLangURL }}">Privacy&Cookie Policy</a>
-  </span> - 
-  <span style="display: inline-block;">
-    Powered by
-    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-    <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener noreferrer" target="_blank">PaperMod</a>
-  </span> 
-  <br/>
-  <span style="line-height: 1.3em; margin-top: 1em;">
-    ✍️ Crafted with the help of 🤖 AI. 
-    💡 All content is fact-checked, edited, and reflects the author’s expertise and opinions.
-  </span>
-</footer>
--->
-<!--
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 -->
 
 
 </footer>
-<p class="text-xs text-neutral-500 dark:text-neutral-400" style="line-break: auto; text-align: right; margin-top: 1em;">
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+<p class="text-xs text-neutral-500 dark:text-neutral-400" style="line-break: auto; text-align: right; margin: 1em;">
+  Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">{{ partial "icon-inline.html" "hugo" }} Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
 </p>
+
+

@@ -19,66 +19,54 @@
           data-input-position="top"
           data-theme="light"
           data-lang="en"
+          data-loading="lazy"
           async>
   </script>
 </div>
 
 <script>
 function handleGiscusLoad(event) {
-  //          data-loading="lazy"
-
   if (event.origin !== 'https://giscus.app') return;
   if (!(typeof event.data === 'object' && event.data.giscus)) return;
 
   const giscusData = event.data.giscus;
   
-  console.log('Giscus is loaded!', giscusData);
-
-  console.log('Giscus is loaded!');
-
   if ('discussion' in giscusData) {
     console.log('Giscus is loaded!', giscusData);
-    yourCustomFunction();
+    updateGiscusTheme();
   }
 }
 
 window.addEventListener('message', handleGiscusLoad);
 
-function yourCustomFunction() {
-  console.log('Giscus has finished loading!');
-}
-
-
-</script>
-<script>
-  function updateGiscusTheme() {
-    function sendMessage(theme) {
-      const iframe = document.querySelector('iframe.giscus-frame');
-      if (iframe) {
-        iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: theme } } }, 'https://giscus.app');
-      }
+function updateGiscusTheme() {
+  function sendMessage(theme) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: theme } } }, 'https://giscus.app');
     }
-
-    const isDarkMode = document.documentElement.classList.contains('dark');
-    const giscusTheme = isDarkMode ? 'dark' : 'light';
-    
-    sendMessage(giscusTheme);
-
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.attributeName === 'class') {
-          const isDarkModeNow = document.documentElement.classList.contains('dark');
-          const newGiscusTheme = isDarkModeNow ? 'dark' : 'light';
-          sendMessage(newGiscusTheme);
-        }
-      });
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['class']
-    });
   }
 
-  window.addEventListener('load', updateGiscusTheme);
+  const isDarkMode = document.documentElement.classList.contains('dark');
+  const giscusTheme = isDarkMode ? 'dark' : 'light';
+  
+  sendMessage(giscusTheme);
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'class') {
+        const isDarkModeNow = document.documentElement.classList.contains('dark');
+        const newGiscusTheme = isDarkModeNow ? 'dark' : 'light';
+        sendMessage(newGiscusTheme);
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+}
+
+window.addEventListener('load', updateGiscusTheme);
 </script>

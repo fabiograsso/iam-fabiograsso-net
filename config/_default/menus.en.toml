@@ -10,6 +10,24 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+
+[[main]]
+  name = "About"
+  pageRef = "about"
+  weight = 1
+  pre = "user"
+
+[[main]]
+  identifier = "linkedin"
+  pre = "linkedin"
+  url = "https://www.linkedin.com/in/fabiograsso82/"
+  weight = 2
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/fabiograsso"
+  weight = 3
+
 [[main]]
   name = "Posts"
   pageRef = "posts"
@@ -22,10 +40,12 @@
   weight = 10
   pre = "tag"
 
+
+
 [[main]]
   name = "Categories"
   pageRef = "categories"
-  weight = 30
+  weight = 99
   pre = "list"
 [[main]]
   name = "Blog"
@@ -58,11 +78,6 @@
   weight = 101
   pre = "utensils"
 
-[[main]]
-  name = "About"
-  pageRef = "about"
-  weight = 50
-  pre = "user"
 
 # -- Footer Menu --
 

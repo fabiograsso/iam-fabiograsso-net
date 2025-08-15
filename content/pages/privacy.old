@@ -18,9 +18,8 @@ searchHidden: true
 hiddenFromHomePage: true
 showAuthor: false
 showDate: false
-
-alias: "/privacy"
-
+url: "/privacy"
+aliases: ["/en/privacy", "/en/pages/privacy/", "/it/privacy", "/it/pages/privacy/", "/fr/privacy", "/fr/pages/privacy/"]
 ---
 
 ## Who We Are
