@@ -353,13 +353,13 @@ The parameters are:
 | **operation** | *start* or *stop*                                                   |
 | **instances** | comma-separated list of the instances on which to do the operation. |
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 You can find the instance IDs in the [AWS EC2 console](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:v=3).
 
 ![](aws-console.png)
 {{< /alert >}}
 <br/>
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 
 If the instance value is “*all*” it will execute the operation on all the EC2 VMs of the selected region. Example:
 
@@ -375,7 +375,7 @@ If the instance value is “*all*” it will execute the operation on all the EC
 
 ### DNS Update
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 You can skip this part if you want to implement only the start/stop automation without the DNS auto-update.
 {{< /alert >}}
 
@@ -641,7 +641,7 @@ You can skip this part if you want to implement only the start/stop automation w
 11. Click on “*Deploy*” on the left in order to publish and enable the code
 12. Click on Save
 
-{{< alert icon="tag" cardColor="#EAE6FF" iconColor="8270DB" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="tag" >}}
 Remember to change the *HOSTED_ZONE_ID* variable with your Route53 zone ID in the code!
 
 You can find it in the Route53 dashboard: ![](aws-zone.png)
@@ -675,7 +675,7 @@ It extracts the *instance ID* and uses it to obtain information about the EC2 VM
 
 At this point, if the hostname has the tag ‘PublicDNS’, it will use it. If not, it will use the VM name.
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 Using this method permits pointing directly to a DNS record, which will update automatically, eliminating the need to obtain the dynamic public IP address every time the EC2 instance is powered on. It’s also a way to avoid using an *Elastic IP Address* , and consequently save on AWS costs.tag
 
 {{< /alert >}}
@@ -723,7 +723,7 @@ With this basic script, the text collected will not be validated. This means tha
 
 ## AWS CloudWatch Automation
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 You can skip this part if you want to implement only the start/stop automation without the DNS auto-update.
 {{< /alert >}}
 
@@ -751,7 +751,7 @@ In this step, we will define the CloudWatch automation that calls the UpdateDNS 
    ![](cloudwatch3.png)
 7. Skip the tag configuration and click on “Create rule” to conclude
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 Lambda scripts and CloudWatch events are based on the region. If you’re using multiple regions, you have to copy the UpdateIP script and the CloudWatch configuration in every region.
 {{< /alert >}}
 
@@ -812,7 +812,7 @@ I’m using simple security via client token. This may be fine in a demo/non-pro
 I’m using simple security via client token. This may be fine in a demo/non-production environment. If it has to be used in production, I warmly suggest moving to OAuth-based security or using only the delegated workflows feature.
 {{< /alert >}}
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 It’s also possible to generate an HTTPS Endpoint directly in AWS Lambda ([**Invoking Lambda function URLs - AWS Lambda**](https://docs.aws.amazon.com/lambda/latest/dg/urls-invocation.html)). However, I prefer to use Workflows because they are tools we know better, and they permit showcasing both Workflows themselves and other possible integrations, i.e., Delegation, and eventually Access Requests.Lambda scripts and CloudWatch events are based on the region. If you’re using multiple regions, you have to copy the UpdateIP script and the CloudWatch configuration in every region
 {{< /alert >}}
 
@@ -871,7 +871,7 @@ When I need to start my demo, I can just click on the dashboard icon without ope
 
 ### Voice control
 
-{{< alert icon="lightbulb" cardColor="#BAF3DB" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="lightbulb" >}}
 Since it’s a simple HTTP request, you can also use it with a voice control such as Siri, Alexa, Google, etc.
 {{< /alert >}}
 
@@ -890,7 +890,7 @@ In theory, you can just say, “*Hey Siri, Start Domain Controller!* ” But I f
 
 ## AWS Costs
 
-{{< alert icon="tag" cardColor="#EAE6FF" iconColor="8270DB" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="tag" >}}
 **TL;DR** The low usage of these Lambda functions and CloudWatch events falls well within the **AWS free tier** . In a demo environment, there will therefore be no cost to use them.
 {{< /alert >}}
 
@@ -904,7 +904,7 @@ The **Lambda free tier** is quite generous, as it includes:
 - 1 million free requests per month
 - 400,000 GB-seconds of compute time per month
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 For the `PowerCycle` and `UpdateDNS` functions described, which are executed infrequently (manually or on a schedule), it is highly probable that their usage will remain well within the free tier, resulting in no cost.
 {{< /alert >}}
 
@@ -918,7 +918,7 @@ The **CloudWatch free tier** is also generous, and includes:
 - 5 GB of Log data ingestion and 5 GB of Log archival per month
 - 1 million custom events per month
 
-{{< alert icon="circle-info" cardColor="#DEEBFF" iconColor="rgb(53, 125, 232)" textColor="rgb(41, 42, 46)" >}}
+{{< alert icon="circle-info" >}}
 Given the low volume of events (only when an EC2 instance starts) and the small amount of log data these functions would generate, your CloudWatch usage would certainly be covered by the free tier.
 {{< /alert >}}
 

@@ -3,7 +3,6 @@ title: "Quis Custodiet Ipsos Custodes: perché un IAM Indipendente è essenziale
 date: 2025-08-12
 tags: ["Iam", "ZeroTrust", "Identity Fabric","Okta"]
 summary: Nell'era digitale, dove l'identità è il nuovo perimetro di sicurezza, la locuzione latina "Quis custodiet ipsos custodes?" - "Chi controlla i controllori?" è più attuale che mai. Questo articolo esplora il paradosso di affidare la gestione delle identità allo stesso fornitore dell'infrastruttura, un approccio che crea rischi come il vendor lock-in e la mancanza di trasparenza. Sosteniamo l'adozione di una strategia IAM indipendente e agnostica, che si basa su standard aperti e promuove un Identity Fabric resiliente e unificato.
-categories: ["blog"]
 showTaxonomies: true
 ---
 ## Chi sorveglia i sorveglianti nell'era dell'identità digitale?

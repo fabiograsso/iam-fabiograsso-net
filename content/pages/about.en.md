@@ -38,7 +38,9 @@ In this space, I share my experience, ideas, and insights on **digital identity 
 
 Subscribe for updates or reach out directly—I'd be happy to discuss how to implement a Zero Trust strategy based on independent IAM and identity governance.
 
+## :email: Contacts
 
+{{< include "contact.en.md" >}}
 
 
 ---

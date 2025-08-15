@@ -5,11 +5,12 @@ tags: ["IAM", "Zero Trust", "Identity Fabric", "Okta", "Cybersecurity", "Vendor 
 summary: "Chi controlla i controllori? Un'analisi critica sui rischi del vendor lock-in nell'IAM e i vantaggi di un approccio agnostico basato su Identity Fabric e standard aperti."
 showTaxonomies: true
 ---
-## Chi sorveglia i sorveglianti nell'era dell'identità digitale?
+## I sorveglianti nell'era dell'identità digitale
 
 > «Pone seram, cohibe, sed quis custodiet ipsos custodes? Cauta est et ab illis incipit uxor.»
->
-> **Decimus Iunius Iuvenalis, Satire**
+> <cite>— Decimus Iunius Iuvenalis [^1]</cite>
+
+[^1]: [Satire VI, O31-O32](https://it.wikipedia.org/wiki/Quis_custodiet_ipsos_custodes), Decimo Giunio Giovenale (Decimus Iunius Iuvenalis), 111
 
 *«Spranga la porta, impedisci di uscire, ma **chi sorveglierà i sorveglianti?** La moglie è astuta e comincerà da quelli.»*
 
@@ -90,7 +91,7 @@ Per superare la frammentazione di questi ecosistemi, il concetto di **Identity F
 
 La vera forza di un Identity Fabric non risiede solo nella capacità di un singolo vendor di orchestrare tutti i componenti, ma nella sua **interoperabilità intrinseca** basata su standard aperti. Questo principio è fondamentale per garantire che l'architettura rimanga flessibile e che le organizzazioni mantengano la libertà di scegliere le migliori soluzioni per ogni specifica esigenza, senza essere vincolate a un unico ecosistema proprietario.
 
-**Okta supporta attivamente questa filosofia attraverso l'adozione di protocolli standard** come SAML, OIDC, OAuth 2.0 e SCIM, e partecipa attivamente all'iniziativa **[IPSIE (Identity Provider Security and Integration Ecosystem)](https://www.okta.com/blog/2024/10/oktas-mission-to-standardize-identity-security/)** della **OpenID Foundation[^2]**. Questo progetto mira a creare il primo standard di sicurezza unificato per le identità aziendali, garantendo che diverse soluzioni IAM, e altri prodotti di sicurezza, possano comunicare e collaborare senza compromettere la sicurezza.
+**Okta supporta attivamente questa filosofia attraverso l'adozione di protocolli standard** come SAML, OIDC, OAuth 2.0 e SCIM, e partecipa attivamente all'iniziativa **[IPSIE (Identity Provider Security and Integration Ecosystem)](https://www.okta.com/blog/2024/10/oktas-mission-to-standardize-identity-security/)** della **OpenID Foundation[^3]**. Questo progetto mira a creare il primo standard di sicurezza unificato per le identità aziendali, garantendo che diverse soluzioni IAM, e altri prodotti di sicurezza, possano comunicare e collaborare senza compromettere la sicurezza.
 
 ![IPSIE (Identity Provider Security and Integration Ecosystem)](okta-ipsie.png)
 
@@ -130,7 +131,7 @@ Okta si impegna in un processo continuo di miglioramento della sicurezza attrave
 
 ### ROI Tangibile e Benefici Misurabili
 
-I vantaggi di un approccio IAM basato su *Identity Fabric* non sono solo teorici. Secondo uno studio recente di **Forrester Consulting**[^1], le organizzazioni che implementano **[Okta Identity Governance](https://www.okta.com/identity-governance/)** ottengono un **ROI del 211%** in tre anni. I benefici includono:
+I vantaggi di un approccio IAM basato su *Identity Fabric* non sono solo teorici. Secondo uno studio recente di **Forrester Consulting**[^2], le organizzazioni che implementano **[Okta Identity Governance](https://www.okta.com/identity-governance/)** ottengono un **ROI del 211%** in tre anni. I benefici includono:
 
 - **Riduzione dei costi operativi**: Automazione delle attività di provisioning e deprovisioning con una riduzione del 75% del tempo necessario per gestire gli accessi utente
 - **Miglioramento della produttività**: Gli utenti recuperano mediamente 30 minuti al giorno grazie all'SSO e alla riduzione degli attriti di accesso
@@ -206,5 +207,5 @@ Come **Solutions Engineer Okta**, vedo quotidianamente i benefici di questo appr
 
 🤝 **Scopri l'Identity Fabric**: Se sei interessato a capire come può proteggere la tua azienda, [contattami](/contacts) per una consulenza personalizzata.
 
-[^1]: [The Total Economic Impact™ Of Okta Identity Governance ](https://www.okta.com/blog/2025/07/new-forrester-study-reveals-okta-identity-governance-can-result-in-211-roi/), Forrester, 2025
-[^2]: [The Interoperability Profiling for Secure Identity in the Enterprise (IPSIE) Work Group](https://openid.net/wg/ipsie/), OpenID Foundation, 2024
+[^2]: [The Total Economic Impact™ Of Okta Identity Governance ](https://www.okta.com/blog/2025/07/new-forrester-study-reveals-okta-identity-governance-can-result-in-211-roi/), Forrester, 2025
+[^3]: [The Interoperability Profiling for Secure Identity in the Enterprise (IPSIE) Work Group](https://openid.net/wg/ipsie/), OpenID Foundation, 2024

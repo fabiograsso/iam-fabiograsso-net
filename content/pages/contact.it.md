@@ -19,12 +19,9 @@ searchHidden: true
 hiddenFromHomePage: true
 showAuthor: false
 showDate: false
-url: "/contact/"
-aliases: ["/en/contact", "/en/pages/contact/", "/it/contact", "/it/pages/contact/", "/fr/contact/", "/fr/pages/contact/"]
 ---
-Use the following form to send me a message. I will respond as soon as possible.
 
----
+Use the following form to send me a message. I will respond as soon as possible.
 
 <form method="POST" 
       action="https://kwesforms.com/api/f/974r2oaasFZumh6vHsvg"
@@ -41,7 +38,7 @@ Use the following form to send me a message. I will respond as soon as possible.
            rules="required|max:255"
            placeholder="Il tuo nome"
            class="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-neutral-50 dark:bg-neutral-700 dark:text-neutral-100">
-  </div>
+  </div><br/>
   
   <div class="mb-4">
     <label for="email" class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
@@ -53,7 +50,7 @@ Use the following form to send me a message. I will respond as soon as possible.
            rules="required|email|max:255"
            placeholder="tua@email.com"
            class="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-neutral-50 dark:bg-neutral-700 dark:text-neutral-100">
-  </div>
+  </div><br/>
   
   <div class="mb-6">
     <label for="message" class="block text-sm font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
@@ -66,13 +63,10 @@ Use the following form to send me a message. I will respond as soon as possible.
               rows="5"
               class="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500 bg-neutral-50 dark:bg-neutral-700 dark:text-neutral-100 resize-y"></textarea>
   </div>
-  
   <button type="submit" 
-          class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200 active:transform active:translate-y-px">
+          class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+          >
     Invia Messaggio
   </button>
 </form>
-
-
 <script src="https://kwesforms.com/v2/kf-script.js" defer></script>
-

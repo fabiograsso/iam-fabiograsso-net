@@ -36,3 +36,7 @@ Dans cet espace, je partage mon expérience, mes idées et ma vision sur **l’i
 ## 📣 Vous souhaitez rester informé ?
 
 Abonnez-vous aux mises à jour ou contactez-moi directement : je serai ravi d’échanger sur la mise en œuvre d’une stratégie Zero Trust basée sur un IAM indépendant et une gouvernance solide de l’identité.
+
+## :email: Contacts
+
+{{< include "contact.fr.md" >}}
