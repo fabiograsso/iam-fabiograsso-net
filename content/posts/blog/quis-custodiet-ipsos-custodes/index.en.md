@@ -3,7 +3,6 @@ title: "Quis Custodiet Ipsos Custodes: Why Independent IAM is Essential for Secu
 date: 2025-08-13
 tags: ["IAM", "Zero Trust", "Identity Fabric", "Okta", "Cybersecurity", "Vendor Lock-in", "Identity Governance", "MFA", "SAML", "OIDC", "Digital Identity", "Enterprise Security", "IPSIE", "OpenID Foundation"]
 summary: "Who watches the watchers? A critical analysis of vendor lock-in risks in IAM and the advantages of an agnostic approach based on Identity Fabric and open standards."
-categories: ["blog"]
 showTaxonomies: true
 ---
 

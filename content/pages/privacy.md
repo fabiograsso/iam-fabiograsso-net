@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 date: 2025-08-04
 translationKey: "privacy"
-layout: single
+layout: simple
 share: false
 sharingLinks: false
 comments: false
@@ -12,7 +12,7 @@ hidemeta: true
 disableShare: true
 ShowReadingTime: false
 ShowBreadCrumbs: false
-ShowPostNavLinks: false
+showPagination: false
 ShowWordCount: false
 searchHidden: true
 hiddenFromHomePage: true
@@ -28,7 +28,8 @@ This website **[iam.fabiograsso.net](https://iam.fabiograsso.net)** is a persona
 ## What Information We Collect
 
 ### Information We Collect Directly
-- **Newsletter**: If you subscribe to our newsletter, we collect your email address through our newsletter service provider, Brevo.
+- **Newsletter**: If you subscribe to our newsletter, we collect your email address through our newsletter service provider, **Brevo**.
+- **Contact form**: When you send a message through the on-site contact form, the data you enter (e.g., name, email, message) is collected by our form provider, **KwesForms**.
 
 ### Information Collected Automatically
 This website itself does not collect personal data from visitors.
@@ -65,6 +66,15 @@ Our newsletter is provided by **Brevo** (formerly known as *Sendinblue*). When y
 - You can unsubscribe at any time using the link provided in each newsletter
 - Your subscription is based on your explicit consent
 
+## Contact Form
+
+This blog uses **KwesForms** (<https://kwesforms.com/>) solely to provide the contact form you see on the “Contact” page.
+
+- When you submit the form, your message and any personal data you include (e.g., name, email) are collected and processed by KwesForms.  
+- Handling, storage, and security of that data are governed by the [KwesForms Privacy Policy](https://kwesforms.com/privacy).  
+- KwesForms forwards your message to my email inbox; I do not store the form submissions on this website or in any self-hosted database.  
+- Your submission is used exclusively to respond to your inquiry and is not added to the newsletter list unless you explicitly request it.
+
 ## Analytics
 
 No analytics or tracking tools are enabled on this site.
@@ -82,6 +92,9 @@ This processing is based on Cloudflare's legitimate interest in providing a secu
 ### Newsletter (Brevo)
 Your email address is used solely to send you our newsletter content. Processing is based on your explicit consent.
 
+### Contact Form (KwesForms)  
+Data you submit via the contact form is used solely to respond to your inquiry or any follow-up you request. Processing and temporary storage are handled by KwesForms on my behalf.
+
 ### Local Storage
 Information stored locally on your device is used to:
 - Remember your theme preferences (essential functionality)
@@ -91,6 +104,7 @@ Information stored locally on your device is used to:
 
 - Your technical information may be processed by Cloudflare in accordance with their [Privacy Policy](https://www.cloudflare.com/privacypolicy/)
 - Newsletter data is processed by Brevo according to their [Privacy Policy](https://www.brevo.com/legal/privacypolicy/)
+- Contact-form data is processed by KwesForms in accordance with their [Privacy Policy](https://kwesforms.com/privacy)
 - Comment data is processed by GitHub according to their [Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
 - No personal data is shared by me with any other third parties
 
@@ -115,6 +129,7 @@ To exercise these rights:
 
 - Cloudflare may process data in various locations globally in accordance with their privacy policy
 - Brevo processes data within the EU and in accordance with GDPR requirements
+- KwesForms processes data within the EU and in accordance with GDPR requirements
 - GitHub may process data globally in accordance with their privacy statement
 
 ## Data Retention

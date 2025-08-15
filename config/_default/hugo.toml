@@ -7,7 +7,7 @@ baseURL = "https://iam.fabiograsso.net/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
 title = "I_AM Fabio"
-mainSections = ["posts", "tips", "travels", "howto", "kitchen"]
+mainSections = ["posts", "blog", "tips", "travels", "howto", "kitchen"]
 
 disableLanguages = [] #to allow translation work requiring shipping to production
 
@@ -34,10 +34,10 @@ defaultFeaturedImage = "img/homebg.webp"
   pagerSize = 20
 
 [taxonomies]
-  tag = "Tags"
-  category = "Categories"
-  author = "Authors"
-  series = "Series"
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
 
 [sitemap]
   changefreq = 'daily'
@@ -58,11 +58,11 @@ defaultFeaturedImage = "img/homebg.webp"
     section = "posts"
     includeHome = false
 [permalinks]
-  #posts = "/posts/:year/:slugorcontentbasename/" 
-  posts = "/posts/:slugorcontentbasename/" 
+  posts = "/:sections/:slugorcontentbasename/"
   section = "/:section/"
   about = "/about/"
   privacy = "/privacy/"
+  contact = "/contact/"
 
 [[cascade]]
   comments = true
@@ -81,7 +81,7 @@ defaultFeaturedImage = "img/homebg.webp"
         weight = 100
 
     [[related.indices]]
-        name = "categories"
+        name = "sections"
         weight = 100
 
     [[related.indices]]

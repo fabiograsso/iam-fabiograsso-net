@@ -7,8 +7,6 @@ tags:
   - Okta
   - OAG
   - Okta Access Gateway
-categories:
-  - howto
 hideSummary: true
 author: Fabio Grasso
 cover:

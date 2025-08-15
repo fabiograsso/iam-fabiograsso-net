@@ -4,7 +4,6 @@ date: 2025-08-01
 draft: false
 tags: [Okta, Cybersecurity, Financial Services, DORA, NIS2, IAM, CIAM, ZeroTrust, Banking Security, Identity Management, Zero Trust, Identity Fabric, Financial Services, Identity Governance, Strong Customer Authentication, HRI, High Regulated Identity]
 summary: "Analyse des incidents cyber bancaires 2024 (+45%) selon le rapport de la Banca d'Italia et la stratégie Identity Fabric pour la résilience opérationnelle dans le secteur financier italien et européen."
-categories: ["blog"]
 ---
 
 ## La situation en 2024

@@ -4,7 +4,6 @@ date: {{ .Date }}
 draft: true
 tags: ["first", "second", "third"]
 description: "A brief description."
-categories: ["tips"]
 #author: "Fabio Grasso"
 #author: ["Me", "You"] # multiple authors
 ShowToc: false

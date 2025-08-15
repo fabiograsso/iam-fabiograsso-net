@@ -5,8 +5,6 @@ tags:
   - Apple
   - MacOS
 description: abc
-categories:
-  - tips
 ShowToc: false
 ---
 Use case: when you need to record a video or share an application via Zoom, and you need the right aspect ratio (i.e. 16:9)

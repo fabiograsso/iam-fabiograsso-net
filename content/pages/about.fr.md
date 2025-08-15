@@ -11,6 +11,7 @@ draft: false
 hiddenFromHomePage: true
 showAuthor: false
 ShowBreadCrumbs: false
+showPagination: false
 showDate: false
 ---
 

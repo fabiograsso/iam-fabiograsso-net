@@ -9,8 +9,6 @@ tags:
 - Workflows
 - Lambda
 - Amazon
-categories:
-- howto
 hideSummary: false
 ---
 

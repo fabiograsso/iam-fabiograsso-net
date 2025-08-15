@@ -8,8 +8,6 @@ tags:
   - AzureGuest
   - Office365
 description: abc
-categories:
-  - tips
 ShowToc: false
 ---
 Guest accounts in Microsoft have a format like: `user_gmail.com#EXT#@tenant.onmicrosoft.com`

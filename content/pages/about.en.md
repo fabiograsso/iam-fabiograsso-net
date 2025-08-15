@@ -11,6 +11,7 @@ draft: false
 hiddenFromHomePage: true
 showAuthor: false
 ShowBreadCrumbs: false
+showPagination: false
 showDate: false
 aliases: ["/about"]
 ---
@@ -36,3 +37,12 @@ In this space, I share my experience, ideas, and insights on **digital identity 
 ## 📣 Want to stay updated?
 
 Subscribe for updates or reach out directly—I'd be happy to discuss how to implement a Zero Trust strategy based on independent IAM and identity governance.
+
+
+
+
+---
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bf1ed5e2-2dee-4346-95d5-a083a31f7dd9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+

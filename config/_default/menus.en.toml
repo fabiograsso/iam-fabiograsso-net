@@ -44,37 +44,37 @@
 
 [[main]]
   name = "Categories"
-  pageRef = "categories"
+  pageRef = "#"
   weight = 99
   pre = "list"
 [[main]]
   name = "Blog"
   parent = "Categories"
-  pageRef = "categories/blog/"
+  pageRef = "posts/blog/"
   weight = 10
   pre = "pencil"
 [[main]]
   name = "Howto"
   parent = "Categories"
-  pageRef = "categories/howto/"
+  pageRef = "posts/howto/"
   weight = 20
   pre = "screwdriver"
 [[main]]
   name = "Tips"
   parent = "Categories"
-  pageRef = "categories/tips/"
+  pageRef = "posts/tips/"
   weight = 30
   pre = "lightbulb"
 [[main]]
   name = "Travels" #
   parent = "Categories"
-  pageRef = "categories/travels/"
+  pageRef = "posts/travels/"
   weight = 100
   pre = "plane"
 [[main]]
   name = "Kitchen"
   parent = "Categories"
-  pageRef = "categories/kitchen/"
+  pageRef = "posts/kitchen/"
   weight = 101
   pre = "utensils"
 

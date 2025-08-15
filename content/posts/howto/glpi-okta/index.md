@@ -6,8 +6,6 @@ description: A brief description.
 tags:
   - Okta
   - GLPI
-categories:
-  - howto
 hideSummary: true
 author: Fabio Grasso
 #cover:

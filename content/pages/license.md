@@ -13,6 +13,7 @@ hidemeta: true
 disableShare: true
 ShowReadingTime: false
 ShowBreadCrumbs: false
+showPagination: false
 ShowPostNavLinks: false
 ShowWordCount: false
 searchHidden: true

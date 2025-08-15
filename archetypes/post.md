@@ -4,7 +4,6 @@ date: {{ .Date }}
 draft: true
 tags: ["first", "second", "third"]
 description: "A brief description."
-categories: ["blog"]
 translationKey: "intro-to-hugo"
 #lightgallery: true
 #keywords: ["first", "second", "third"]

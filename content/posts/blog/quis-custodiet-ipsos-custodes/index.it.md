@@ -3,7 +3,6 @@ title: "Quis Custodiet Ipsos Custodes: perché un IAM Indipendente è essenziale
 date: 2025-08-13
 tags: ["IAM", "Zero Trust", "Identity Fabric", "Okta", "Cybersecurity", "Vendor Lock-in", "Identity Governance", "MFA", "SAML", "OIDC", "Digital Identity", "Enterprise Security", "IPSIE", "OpenID Foundation"]
 summary: "Chi controlla i controllori? Un'analisi critica sui rischi del vendor lock-in nell'IAM e i vantaggi di un approccio agnostico basato su Identity Fabric e standard aperti."
-categories: ["blog"]
 showTaxonomies: true
 ---
 ## Chi sorveglia i sorveglianti nell'era dell'identità digitale?
