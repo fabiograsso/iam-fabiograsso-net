@@ -63,4 +63,18 @@ curl 'https://www.credly.com/users/e2fc1e87-e55b-4ff3-a69c-91c5920d628a/badges?p
   -H 'Cache-Control: no-cache' \
   -H 'TE: trailers' -o test.json
 
+
+curl 'https://www.credly.com/users/e2fc1e87-e55b-4ff3-a69c-91c5920d628a/badges?page=1^&page_size=48' \
+  --compressed \
+  -H 'Accept: application/json' \
+  -H 'Referer: https://www.credly.com/users/fabio.grasso/badges' \
+  -H 'Connection: keep-alive' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'Pragma: no-cache' \
+  -H 'Cache-Control: no-cache' \
+  -H 'TE: trailers' -o test.json
+
+
 -->
