@@ -56,7 +56,7 @@ section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl::before {
 
 
 /* Custom styles for the ko-fi Buy me a coffee */
-.ko-fi {
+#ko-fi {
   padding-top: 10px;
   margin-top: 40px;
   padding-bottom: 10px;
@@ -68,7 +68,7 @@ section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl::before {
   border-top: 1px solid rgba(var(--color-neutral-300), 1);
   border-bottom: 1px solid rgba(var(--color-neutral-300), 1);
 }
- html.dark .ko-fi  {
+ html.dark #ko-fi  {
   background: rgba(var(--color-neutral-500), 1);
   border-top-color: rgba(var(--color-neutral-500), 1);
   border-bottom-color: rgba(var(--color-neutral-500), 1);
@@ -78,7 +78,7 @@ section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl::before {
 /* Custom styles for the footer */
 #site-footer {
     padding: 10px;
-    margin: 40px 0px;
+    margin: 40px 0px 0px 0px;
     border-top: 1px solid rgba(var(--color-neutral-300), 1);
     border-bottom: 1px solid rgba(var(--color-neutral-300), 1);
     background: rgba(var(--color-neutral-50), 1);

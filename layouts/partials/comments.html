@@ -1,11 +1,11 @@
-<div class="ko-fi" style="display: flex; align-items: center; justify-content: center; text-align: center;">
+<div id="ko-fi" style="display: flex; align-items: center; justify-content: center; text-align: center;">
   Do you like what you read? 
   <a href="https://ko-fi.com/O5O81JB4FK/tip" target="_blank">
     <img height='36'  class="no-zoom" style='border:0px;height:36px;margin:10px 0px 10px 10px;' src='/img/kofi5.webp' border='0' alt='Buy Me a Coffee at ko-fi.com' />
   </a>
 </div>
 <div id="comments">
-  <h2>Comments</h2>
+  <!-- <h2>Comments</h2> -->
   <script src="https://giscus.app/client.js"
           data-repo="fabiograsso/iam-fabiograsso-net"
           data-repo-id="R_kgDOPXdHOg"
@@ -14,19 +14,19 @@
           data-mapping="specific"
           data-term="{{ .Page.TranslationKey }}"
           data-strict="1"
-          data-reactions-enabled="1"
+          data-reactions-enabled="0"
           data-emit-metadata="1"
           data-input-position="top"
           data-theme="light"
           data-lang="en"
-          data-loading="lazy"
-          crossorigin="anonymous"
           async>
   </script>
 </div>
 
 <script>
 function handleGiscusLoad(event) {
+  //          data-loading="lazy"
+
   if (event.origin !== 'https://giscus.app') return;
   if (!(typeof event.data === 'object' && event.data.giscus)) return;
 

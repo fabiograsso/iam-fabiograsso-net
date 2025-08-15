@@ -66,8 +66,8 @@
 
 # -- Footer Menu --
 
-[[footer]]
-  name = "Contacts"
-  pageRef = "contacts"
-  weight = 10
-  pre = "address-card"
+#[[footer]]
+#  name = "Contacts"
+#  pageRef = "contacts"
+#  weight = 10
+#  pre = "address-card"

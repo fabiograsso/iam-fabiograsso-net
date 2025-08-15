@@ -18,18 +18,19 @@ enableCodeCopy = true
 copyright = """
   <span style="display: inline-block;">
     &copy; 2025 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/about">Fabio Grasso</a>
-    - 
-    License: <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
-    -
-    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/posts/index.xml">RSS</a>
-    - 
-    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy">Privacy&Cookie Policy</a>
+     |
+    License: <a title="CC BY-NC-SA 4.0" class="hover:underline hover:decoration-primary-400 hover:text-primary-500" rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">{{< icon "creative-commons" >}}{{< icon "creative-commons-by" >}}{{< icon "creative-commons-nc" >}}{{< icon "creative-commons-sa" >}}</a>
+     | 
+    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/posts/index.xml">{{< icon "feed" >}} RSS</a>
+     | 
+    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy">{{< icon "shield-halved" >}}{{< icon "cookie-bite" >}} Privacy & Cookie Policy</a>
   </span>
-  <br/>
+  <br style="margin-bottom:1.2em"/>
   <span style="display: inline-block;">
-    ✍️ Crafted with the help of 🤖 AI. <br/>
+    ✍️ Crafted with the help of 🤖 AI.
     💡 All content is fact-checked, edited, and reflects the author’s expertise and opinions.
   </span>
+  <br/>
 """
 
 #logo = "img/apple-touch-icon.png"
@@ -51,7 +52,7 @@ smartTOCHideUnfocusedChildren = false
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
   

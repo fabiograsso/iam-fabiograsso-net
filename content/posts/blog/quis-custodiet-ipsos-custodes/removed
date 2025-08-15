@@ -1,0 +1,23 @@
+
+## Contestazioni comuni
+
+### "La complessità multi-vendor aumenta i rischi"
+
+Questo timore è comprensibile ma mal riposto. Una piattaforma IAM agnostica come Okta **riduce** la complessità attraverso:
+- **Standardizzazione**: Tutti i sistemi utilizzano gli stessi protocolli di autenticazione (SAML, OIDC)
+- **Visibilità unificata**: Un'unica dashboard per monitorare accessi e sicurezza su tutti i sistemi
+- **Automazione**: Eliminazione della gestione manuale frammentata tipica degli ambienti vendor-specifici
+
+### "I costi di integrazione superano i benefici"
+
+L'analisi TCO (Total Cost of Ownership) dimostra il contrario:
+- **Costi nascosti delle soluzioni integrate**: Vendor lock-in, mancanza di negoziazione, limitazioni funzionali
+- **ROI dell'approccio agnostico**: Come dimostrato dallo studio Forrester[^1], il ROI del 211% si manifesta attraverso riduzione dei costi operativi, miglioramento della produttività e prevenzione di violazioni
+- **Flessibilità futura**: Capacità di adottare nuove tecnologie senza dover rifare l'intero stack IAM
+
+### "Il vendor unico semplifica il supporto"
+
+Questa percezione nasconde una realtà più complessa:
+- **Responsabilità diluite**: Con un vendor integrato, spesso è difficile identificare dove risiede il problema (infrastruttura vs IAM)
+- **Supporto specializzato**: Un vendor IAM dedicato offre expertise specifica e SLA mirati sulla sicurezza delle identità
+- **Community e risorse**: Piattaforme specializzate come Okta offrono community attive, documentazione estensiva e risorse dedicate

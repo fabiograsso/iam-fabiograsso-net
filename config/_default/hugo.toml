@@ -51,10 +51,6 @@ defaultFeaturedImage = "img/homebg.webp"
 [frontmatter]
   lastmod = ["lastmod", ":git", "date", "publishDate"]
 
-[markup]
-  [highlight]
-    noClasses = false
-
 [services]
   [rss]
     limit = 42

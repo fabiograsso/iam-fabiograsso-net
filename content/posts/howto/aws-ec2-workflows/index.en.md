@@ -101,7 +101,7 @@ The first step is creating an IAM role to run the automation. For practicality, 
 7. Click on “*Create function* ”
 8. In the Code source section, copy the following script:
 
-   ```python
+   ```python{class="my-class" id="my-codeblock" lineNos=inline tabWidth=2}
    import json
    import logging
    import boto3
