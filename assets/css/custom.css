@@ -1,20 +1,8 @@
 /* Custom styles
+  * This file contains custom styles for the website.
+  * It overrides some default styles and adds new ones.
+*/  
 
-.flex::before {
-    content: "Share :";
-    display: none;
-
-}
-.footnotes a::before {
-    content: '[';
-}
-.footnotes a::after {
-    content: ']';
-}
-.footnote-backref::before, .footnote-backref::after{
-    content: none!important;
-}
-*/
 
 /* Custom styles for the footnotes */
 .footnotes p, .footnotes li {
@@ -51,7 +39,6 @@ section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl::before {
   display: inline-flex;
   align-items: center;
   color: var(--tw-prose-body);
-
 }
 
 
@@ -62,13 +49,12 @@ section.flex.flex-row.flex-wrap.justify-center.pt-4.text-xl::before {
   padding-bottom: 10px;
   margin-bottom: 40px;
   border-radius: 15px;
-
   background: rgba(var(--color-neutral-100), 1);
   color: var(--tw-prose-body);
   border-top: 1px solid rgba(var(--color-neutral-300), 1);
   border-bottom: 1px solid rgba(var(--color-neutral-300), 1);
 }
- html.dark #ko-fi  {
+html.dark #ko-fi  {
   background: rgba(var(--color-neutral-500), 1);
   border-top-color: rgba(var(--color-neutral-500), 1);
   border-bottom-color: rgba(var(--color-neutral-500), 1);
@@ -101,6 +87,7 @@ kbd {
   padding: 0.1rem 0.4rem;
 }
 
+
 /* Headline styles */
 #headline {
     font-size: 15px;
@@ -116,11 +103,82 @@ kbd {
     margin-top: 1em;
 }
 
+
 /* No zoom styles */
 .no-zoom, .ko-fi img {
   pointer-events: none;
 }
 
+/* Footer text styles */
 #site-footer .text-xs.text-neutral-500.dark\:text-neutral-400 {
   align-self: flex-end; margin-top: auto;
+}
+
+
+/*
+.prose pre { max-height: 480px; overflow: auto; }
+.prose pre code { white-space: pre; }
+
+.highlight [style*="user-select:none"],
+.chroma .lnt,
+.highlight .linenos,
+.chroma td.linenos {
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+}*/
+
+
+/* 1) Make the entire Chroma table scrollable (both axes) */
+.chroma .lntable {
+  display: block;          /* allow overflow on the table */
+  max-height: 480px;       /* adjust to taste (e.g., 360px/600px) */
+  overflow: auto;          /* vertical + horizontal scroll */
+  border: 1px solid var(--color-neutral-200, #ddd);
+  border-radius: 6px;
+}
+
+/* 2) Prevent inner pre/code from expanding beyond container and enable X-scroll */
+.chroma pre {
+  white-space: pre;        /* no wrapping; show horizontal scrollbar if needed */
+  overflow: visible;       /* let the outer .lntable handle scrolling */
+  margin: 0;               /* remove default margins to avoid extra scrollbars */
+}
+
+/* 3) Optional: if some styles put overflow on .highlight or .chroma, add a fallback */
+.highlight .chroma {
+  max-height: 480px;
+  overflow: auto;
+  border: 1px solid var(--color-neutral-200, #ddd);
+  border-radius: 6px;
+}
+
+/* 4) Optional: keep the left gutter (line numbers) narrow and non-selectable */
+.chroma td.lntd {
+  width: 1%;
+  white-space: nowrap;
+}
+.chroma .lnt,
+.chroma td.linenos {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Line numbers version */
+/* Inline line numbers (no table): scroll the outer .chroma block */
+
+.chroma {
+  max-height: 480px;
+  overflow: auto;
+  border: 1px solid var(--color-neutral-200, #ddd);
+  border-radius: 6px;
+}
+
+
+/* Reduce the width of the Table of Contents */
+@media (width >= 1024px) {
+    #TableOfContents {
+      max-width: 19vw;
+  }
 }

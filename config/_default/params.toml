@@ -27,7 +27,7 @@ copyright = """
     |
     <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy/#use-of-cookies">{{< icon "cookie-bite" >}}&nbsp;Cookie Policy</a>
   </span>
-  <br style="margin-bottom:1.2em;"/>
+  <br style="margin-bottom:15px;"/>
   <span style="display: inline-block; font-size: 13px">
     ✍️ Crafted with the help of 🤖 AI.
     💡 All content is fact-checked, edited, and reflects the author’s expertise and opinions.

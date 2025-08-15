@@ -12,9 +12,22 @@
         block = [['\[', '\]'], ['$$', '$$']]
         inline = [['\(', '\)']]
 
-        
+# https://gohugo.io/configuration/markup/#highlight
 [highlight]
   noClasses = false
+  # anchorLineNos = false
+  codeFences = true
+  # guessSyntax = false
+  # hl_Lines = ''
+  # hl_inline = false
+  lineAnchors = ''
+  # lineNoStart = 1
+  # lineNos = true
+  # lineNumbersInTable = true
+  #style = 'monokai'
+  style = 'vim'
+  #tabWidth = 2
+  #wrapperClass = 'highlight'
 
 [tableOfContents]
   startLevel = 2

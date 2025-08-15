@@ -1,5 +1,5 @@
 ---
-title: "A propos de moi "
+title: "À propos de moi "
 layout: single
 date: 2025-08-03
 share: false

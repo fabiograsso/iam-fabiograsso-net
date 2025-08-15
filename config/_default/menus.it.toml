@@ -10,23 +10,77 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
+
 [[main]]
-  name = "Posts"
+  name = "Chi sono"
+  pageRef = "about"
+  weight = 1
+  pre = "user"
+
+[[main]]
+  identifier = "linkedin"
+  pre = "linkedin"
+  url = "https://www.linkedin.com/in/fabiograsso82/"
+  weight = 2
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/fabiograsso"
+  weight = 3
+
+[[main]]
+  name = "Articoli"
   pageRef = "posts"
   weight = 10
+  pre = "newspaper"
 
 [[main]]
   name = "Tag"
   pageRef = "tags"
   weight = 10
+  pre = "tag"
 
 [[main]]
-  name = "About"
-  pageRef = "about"
-  weight = 50
+  name = "Categorie"
+  pageRef = "#"
+  weight = 99
+  pre = "list"
+[[main]]
+  name = "Blog"
+  parent = "Categorie"
+  pageRef = "posts/blog/"
+  weight = 10
+  pre = "pencil"
+[[main]]
+  name = "Guide"
+  parent = "Categorie"
+  pageRef = "posts/howto/"
+  weight = 20
+  pre = "screwdriver"
+[[main]]
+  name = "Consigli"
+  parent = "Categorie"
+  pageRef = "posts/tips/"
+  weight = 30
+  pre = "lightbulb"
+[[main]]
+  name = "Viaggi" #
+  parent = "Categorie"
+  pageRef = "posts/travels/"
+  weight = 100
+  pre = "plane"
+[[main]]
+  name = "Cucina"
+  parent = "Categorie"
+  pageRef = "posts/kitchen/"
+  weight = 101
+  pre = "utensils"
+
 
 # -- Footer Menu --
-# [[footer]]
-#  name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+
+#[[footer]]
+#  name = "Contacts"
+#  pageRef = "contacts"
+#  weight = 10
+#  pre = "address-card"

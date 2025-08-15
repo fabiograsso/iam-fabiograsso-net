@@ -40,8 +40,6 @@
   weight = 10
   pre = "tag"
 
-
-
 [[main]]
   name = "Categories"
   pageRef = "#"
