@@ -47,3 +47,4 @@ resources/_gen/
 test/
 .env
 .vscode
+/themes

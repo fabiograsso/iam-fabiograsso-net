@@ -40,3 +40,9 @@ Abonnez-vous aux mises à jour ou contactez-moi directement : je serai ravi d’
 ## :email: Contacts
 
 {{< include "contact.fr.md" >}}
+
+---
+
+## Okta Badge Wallet
+
+{{< include "inc/badge-credly.txt" >}}

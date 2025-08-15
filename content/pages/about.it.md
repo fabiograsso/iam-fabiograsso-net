@@ -43,3 +43,9 @@ Iscriviti agli aggiornamenti o contattami direttamente: sarò felice di approfon
 ## :email: Contattami
 
 {{< include "contact.it.md" >}}
+
+---
+
+## Okta Badge Wallet
+
+{{< include "inc/badge-credly.txt" >}}
