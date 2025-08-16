@@ -31,8 +31,8 @@ All content on this blog is published under the <a href="https://creativecommons
 ## What this means for you
 
 - **{{< icon "creative-commons" >}} You can**: 
-  - **{{< icon "share" > }} Share** - copy and redistribute the material in any medium or format
-  - **{{< icon "pen-to-square" > }} Adapt** - remix, transform, and build upon the material
+  - **{{< icon "share" >}} Share** - copy and redistribute the material in any medium or format
+  - **{{< icon "pen-to-square" >}} Adapt** - remix, transform, and build upon the material
 - **{{< icon "creative-commons-by" >}} Attribution required**: <ins>You must give appropriate credit</ins> (cite the author, a link of this website, and the license), provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 - **{{< icon "creative-commons-nc" >}} Non-commercial only**: You may not use the material for commercial purposes.
 - **{{< icon "creative-commons-sa" >}} Share-alike**: If you remix, transform, or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.
