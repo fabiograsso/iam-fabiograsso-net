@@ -17,14 +17,10 @@ enableCodeCopy = true
 
 copyright = """
   <span style="display: inline-block; font-size: 16px">
-    &copy;&nbsp;2025&nbsp;<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/about">Fabio&nbsp;Grasso</a>
-     |
-    License:&nbsp;<a title="CC BY-NC-SA 4.0" class="hover:underline hover:decoration-primary-400 hover:text-primary-500" rel="license external nofollow noopener noreffer" href="/license/" target="_blank">{{< icon "creative-commons" >}}{{< icon "creative-commons-by" >}}{{< icon "creative-commons-nc" >}}{{< icon "creative-commons-sa" >}}</a>
-     | 
-    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/posts/index.xml">{{< icon "feed" >}}&nbsp;RSS</a>
-     | 
-    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy">{{< icon "shield-halved" >}}&nbsp;Privacy Policy</a>
-    |
+    &copy;&nbsp;2025&nbsp;<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/about">Fabio&nbsp;Grasso</a> |
+    <a title="CC BY-NC-SA 4.0" class="hover:underline hover:decoration-primary-400 hover:text-primary-500" rel="license" href="/license/">License:&nbsp;{{< icon "creative-commons" >}}{{< icon "creative-commons-by" >}}{{< icon "creative-commons-nc" >}}{{< icon "creative-commons-sa" >}}</a> | 
+    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/posts/index.xml">{{< icon "feed" >}}&nbsp;RSS</a> | 
+    <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy">{{< icon "shield-halved" >}}&nbsp;Privacy Policy</a> |
     <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="/privacy/#use-of-cookies">{{< icon "cookie-bite" >}}&nbsp;Cookie Policy</a>
   </span>
   <br style="margin-bottom:15px;"/>

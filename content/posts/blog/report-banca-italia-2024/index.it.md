@@ -10,13 +10,104 @@ summary: "Analisi degli incidenti cyber bancari 2024 (+45%) secondo il report de
 
 Il recente report **"Framework segnaletico di Vigilanza degli incidenti operativi o di sicurezza - Analisi orizzontale 2024"**[^1] della Banca d'Italia non è solo una statistica, è un campanello d'allarme strategico per l'intero settore finanziario italiano (e, per estensione, europeo). I dati sono netti e preoccupanti: un **aumento del 45% degli incidenti operativi e di sicurezza segnalati**, per un totale di **188 notifiche**, il livello più alto mai registrato dal 2020.
 
-![Evoluzione degli Incidenti Bancari in Italia (2020-2024): +45% nel 2024](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/b4b226b87471aaf64181da4b746f216e/5767c06c-b65c-4e16-abb3-caa643ee6840/397a6093.png)
-Evoluzione degli Incidenti Bancari in Italia (2020-2024): +45% nel 2024
-TODO: Immagine - grafico
+{{< chart >}}
+type: 'bar',
+data: {
+    labels: ['2020','2021','2022','2023','2024'],
+    datasets: [
+        {
+        label: 'Cyber incidents',
+        data: [26, 20, 15, 37, 40],
+        backgroundColor: 'rgba(255, 99, 132, 0.7)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1,
+        borderRadius: 2
+        },
+        {
+        label: 'Operational Incidents',
+        data: [56, 76, 84, 93, 148],
+        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1,
+        borderRadius: 2
+        },
+        {
+        label: 'Total incidents',
+        type: 'line',
+        data: [82, 96, 99, 130, 188],
+        borderColor: 'rgba(255, 159, 64, 1)',
+        backgroundColor: 'rgba(255, 159, 64, 0.2)',
+        borderWidth: 2,
+        pointRadius: 5,
+        pointHoverRadius: 10,
+        tension: 0.3,
+        fill: false,
+        }
+    ]
+},
+options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+        x: { stacked: true },
+        y: {stacked: true, beginAtZero: true,       ticks: { precision: 0 } }
+    },
+    plugins: {
+        title: {
+        display: true,
+        text: 'Evoluzione degli incidenti bancari in Italia (2020–2024)'
+        }
+    }
+}
+{{< /chart >}}
 
 Ma il dato più rivelatore emerge dall'analisi dettagliata: il **65% di tutti gli incidenti ha coinvolto un fornitore di servizi esterno**, un balzo enorme rispetto al 45% del 2023. Questo, unito a un tempo medio di ripristino dei servizi più che raddoppiato (da 9 a 21 ore), ci dice una cosa chiara: il perimetro di sicurezza tradizionale non esiste più. Il rischio è frammentato, interconnesso e risiede sempre più nella gestione delle identità e degli accessi privilegiati.
 
 Il panorama delle minacce si sta inoltre evolvendo rapidamente. Gli attacchi DDoS "rumorosi" sono crollati del 75% (da 16 nel 2023 a 4 nel 2024), lasciando spazio a minacce più silenziose e mirate come **malware (50% degli incidenti cyber), accessi non autorizzati (45%) e social engineering (22,5%)**. L'obiettivo non è più solo "buttare giù" un servizio, ma *infiltrarsi, rubare credenziali e muoversi lateralmente* attraverso l'infrastruttura digitale interconnessa.[^1]
+
+{{< chart >}}
+type: 'bar',
+data: {
+    labels: ['Malware','Unauthorized Access','Social Engineering','DDoS','Other'],
+    datasets: [
+        {
+        data: [20, 18, 9, 4, 3],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.7)',
+            'rgba(54, 162, 235, 0.7)',
+            'rgba(255, 206, 86, 0.7)',
+            'rgba(153, 102, 255, 0.7)',
+            'rgba(75, 192, 192, 0.7)'
+        ],
+        borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(75, 192, 192, 1)'
+        ],
+        borderWidth: 1,
+        borderRadius: 3
+        }
+    ]
+},
+options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+        legend: { display: false },
+        tooltip: { enabled: true },
+        title: {
+            display: true,
+            text: 'Tipologie degli incidenti cyber nel settore bancario in Italia (2020–2024)'
+        }
+    },
+    scales: {
+        x: { stacked: false },
+        y: {stacked: false, beginAtZero: true, max: 25, ticks: { precision: 0 } }
+    },
+}
+{{< /chart >}}
 
 Questi dati italiani riflettono un trend europeo più ampio. L'European Banking Authority (EBA) riporta che oltre il 58% delle banche europee ha subito almeno un cyberattacco nel secondo semestre 2024, con il 24% che ha registrato almeno un attacco riuscito con impatto significativo[^2]. Parallelamente, l'ENISA ha identificato 488 incidenti cyber pubblicamente riportati nel settore finanziario europeo tra gennaio 2023 e giugno 2024, con le banche come obiettivo primario nel 46% dei casi[^3].
 

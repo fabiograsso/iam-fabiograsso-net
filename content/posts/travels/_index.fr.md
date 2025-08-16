@@ -1,6 +1,7 @@
 ---
 title: "Travels"
 weight: 4
+showTableOfContents: false
 ---
 
 {{< lead >}}

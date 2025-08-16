@@ -12,6 +12,4 @@ Articoli tecnici su cybersecurity, Zero Trust, governance delle identità digita
 
 Molti contenuti sono disponibili solo in inglese - visita la versione [🇬🇧 EN](/en) del sito per l'archivio completo.
 
-Molti contenuti sono disponibili solo in inglese - visita la versione [🇬🇧 EN] del sito per l'archivio completo.
-
 ---
